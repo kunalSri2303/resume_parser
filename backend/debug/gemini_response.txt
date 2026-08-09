@@ -1,0 +1,211 @@
+{
+  "personal_information": {
+    "name": "SHAIKH ANAS Z.",
+    "email": "sanas8084@gmail.com",
+    "phone": "+91 7817937498",
+    "location": "Ahmedabad, India",
+    "linkedin": null,
+    "github": null,
+    "portfolio": null,
+    "nationality": "Indian"
+  },
+
+  "profession": {
+    "category": "Software & IT",
+    "subcategory": "IT Hardware and Support",
+    "industry": "Information Technology",
+    "current_role": "Desktop Support Server Engineer",
+    "target_roles": [
+      "Desktop Support Server Engineer",
+      "IT Hardware Engineer",
+      "Technical Support Engineer"
+    ],
+    "current_company": "Arizona Automation & Technology",
+    "experience_years": 7.17,
+    "seniority": "Mid",
+    "employment_type": null
+  },
+
+  "skills": {
+    "technical": [
+      "Laptop assembling",
+      "Laptop disassembling",
+      "Computer assembling",
+      "Computer disassembling",
+      "Troubleshooting hardware issues",
+      "Develop and test computer systems",
+      "Develop and test computer components",
+      "Windows installation",
+      "Windows management",
+      "Crimping",
+      "punching",
+      "Basic networking setup",
+      "Network troubleshooting",
+      "Formatting Windows",
+      "Device driver installation",
+      "Software installation"
+    ],
+    "soft": [
+      "teamwork",
+      "communication",
+      "Ability to work independently",
+      "Adaptable",
+      "willingness to learn",
+      "Positive attitude"
+    ],
+    "tools": [
+      "MS Office Suite",
+      "Windows 7",
+      "Windows 8",
+      "Windows 10",
+      "Windows Server 2013",
+      "Windows Server 2016",
+      "Windows Server 2019"
+    ],
+    "frameworks": [],
+    "equipment": [
+      "Laptop",
+      "Computer",
+      "Servers"
+    ],
+    "standards": [],
+    "languages": [
+      "English",
+      "Hindi",
+      "Gujarati"
+    ],
+    "methodologies": [
+      "System Administration",
+      "Help Desk",
+      "Technical Support"
+    ]
+  },
+
+  "experience": [
+    {
+      "title": "Desktop Support Server Engineer",
+      "company": "Arizona Automation & Technology",
+      "location": "",
+      "start_date": "",
+      "end_date": "",
+      "duration": "1.5 Years",
+      "description": "Managed and maintained IT infrastructure, including networks, servers, and cloud environments. Provided technical support and training to end users, improving overall system efficiency. Installed and configured operating systems and software. System Administration & Troubleshooting. Diagnosed and resolved hardware/software issues. Technical Support & Help Desk.",
+      "key_achievements": []
+    },
+    {
+      "title": "Technical Support Engineer",
+      "company": "ITechEzy",
+      "location": "",
+      "start_date": "",
+      "end_date": "",
+      "duration": "1 Year",
+      "description": "Delivered customer support for IT-related issues. Assisted in troubleshooting the system and resolving the problems.",
+      "key_achievements": []
+    },
+    {
+      "title": "Desktop Support Engineer",
+      "company": "Sunce Info Solution",
+      "location": "",
+      "start_date": "",
+      "end_date": "",
+      "duration": "8 Months",
+      "description": "Provided technical support and system maintenance. Installed and configured operating systems and software. Diagnosed and resolved hardware/software issues.",
+      "key_achievements": []
+    },
+    {
+      "title": "Technical Support Engineer",
+      "company": "Fourtune Systems",
+      "location": "",
+      "start_date": "",
+      "end_date": "",
+      "duration": "2 Years",
+      "description": "Delivered customer support for IT-related issues. Assisted in troubleshooting system and network problems.",
+      "key_achievements": []
+    },
+    {
+      "title": "Hardware Technician",
+      "company": "Unique Computers",
+      "location": "",
+      "start_date": "",
+      "end_date": "",
+      "duration": "1 Year",
+      "description": "Assembled and disassembled a laptop's components. All Laptop-Related Hardware Components Assemble. Installed drivers and software applications.",
+      "key_achievements": []
+    },
+    {
+      "title": "Intern",
+      "company": "Computrack System",
+      "location": "",
+      "start_date": "",
+      "end_date": "",
+      "duration": "1 Year",
+      "description": "Learning Computer & Laptop OS installation & Formatting Windows. Basic hardware troubleshooting and maintenance. Supported system installations and upgrades.",
+      "key_achievements": []
+    }
+  ],
+
+  "education": [
+    {
+      "degree": "Bachelor of Commerce (B.Com)",
+      "institution": "Vivekanand Vanijya College, Raipur, Ahmedabad. Gujarat University",
+      "field_of_study": "Commerce",
+      "graduation_year": "Pursuing",
+      "cgpa_or_percentage": null
+    },
+    {
+      "degree": "Higher Secondary (12th)",
+      "institution": "GSEB",
+      "field_of_study": null,
+      "graduation_year": "2015",
+      "cgpa_or_percentage": "50%"
+    },
+    {
+      "degree": "Secondary (10th)",
+      "institution": "GSEB",
+      "field_of_study": null,
+      "graduation_year": "2013",
+      "cgpa_or_percentage": "53%"
+    }
+  ],
+
+  "projects": [],
+
+  "certifications": [],
+
+  "licenses": [],
+
+  "achievements": [],
+
+  "summary": "Dedicated IT Hardware Engineer with over 7 years of experience in computer hardware, operating systems installation, and technical support. Proven expertise in troubleshooting hardware and network issues, laptop and computer assembly/disassembly, server administration, and desktop support.",
+  "documents": {
+    "resume_available": true,
+    "cover_letter_available": false,
+    "certificates_available": false
+  },
+  "confidence": {
+    "name": 1.0,
+    "email": 1.0,
+    "phone": 1.0,
+    "profession": 1.0,
+    "skills": 1.0,
+    "experience": 1.0
+  },
+  "search_keywords": [
+    "IT Hardware Engineer",
+    "Desktop Support Server Engineer",
+    "Technical Support Engineer",
+    "Desktop Support Engineer",
+    "Hardware Technician",
+    "Windows Server 2019",
+    "Windows Server 2016",
+    "Windows Server 2013",
+    "System Administration",
+    "Hardware Troubleshooting",
+    "Network Troubleshooting",
+    "OS installation",
+    "MS Office Suite",
+    "Help Desk Support",
+    "Assembling",
+    "Crimping & punching"
+  ]
+}
