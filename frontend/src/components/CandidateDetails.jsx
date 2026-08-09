@@ -29,8 +29,11 @@ import {
   UserCheck 
 } from 'lucide-react';
 import { resumeApi, jobApi, recommendationApi, feedbackApi } from '../services/api';
+import { useRole } from '../context/RoleContext';
+import { Lock } from 'lucide-react';
 
 const CandidateDetails = () => {
+  const { isHiringManager } = useRole();
   const { id } = useParams();
   const [candidate, setCandidate] = useState(null);
   const [jobs, setJobs] = useState([]);
@@ -652,56 +655,63 @@ const CandidateDetails = () => {
                   </div>
 
                   {/* Recruiter Action Decision Box */}
-                  <div className="p-6 bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-2xl shadow-2xs space-y-4">
-                    <h4 className="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
-                      <UserCheck size={16} className="text-primary-500" />
-                      Take Recruiter Action
-                    </h4>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">
-                      Record an immediate decision to update candidate status in the hiring pipeline.
-                    </p>
+                  {!isHiringManager ? (
+                    <div className="p-6 bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-2xl shadow-2xs space-y-4">
+                      <h4 className="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
+                        <UserCheck size={16} className="text-primary-500" />
+                        Take Recruiter Action
+                      </h4>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">
+                        Record an immediate decision to update candidate status in the hiring pipeline.
+                      </p>
 
-                    <div className="space-y-3">
-                      <textarea
-                        placeholder="Add optional reviewer notes (e.g. Strong system design interview candidate)..."
-                        value={feedbackNote}
-                        onChange={(e) => setFeedbackNote(e.target.value)}
-                        className="w-full h-20 p-3 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl text-xs focus:outline-none focus:border-primary-500 resize-none font-medium leading-relaxed"
-                      />
+                      <div className="space-y-3">
+                        <textarea
+                          placeholder="Add optional reviewer notes (e.g. Strong system design interview candidate)..."
+                          value={feedbackNote}
+                          onChange={(e) => setFeedbackNote(e.target.value)}
+                          className="w-full h-20 p-3 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl text-xs focus:outline-none focus:border-primary-500 resize-none font-medium leading-relaxed"
+                        />
 
-                      {feedbackSuccess && (
-                        <div className="p-3 bg-emerald-50 dark:bg-emerald-950/20 text-emerald-800 dark:text-emerald-300 rounded-xl text-xs font-bold border border-emerald-500/20">
-                          {feedbackSuccess}
+                        {feedbackSuccess && (
+                          <div className="p-3 bg-emerald-50 dark:bg-emerald-950/20 text-emerald-800 dark:text-emerald-300 rounded-xl text-xs font-bold border border-emerald-500/20">
+                            {feedbackSuccess}
+                          </div>
+                        )}
+
+                        <div className="flex flex-wrap gap-2">
+                          <button
+                            onClick={() => handleFeedbackSubmit('Shortlisted')}
+                            disabled={submittingFeedback}
+                            className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition-colors cursor-pointer"
+                          >
+                            Shortlist
+                          </button>
+                          <button
+                            onClick={() => handleFeedbackSubmit('Hired')}
+                            disabled={submittingFeedback}
+                            className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition-colors flex items-center space-x-1 cursor-pointer"
+                          >
+                            <Check size={14} />
+                            <span>Mark Hired</span>
+                          </button>
+                          <button
+                            onClick={() => handleFeedbackSubmit('Rejected')}
+                            disabled={submittingFeedback}
+                            className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold transition-colors flex items-center space-x-1 cursor-pointer"
+                          >
+                            <X size={14} />
+                            <span>Reject</span>
+                          </button>
                         </div>
-                      )}
-
-                      <div className="flex flex-wrap gap-2">
-                        <button
-                          onClick={() => handleFeedbackSubmit('Shortlisted')}
-                          disabled={submittingFeedback}
-                          className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition-colors cursor-pointer"
-                        >
-                          Shortlist
-                        </button>
-                        <button
-                          onClick={() => handleFeedbackSubmit('Hired')}
-                          disabled={submittingFeedback}
-                          className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition-colors flex items-center space-x-1 cursor-pointer"
-                        >
-                          <Check size={14} />
-                          <span>Mark Hired</span>
-                        </button>
-                        <button
-                          onClick={() => handleFeedbackSubmit('Rejected')}
-                          disabled={submittingFeedback}
-                          className="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold transition-colors flex items-center space-x-1 cursor-pointer"
-                        >
-                          <X size={14} />
-                          <span>Reject</span>
-                        </button>
                       </div>
                     </div>
-                  </div>
+                  ) : (
+                    <div className="p-4 bg-amber-50 dark:bg-amber-950/30 border border-amber-500/20 rounded-2xl text-amber-800 dark:text-amber-300 text-xs font-bold flex items-center space-x-2">
+                      <Lock size={16} className="text-amber-500 flex-shrink-0" />
+                      <span>Viewing candidate evaluation in Read Only mode. Candidate status modification is disabled for Hiring Managers.</span>
+                    </div>
+                  )}
 
                 </div>
 

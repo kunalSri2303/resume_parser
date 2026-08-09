@@ -82,4 +82,13 @@ export const analyticsApi = {
   getMetrics: () => api.get('/analytics'),
 };
 
+export const authApi = {
+  login: (username, password, role) =>
+    api.post('/api/auth/login', { username, password, role }),
+  changePassword: (data) =>
+    api.post('/api/auth/change-password', data),
+  getUsers: () =>
+    api.get('/api/auth/users'),
+};
+
 export default api;

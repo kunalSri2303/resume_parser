@@ -2,12 +2,33 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
 from app.database.database import engine, Base
-from app.api import resume, jobs, search, recommendation, feedback, analytics, vacancy
+from app.api import resume, jobs, search, recommendation, feedback, analytics, vacancy, auth
+from app.database.database import SessionLocal
+from app.database.operations import get_user_by_username, create_user
+import bcrypt
 from app.utils.logger import logger
 
 # Initialize database tables on startup
 logger.info("Initializing database tables...")
 Base.metadata.create_all(bind=engine)
+
+# Seed default user accounts in database if absent
+try:
+    db_session = SessionLocal()
+    admin_user = get_user_by_username(db_session, "admin")
+    if not admin_user:
+        admin_hash = bcrypt.hashpw(b"AdminPassword2026!", bcrypt.gensalt()).decode("utf-8")
+        create_user(db_session, "admin", admin_hash, "admin")
+        logger.info("Seeded initial 'admin' user into database.")
+
+    hm_user = get_user_by_username(db_session, "hiringmanager")
+    if not hm_user:
+        hm_hash = bcrypt.hashpw(b"ManagerPassword2026!", bcrypt.gensalt()).decode("utf-8")
+        create_user(db_session, "hiringmanager", hm_hash, "hiring_manager")
+        logger.info("Seeded initial 'hiringmanager' user into database.")
+    db_session.close()
+except Exception as seed_err:
+    logger.warning(f"Initial user seed check: {seed_err}")
 
 # Programmatically add missing columns if they don't exist (SQLite schema migration safety)
 try:
@@ -56,6 +77,7 @@ app.include_router(recommendation.router)
 app.include_router(feedback.router)
 app.include_router(analytics.router)
 app.include_router(vacancy.router)
+app.include_router(auth.router, prefix="/api")
 
 @app.get("/")
 def get_root_status():

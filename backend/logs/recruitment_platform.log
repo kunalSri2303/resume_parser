@@ -11770,3 +11770,558 @@ Please retry in 23.799922785s. [links {
 [2026-08-09 18:51:18] INFO [recruitment_platform:operations.py:216] - Saved job description: 'CARPENTERS' (ID: 9)
 [2026-08-09 18:51:18] INFO [recruitment_platform:operations.py:216] - Saved job description: 'SCAFFOLDERS (GULF RETURN)' (ID: 10)
 [2026-08-09 18:51:18] INFO [recruitment_platform:operations.py:216] - Saved job description: 'MASONS' (ID: 11)
+[2026-08-09 19:04:54] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 19:04:59] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 19:05:10] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 19:05:10] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 19:05:10] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 19:05:10] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 19:05:10] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 19:05:10] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 19:05:10] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 19:05:10] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 19:05:10] INFO [recruitment_platform:main.py:34] - Database tables initialized successfully.
+[2026-08-09 19:05:10] INFO [recruitment_platform:operations.py:216] - Saved job description: 'Senior Quality Inspector' (ID: 12)
+[2026-08-09 19:05:10] INFO [recruitment_platform:operations.py:247] - Updated job description: 'Senior Quality Inspector' (ID: 12)
+[2026-08-09 19:09:44] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 19:09:49] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 19:10:00] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 19:10:00] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 19:10:00] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 19:10:00] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 19:10:00] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 19:10:00] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 19:10:00] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 19:10:00] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 19:10:00] INFO [recruitment_platform:main.py:34] - Database tables initialized successfully.
+[2026-08-09 19:28:23] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 19:28:23] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 19:29:05] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 19:29:05] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 20:54:32] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 20:54:37] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 20:54:44] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 20:54:44] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 20:54:44] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 20:54:44] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 20:54:44] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 20:54:44] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 20:54:44] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 20:54:44] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 20:54:44] INFO [recruitment_platform:main.py:34] - Database tables initialized successfully.
+[2026-08-09 20:55:19] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 20:55:19] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 20:55:35] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 20:55:35] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:13:06] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 21:13:11] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 21:13:18] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 21:13:18] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 21:13:18] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 21:13:18] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 21:13:18] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 21:13:18] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 21:13:18] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 21:13:18] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 21:13:18] INFO [recruitment_platform:main.py:34] - Database tables initialized successfully.
+[2026-08-09 21:13:18] INFO [recruitment_platform:operations.py:216] - Saved job description: 'Senior Quality Inspector' (ID: 13)
+[2026-08-09 21:13:18] INFO [recruitment_platform:operations.py:247] - Updated job description: 'Senior Quality Inspector' (ID: 13)
+[2026-08-09 21:14:47] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 21:14:52] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 21:14:59] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 21:14:59] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 21:14:59] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 21:14:59] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 21:14:59] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 21:14:59] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 21:14:59] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 21:14:59] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 21:14:59] INFO [recruitment_platform:main.py:34] - Database tables initialized successfully.
+[2026-08-09 21:16:20] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:16:20] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:17:41] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:17:41] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:20:32] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:20:32] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:31:20] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 21:31:24] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 21:31:31] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 21:31:31] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 21:31:31] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 21:31:31] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 21:31:31] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 21:31:31] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 21:31:31] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 21:31:31] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 21:31:31] INFO [recruitment_platform:main.py:34] - Database tables initialized successfully.
+[2026-08-09 21:31:31] INFO [recruitment_platform:operations.py:216] - Saved job description: 'Senior Quality Inspector' (ID: 14)
+[2026-08-09 21:31:31] INFO [recruitment_platform:operations.py:247] - Updated job description: 'Senior Quality Inspector' (ID: 14)
+[2026-08-09 21:31:46] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:31:46] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:32:02] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:32:02] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:32:16] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:32:16] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:32:20] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:32:20] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:33:35] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:33:35] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:34:37] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:34:37] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 21:39:11] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'WhatsApp Image 2026-08-09 at 18.24.52.jpeg'...
+[2026-08-09 21:39:11] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 21:39:17] INFO [recruitment_platform:gemini_provider.py:233] - Successfully transcribed page image (1255 chars).
+[2026-08-09 21:39:17] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (1255 chars)...
+[2026-08-09 21:39:17] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 21:39:27] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 21:40:26] INFO [recruitment_platform:resume.py:194] - Received upload request for 1 items.
+[2026-08-09 21:40:26] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/6f5313762ca44452a4578057d4ffabec_JAYDEEP CV.pdf
+[2026-08-09 21:40:26] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: JAYDEEP CV.pdf (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/6f5313762ca44452a4578057d4ffabec_JAYDEEP CV.pdf)
+[2026-08-09 21:40:26] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 3310 characters extracted.
+[2026-08-09 21:40:26] INFO [recruitment_platform:pipeline_service.py:78] - Running normal layout parser for JAYDEEP CV.pdf...
+[2026-08-09 21:40:26] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 21:40:26] INFO [recruitment_platform:pipeline_service.py:93] - Extracted resume text saved to: /Users/kunalsrivastav/Desktop/resume_parser/backend/debug/debug_resume.txt
+[2026-08-09 21:40:26] INFO [recruitment_platform:pipeline_service.py:100] - Starting hybrid extraction...
+[2026-08-09 21:40:26] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'jaydeepajani1963@gmail.com', 'phone': '+91 83470 50997', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 21:40:26] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-09 21:40:26] INFO [recruitment_platform:gemini_provider.py:130] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-09 21:40:42] INFO [recruitment_platform:gemini_provider.py:132] - Successfully parsed resume via Gemini API.
+[2026-08-09 21:40:42] INFO [recruitment_platform:pipeline_service.py:102] - Resume extracted successfully for Jaydeep Babubhai Ajani
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:122] - Creating new candidate record for jaydeepajani1963@gmail.com.
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Plc Programming' (alias: 'plc programming')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Cnc Machine Commissioning' (alias: 'cnc machine commissioning')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Hmi Development' (alias: 'hmi development')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Fat/sat Testing' (alias: 'fat/sat testing')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'I/o Mapping' (alias: 'i/o mapping')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Parameter Configuration' (alias: 'parameter configuration')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Signal Validation' (alias: 'signal validation')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Synchronized Axis Control' (alias: 'synchronized axis control')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Coordinated Machining Operations' (alias: 'coordinated machining operations')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Analytical & Problem Solving' (alias: 'analytical & problem solving')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Self Motivated' (alias: 'self-motivated')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Process Orientated' (alias: 'process-orientated')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Fanuc Nc Guide' (alias: 'fanuc nc guide')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Fanuc Servo Guide' (alias: 'fanuc servo guide')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Fanuc Picture' (alias: 'fanuc picture')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Gx Works' (alias: 'gx works')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Fanuc Ladder' (alias: 'fanuc ladder')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Microsoft Office Suite' (alias: 'microsoft office suite')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Cnc Machines' (alias: 'cnc machines')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Huron Graffenstaden Cnc Machines' (alias: 'huron graffenstaden cnc machines')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Fanuc Controllers' (alias: 'fanuc controllers')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Mitsubishi Controllers' (alias: 'mitsubishi controllers')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Spindle Drives' (alias: 'spindle drives')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Servo Axes' (alias: 'servo axes')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Atc Systems' (alias: 'atc systems')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Rotary/tilting Tables' (alias: 'rotary/tilting tables')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Bar Feeders' (alias: 'bar feeders')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Gantry Robots' (alias: 'gantry robots')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Hydraulic Units' (alias: 'hydraulic units')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Pneumatic Units' (alias: 'pneumatic units')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Arduino' (alias: 'arduino')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Iot Controller' (alias: 'iot controller')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Ce Safety Standards' (alias: 'ce safety standards')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'European Machine Directives' (alias: 'european machine directives')
+[2026-08-09 21:40:42] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Plc Ladder Logic' (alias: 'plc ladder logic')
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 38)
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 39)
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 40)
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 41)
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 42)
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 43)
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 44)
+[2026-08-09 21:40:43] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 21:40:43] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 8
+[2026-08-09 21:40:43] INFO [recruitment_platform:excel_service.py:154] - Appending new candidate jaydeepajani1963@gmail.com to Candidates.xlsx
+[2026-08-09 21:40:43] INFO [recruitment_platform:pipeline_service.py:124] - Background processing complete for candidate Jaydeep Babubhai Ajani (jaydeepajani1963@gmail.com). Is update: False
+[2026-08-09 21:41:34] INFO [recruitment_platform:search.py:39] - Natural language candidate search requested: 'CNC'
+[2026-08-09 21:41:35] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 14
+[2026-08-09 21:41:47] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 14
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 21:41:47] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 22:50:37] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 22:50:42] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 22:50:50] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 22:50:50] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 22:50:50] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 22:50:50] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 22:50:50] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 22:50:50] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 22:50:50] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 22:50:50] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 22:50:50] INFO [recruitment_platform:main.py:34] - Database tables initialized successfully.
+[2026-08-09 23:27:47] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 23:27:52] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 23:27:59] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 23:27:59] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:27:59] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:27:59] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:27:59] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:27:59] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:27:59] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:28:21] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 23:28:26] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 23:28:33] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 23:28:33] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:28:33] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:28:33] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:28:33] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:28:33] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:28:33] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:28:33] INFO [recruitment_platform:main.py:12] - Initializing database tables...
+[2026-08-09 23:28:33] INFO [recruitment_platform:operations.py:346] - Created user: 'admin' with role 'admin'
+[2026-08-09 23:28:33] INFO [recruitment_platform:main.py:22] - Seeded initial 'admin' user into database.
+[2026-08-09 23:28:33] INFO [recruitment_platform:operations.py:346] - Created user: 'hiringmanager' with role 'hiring_manager'
+[2026-08-09 23:28:33] INFO [recruitment_platform:main.py:28] - Seeded initial 'hiringmanager' user into database.
+[2026-08-09 23:28:33] INFO [recruitment_platform:main.py:55] - Database tables initialized successfully.
+[2026-08-09 23:28:34] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-09 23:28:34] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-09 23:28:34] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-09 23:28:35] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-09 23:28:35] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-09 23:28:35] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-09 23:28:35] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:28:35] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-09 23:28:36] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:28:36] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-09 23:28:36] INFO [recruitment_platform:operations.py:216] - Saved job description: 'Senior Quality Inspector' (ID: 15)
+[2026-08-09 23:28:36] INFO [recruitment_platform:operations.py:247] - Updated job description: 'Senior Quality Inspector' (ID: 15)
+[2026-08-09 23:29:05] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 23:29:09] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 23:29:16] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 23:29:16] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:29:16] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:29:16] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:29:16] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:29:16] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:29:16] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:29:16] INFO [recruitment_platform:main.py:12] - Initializing database tables...
+[2026-08-09 23:29:16] INFO [recruitment_platform:main.py:55] - Database tables initialized successfully.
+[2026-08-09 23:29:16] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-09 23:29:17] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-09 23:29:17] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-09 23:29:17] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-09 23:29:18] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-09 23:29:18] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-09 23:29:18] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:29:18] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-09 23:29:18] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:29:18] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-09 23:29:18] INFO [recruitment_platform:operations.py:216] - Saved job description: 'Senior Quality Inspector' (ID: 16)
+[2026-08-09 23:29:18] INFO [recruitment_platform:operations.py:247] - Updated job description: 'Senior Quality Inspector' (ID: 16)
+[2026-08-09 23:29:18] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 23:29:18] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 1679 characters extracted.
+[2026-08-09 23:29:18] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (1445 chars)...
+[2026-08-09 23:29:18] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 23:29:28] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 23:29:28] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 23:29:28] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'john.doe@example.com', 'phone': '+1-234-567-8901', 'linkedin': 'linkedin.com/in/johndoe', 'github': 'github.com/johndoe', 'portfolio': 'https://johndoe.dev'}
+[2026-08-09 23:29:28] ERROR [recruitment_platform:matching_service.py:273] - Error querying FAISS during job match for section 'certifications': 
+[2026-08-09 23:29:28] ERROR [recruitment_platform:matching_service.py:273] - Error querying FAISS during job match for section 'achievements': 
+[2026-08-09 23:29:28] ERROR [recruitment_platform:matching_service.py:273] - Error querying FAISS during job match for section 'summary': 
+[2026-08-09 23:29:28] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': None, 'phone': '+1 (123) 456-7890', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 23:29:28] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': None, 'phone': '+91 98765 43210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 23:29:28] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': None, 'phone': '98765-43210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 23:29:28] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': None, 'phone': None, 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 23:29:28] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 23:29:28] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 1020 characters extracted.
+[2026-08-09 23:29:28] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (890 chars)...
+[2026-08-09 23:29:28] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 23:29:28] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 31.637647301s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 31
+}
+]'. Retrying attempt 1/3 in 1.85s...
+[2026-08-09 23:29:30] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 29.579690854s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 29
+}
+]'. Retrying attempt 2/3 in 3.59s...
+[2026-08-09 23:29:34] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 25.787178582s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 25
+}
+]'. Retrying attempt 3/3 in 6.94s...
+[2026-08-09 23:29:40] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 23:29:41] ERROR [recruitment_platform:gemini_provider.py:25] - Function call failed after 3 retry attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 18.64717493s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 18
+}
+]
+[2026-08-09 23:29:41] ERROR [recruitment_platform:gemini_provider.py:260] - All retry attempts for Gemini vacancy extraction failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 18.64717493s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 18
+}
+]
+[2026-08-09 23:29:41] ERROR [recruitment_platform:vacancy.py:85] - Error processing vacancy extraction for 'sample_demand_letter.pdf': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 18.64717493s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 18
+}
+]
+[2026-08-09 23:29:44] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 23:29:51] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 23:29:51] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:29:51] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:29:51] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:29:51] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:29:51] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:29:51] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:29:51] INFO [recruitment_platform:main.py:12] - Initializing database tables...
+[2026-08-09 23:29:51] INFO [recruitment_platform:main.py:55] - Database tables initialized successfully.
+[2026-08-09 23:30:01] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 14
+[2026-08-09 23:30:01] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 14
+[2026-08-09 23:30:02] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:02] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:02] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:02] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:30:21] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 23:30:26] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 23:30:33] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 23:30:33] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:30:33] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:30:33] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:30:33] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:30:33] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:30:33] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:30:33] INFO [recruitment_platform:main.py:12] - Initializing database tables...
+[2026-08-09 23:30:33] INFO [recruitment_platform:main.py:55] - Database tables initialized successfully.
+[2026-08-09 23:30:34] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-09 23:30:34] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-09 23:30:34] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-09 23:30:35] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-09 23:30:35] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-09 23:30:35] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-09 23:30:36] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:30:36] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-09 23:30:36] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:30:36] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-09 23:30:36] INFO [recruitment_platform:operations.py:216] - Saved job description: 'Senior Quality Inspector' (ID: 17)
+[2026-08-09 23:30:36] INFO [recruitment_platform:operations.py:247] - Updated job description: 'Senior Quality Inspector' (ID: 17)
+[2026-08-09 23:31:13] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 14
+[2026-08-09 23:31:13] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 14
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:31:14] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 44 matches.
+[2026-08-09 23:33:28] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-09 23:33:28] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-09 23:35:00] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:35:00] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-09 23:38:49] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 23:38:54] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 23:39:03] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 23:39:03] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:39:03] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:39:03] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:39:03] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:39:03] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:39:03] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:39:03] INFO [recruitment_platform:main.py:12] - Initializing database tables...
+[2026-08-09 23:39:03] INFO [recruitment_platform:main.py:55] - Database tables initialized successfully.
+[2026-08-09 23:39:04] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:39:04] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-09 23:39:04] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:39:04] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-09 23:39:04] INFO [recruitment_platform:operations.py:216] - Saved job description: 'Senior Quality Inspector' (ID: 18)
+[2026-08-09 23:39:04] INFO [recruitment_platform:operations.py:247] - Updated job description: 'Senior Quality Inspector' (ID: 18)
+[2026-08-09 23:39:21] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 23:39:26] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 23:39:32] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 23:39:32] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:39:32] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:39:32] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:39:32] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:39:32] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:39:32] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:39:32] INFO [recruitment_platform:main.py:12] - Initializing database tables...
+[2026-08-09 23:39:32] INFO [recruitment_platform:main.py:55] - Database tables initialized successfully.
+[2026-08-09 23:40:05] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 23:40:09] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 23:40:17] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 23:40:17] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:40:17] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:40:17] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:40:17] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:40:17] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 23:40:17] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-09 23:40:17] INFO [recruitment_platform:main.py:12] - Initializing database tables...
+[2026-08-09 23:40:17] INFO [recruitment_platform:main.py:55] - Database tables initialized successfully.
+[2026-08-09 23:40:18] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-09 23:40:18] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:40:18] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-09 23:40:19] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-09 23:40:19] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-09 23:40:19] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-09 23:40:20] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-09 23:40:20] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-09 23:40:20] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:40:20] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-09 23:40:20] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:40:20] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-09 23:40:20] INFO [recruitment_platform:operations.py:216] - Saved job description: 'Senior Quality Inspector' (ID: 19)
+[2026-08-09 23:40:20] INFO [recruitment_platform:operations.py:247] - Updated job description: 'Senior Quality Inspector' (ID: 19)
+[2026-08-09 23:42:09] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-09 23:42:49] INFO [recruitment_platform:auth.py:58] - User 'hiringmanager' successfully authenticated for role 'hiring_manager'.
+[2026-08-09 23:43:49] INFO [recruitment_platform:auth.py:58] - User 'hiringmanager' successfully authenticated for role 'hiring_manager'.
+[2026-08-09 23:44:30] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-09 23:44:30] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-09 23:44:45] INFO [recruitment_platform:auth.py:58] - User 'hiringmanager' successfully authenticated for role 'hiring_manager'.
+[2026-08-09 23:45:33] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-09 23:46:02] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-09 23:46:02] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-09 23:46:21] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-09 23:46:23] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 23:46:23] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.

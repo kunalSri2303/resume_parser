@@ -1,102 +1,69 @@
-RAJESH KUMAR YADAV
-Mechanical Quality Engineer | APQP & PPAP | Root Cause Analysis
-+91 8107261166 rajeshkyadav00342@gmail.com linkedin.com/in/rajeshkumaryadav342
-Bhiwadi, Rajasthan, India NEED SPONSORSHIP INDIAN
-Summary
-Process Quality Assurance professional with over 6 years of experience in quality assurance and quality control, expert in
-process improvement and defect analysis. Key achievements include the amplification of production output by 40% and the
-reduction of error rates to below 2%, contributing to 80% business growth over four years. Seeking a Process Quality
-Assurance Engineer position at Your company,where I bring my quality control and inspection skills to support your mission of
-ensuring product and process compliance with the highest standards of quality and performance. NEED SPONSORSHIP
-Skills
-Core Acumen :
-Process Improvement collaborated & communicated with Team Quality Control Quality Assurance Production Efficiency
-Problem Solving Cross-functional Coordination Troubleshooting Corrective Action Preventive Action
-Documentation Control Audit Readiness Inspection Planning Defect Reduction Compliance
-Technical Skills:
-Piping Inspection PDCA QA/QC Inspection Quality KPIs Documentation Final Inspection Quality Tools Basic(APQP
-PPAP SPC FMEA MSA) Vendor Inspection IQC CAPA ASME Section V ISO 9001 NCR 8D API ITP NDT Level II
-Material UTM Tested
-Measurement Instruments:
-Micrometers Bevel Protractor Wire Gauge Rockwell Hardness Tester Profile Projector
-Internal Taper & External Tapper Gauge Portable Hardness Tester Bore Dial Gauge Universal Testing Machine Contour
-Vernier Caliper ( Manual & Digital ) Surface Roughness Testers
-Certifications
-ASNT Level II – NDT Inspection CORE Training Engineering Services Pvt. Ltd
-Key Achievements
-​ Amplified production output ​ Delivered 80% business ​ Performed and reviewed NDT
-by 40% and enhanced growth over four years by inspections including UT, MT,
-inventory turnover by 15% by supervising workshop PT, and VT in compliance
-implementing an effective operations, improving with ASME Section V,
-FIFO system, while reducing diagnostics, repair quality, ensuring product quality and
-error rates to below 2% and customer satisfaction client specification
-adherence
-​ Oversaw root cause analysis ​ Executed and preserved QMS ​ Improved team productivity
-using 8D methodology, aligned with API, ISO 9001, by 15% through workflow
-driving defect reduction and and ASME, improving optimization and software-
-continuous quality compliance, process based process improvements
-improvement efficiency, and audit in technical support
-readiness operations
-Key Achievements
-​ Contributed to 30% higher ​ Decreased machine ​ Maintained product rejection
-production efficiency during downtime by 15% and rates below 2% and reduced
-Green ply plant installation machine failures by 20% raw material wastage by 8%
-and setup activities through process optimization through close process
-and preventive maintenance monitoring and quality
-programs control
-Experience
-WELLCARE Oil Tools Pvt. Ltd India
-Quality Engineer / Inspection Engineer 10/2019 - Present
-• Oversaw QA/QC activities for petroleum parts manufacturing, ensuring compliance with client specifications and industry
-standards, and managed end-to-end QA/QC for Oil & Gas tools.
-• Prepared and implemented comprehensive ITPs, Quality Plans, and inspection procedures, while performing inspections to
-meet customer and international standards.
-• Conducted dimensional inspections using advanced measuring instruments, and performed ASNT NDT Level II
-examinations, including VT, MT, PT, and UT.
-• Escalated production output by 40%, improved inventory turnover by 15%, and reduced error rates to below 2% through
-effective FIFO system implementation.
-• Led root cause analysis utilizing 8D methodology, resulting in defect reduction and continuous product quality improvement.
-• Ensured compliance with API, ISO, and ASME standards, maintaining QMS, and coordinating NCRs for corrective actions
-with clients and third-party inspectors.
-• Collaborated with cross-functional teams to resolve manufacturing quality issues, contributing to 80% business growth over
-four years.
-TeamLease Service Ltd India
-Tech Support Engineer 10/2018 - 09/2019
-• Offered Level 1 and Level 2 technical support for broadband, leased line, MPLS, VPN, and enterprise connectivity services
-• Improved team productivity by 15% by implementing software-based workflow improvements and process optimization
-initiatives
-• Increased system uptime by 15% through timely troubleshooting and resolution of over 50 software and hardware issues
-• Managed, troubleshot, and optimized network infrastructure, software systems, and hardware devices to maintain smooth
-business operations
-• Handled multiple maintenance and support tasks efficiently while meeting tight deadlines and service expectations
-• Diagnosed technical issues, provided end-user support, and ensured prompt incident resolution to minimize operational
-downtime
-Greenply Industry Limited Andhra Pradesh, India
-Assistant Engineer 01/2017 - 03/2018
-• Led commissioning of India's largest MDF plant, managing installation, testing, and startup for on-time operational success.
-• Boosted equipment uptime by 15% through diagnostics and network optimization, significantly reducing production
-downtime.
-• Work together with engineers and contractors to ensure compliance with SOPs, safety, and quality standards during
-installation.
-• Conducted inspections and implemented preventive and corrective measures, enhancing production efficiency and reducing
-waste.
-• Worked closely with Maintenance, Quality Assurance, and Process Engineering teams to enhance productivity and process
-reliability.
-• Supported process optimization initiatives and assisted in operator training, contributing to improved production quality.
-• Participated in preventive maintenance planning, ensuring post-maintenance production readiness and sustained optimal
-operations.
-Experience
-MASAND INFRATECH Meerut, India
-Graduate Engineer 02/2016 - 12/2016
-• Supported erection, installation, and commissioning of equipment, piping systems, adhering to project specifications
-• Supervised site activities, ensuring fabrication alignments, welding, and quality compliance
-• Assisted in pre-commissioning and commissioning, adhering to ASME codes and safety standards
-• Prepared and sustained progress, inspection reports, ensuring accuracy and transparency
-• Coordinated material inspection, QA/QC compliance, upholding project quality standards
-• Identified and resolved site deviations, supporting issue resolution and project execution
-• Assisted in planning, scheduling, and resource allocation for timely project completion
+Jaydeep Babubhai Ajani
+Address: 56, Shree Satvam Bungalows, Morbi Road, Rajkot-360003, Gujarat, India
+Phone: +91 83470 50997
+Email: jaydeepajani1963@gmail.com
+Professional Summary
+Electrical Engineer with experience in CNC automation and PLC programming, seeking a challenging role in the
+automation industry. Strong background in Fanuc & Mitsubishi PLC systems, CNC machine commissioning,
+HMI development, and troubleshooting.
+Professional Experience
+Jyoti CNC Automation Ltd., Rajkot, Gujarat, India
+Junior Engineer, R&D Department
+March 2022 – Present
+ Develop, test, and standardize PLC ladder logic for CNC machines using Fanuc and Mitsubishi
+controllers, including interlocks, safety logic, alarm handling, and sequence control.
+ Hands-on experience with Huron Graffenstaden(France) CNC machines, configured and commissioned
+according to CE safety standards and European machine directives.
+ Experience with multi-path, multi-axis CNC machines, including synchronized axis control and
+coordinated machining operations.
+ Perform full CNC machine commissioning: spindle drives, servo axes, ATC systems, rotary/tilting tables,
+bar feeders, gantry robots, hydraulic and pneumatic units.
+ Integrate CNC controllers with field devices via I/O mapping, parameter configuration, and signal
+validation.
+ Design and implement Fanuc HMI screens with real-time diagnostics, alarms, and maintenance pages.
+ Develop custom PLC function blocks for special customer automation requirements.
+ Optimize PLC and HMI fault logic, reducing unplanned machine downtime by ~20% and shortening
+restart time.
+ Perform FAT/SAT testing, root-cause analysis, and onsite troubleshooting for machine failures.
+ Create and maintain electrical commissioning manuals, PLC alarm lists, configuration procedures, and
+technical data sheets.
+ Provide advanced technical support to service and maintenance teams to improve machine availability.
+ Work cross-functionally with mechanical, electrical, and software teams during machine development
+and ramp-up.
 Education
-SLBS Engineering College Jodhpur, Rajasthan, India
-Bachelor of Technology (B.Tech) 08/2012 - 06/2016
-CBSE Board India
-Senior Secondary Education 2010
+Bachelor of Engineering, Electrical Engineering
+Marwadi Engineering College, Rajkot, Gujarat, India
+Graduated July 2019
+C.G.P.A: 8.66
+Technical Skills
+PLC Software
+o Fanuc Ladder
+o GX Works
+o Fanuc NC Guide (CNC Simulator)
+o Fanuc Servo Guide
+o Fanuc Picture
+ Office Tools
+o Microsoft Office Suite.
+Soft Skills
+ Analytical & problem solving
+ Self-motivated
+ Process-orientated (5S)
+Projects
+ Arduino based smart greenhouse system University Project
+Developed a system to control climate parameters such as temperature, humidity, moisture, and
+light intensity. We developed a system using Arduino and IOT controller. We collected continuous
+data via a mobile application.
+ Double Column CNC Machine (Huron Graffenstaden)
+Automation and Preprograming of a double-column machining center equipped with:
+o Automatic Head Changer (AHC) with HV/LV type Automatic Tool Changer (ATC) for horizontal
+and vertical heads.
+o Integrated safety and interlock logic as per CE standards.
+o Full PLC, HMI, and servo integration.
+Certifications
+ Bosch Rexroth PLC
+ Soft skills development (SIG)
+ 5S
+Languages
+ Gujarati: Native
+ English: Fluent
+ Hindi: Fluent

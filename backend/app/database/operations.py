@@ -2,7 +2,7 @@ import json
 from datetime import datetime
 from sqlalchemy.orm import Session
 from sqlalchemy import delete
-from app.database.models import Candidate, Skill, SkillAlias, CandidateSkill, EmbeddingMetadata, Job, Recommendation, RecruiterFeedback
+from app.database.models import Candidate, Skill, SkillAlias, CandidateSkill, EmbeddingMetadata, Job, Recommendation, RecruiterFeedback, User
 from app.services.skill_normalizer import SkillNormalizer
 from app.utils.logger import logger
 
@@ -326,3 +326,48 @@ def save_recommendation(db: Session, candidate_id: int, job_id: int, rec_data: d
         db.rollback()
         logger.error(f"Failed to save recommendations for candidate {candidate_id}: {e}")
         raise e
+
+# User Authentication Database Operations
+def get_user_by_username(db: Session, username: str) -> User:
+    """Finds a User by username (case-insensitive)."""
+    return db.query(User).filter(User.username == username.strip().lower()).first()
+
+def create_user(db: Session, username: str, password_hash: str, role: str) -> User:
+    """Creates a new User in database."""
+    try:
+        user = User(
+            username=username.strip().lower(),
+            password_hash=password_hash,
+            role=role
+        )
+        db.add(user)
+        db.commit()
+        db.refresh(user)
+        logger.info(f"Created user: '{user.username}' with role '{user.role}'")
+        return user
+    except Exception as e:
+        db.rollback()
+        logger.error(f"Failed to create user {username}: {e}")
+        raise e
+
+def update_user_password(db: Session, username: str, new_password_hash: str) -> User:
+    """Updates password hash for a user."""
+    try:
+        user = get_user_by_username(db, username)
+        if not user:
+            return None
+        user.password_hash = new_password_hash
+        user.updated_at = datetime.utcnow()
+        db.commit()
+        db.refresh(user)
+        logger.info(f"Successfully updated password hash for user: '{username}'")
+        return user
+    except Exception as e:
+        db.rollback()
+        logger.error(f"Failed to update password for user {username}: {e}")
+        raise e
+
+def get_all_users(db: Session):
+    """Retrieves all registered users."""
+    return db.query(User).all()
+

@@ -315,5 +315,24 @@ class VacancyExtractionSchema(BaseModel):
     positions: List[VacancyPositionSchema] = Field(default_factory=list)
     confidence: Optional[dict] = Field(default_factory=dict)
 
-         
-     
+
+# User Authentication Schemas
+class UserLoginRequestSchema(BaseModel):
+    username: str
+    password: str
+    role: str = "admin"
+
+class ChangePasswordRequestSchema(BaseModel):
+    current_password: Optional[str] = None
+    new_password: str
+    target_username: Optional[str] = None
+    requester_role: Optional[str] = "admin"
+
+class UserResponseSchema(BaseModel):
+    id: int
+    username: str
+    role: str
+    updated_at: datetime
+
+    class Config:
+        from_attributes = True

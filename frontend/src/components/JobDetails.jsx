@@ -19,8 +19,11 @@ import {
   Pencil
 } from 'lucide-react';
 import { jobApi, recommendationApi, feedbackApi } from '../services/api';
+import { useRole } from '../context/RoleContext';
+import { Lock } from 'lucide-react';
 
 const JobDetails = () => {
+  const { isHiringManager } = useRole();
   const { id } = useParams();
   const [job, setJob] = useState(null);
   const [matches, setMatches] = useState([]);
@@ -176,14 +179,16 @@ const JobDetails = () => {
               <h2 className="text-xl sm:text-2xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">
                 {job.title}
               </h2>
-              <button
-                type="button"
-                onClick={handleStartEdit}
-                className="p-1.5 text-slate-400 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
-                title="Edit Vacancy Details"
-              >
-                <Pencil size={16} />
-              </button>
+              {!isHiringManager && (
+                <button
+                  type="button"
+                  onClick={handleStartEdit}
+                  className="p-1.5 text-slate-400 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
+                  title="Edit Vacancy Details"
+                >
+                  <Pencil size={16} />
+                </button>
+              )}
             </div>
             <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-slate-500 dark:text-slate-400 font-medium pt-1">
               <span className="flex items-center space-x-1">
@@ -207,14 +212,16 @@ const JobDetails = () => {
         </div>
 
         <div className="flex items-center space-x-3 border-t lg:border-t-0 pt-4 lg:pt-0 border-slate-100 dark:border-slate-800">
-          <button
-            type="button"
-            onClick={handleStartEdit}
-            className="flex items-center space-x-1.5 px-3 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold rounded-xl transition-colors cursor-pointer mr-2"
-          >
-            <Pencil size={14} />
-            <span>Edit Requisition</span>
-          </button>
+          {!isHiringManager && (
+            <button
+              type="button"
+              onClick={handleStartEdit}
+              className="flex items-center space-x-1.5 px-3 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold rounded-xl transition-colors cursor-pointer mr-2"
+            >
+              <Pencil size={14} />
+              <span>Edit Requisition</span>
+            </button>
+          )}
           <div className="text-right">
             <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">
               Match Engine Status
@@ -227,8 +234,8 @@ const JobDetails = () => {
         </div>
       </div>
 
-      {/* Edit Vacancy Modal in JobDetails */}
-      {isEditing && (
+   {/* Edit Vacancy Modal in JobDetails */}
+      {!isHiringManager && isEditing && (
         <div className="fixed inset-0 bg-slate-950/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 animate-fade-in">
           <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
             <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
@@ -482,28 +489,30 @@ const JobDetails = () => {
                           <ArrowRight size={13} />
                         </Link>
 
-                        <div className="flex items-center space-x-1.5">
-                          <button
-                            onClick={() => handleFeedbackClick(match, 'Shortlisted')}
-                            className="px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950/30 text-blue-700 dark:text-blue-300 font-bold hover:bg-blue-100 text-[11px] transition-colors cursor-pointer"
-                          >
-                            Shortlist
-                          </button>
-                          <button
-                            onClick={() => handleFeedbackClick(match, 'Hired')}
-                            className="px-2.5 py-1 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 font-bold hover:bg-emerald-100 text-[11px] transition-colors flex items-center space-x-1 cursor-pointer"
-                          >
-                            <Check size={12} />
-                            <span>Hire</span>
-                          </button>
-                          <button
-                            onClick={() => handleFeedbackClick(match, 'Rejected')}
-                            className="px-2.5 py-1 rounded-lg bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 font-bold hover:bg-rose-100 text-[11px] transition-colors flex items-center space-x-1 cursor-pointer"
-                          >
-                            <X size={12} />
-                            <span>Reject</span>
-                          </button>
-                        </div>
+                        {!isHiringManager && (
+                          <div className="flex items-center space-x-1.5">
+                            <button
+                              onClick={() => handleFeedbackClick(match, 'Shortlisted')}
+                              className="px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950/30 text-blue-700 dark:text-blue-300 font-bold hover:bg-blue-100 text-[11px] transition-colors cursor-pointer"
+                            >
+                              Shortlist
+                            </button>
+                            <button
+                              onClick={() => handleFeedbackClick(match, 'Hired')}
+                              className="px-2.5 py-1 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 font-bold hover:bg-emerald-100 text-[11px] transition-colors flex items-center space-x-1 cursor-pointer"
+                            >
+                              <Check size={12} />
+                              <span>Hire</span>
+                            </button>
+                            <button
+                              onClick={() => handleFeedbackClick(match, 'Rejected')}
+                              className="px-2.5 py-1 rounded-lg bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 font-bold hover:bg-rose-100 text-[11px] transition-colors flex items-center space-x-1 cursor-pointer"
+                            >
+                              <X size={12} />
+                              <span>Reject</span>
+                            </button>
+                          </div>
+                        )}
                       </div>
 
                     </div>
@@ -523,7 +532,7 @@ const JobDetails = () => {
       </div>
 
       {/* Recruiter Feedback Dialog Modal */}
-      {selectedCandidate && (
+      {!isHiringManager && selectedCandidate && (
         <div className="fixed inset-0 bg-slate-950/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 animate-fade-in">
           <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
             

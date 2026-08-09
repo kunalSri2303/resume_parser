@@ -21,8 +21,11 @@ import {
 } from 'lucide-react';
 import { resumeApi } from '../services/api';
 import ExportModal from './ExportModal';
+import { useRole } from '../context/RoleContext';
+import { Lock } from 'lucide-react';
 
 const ResumesPage = () => {
+  const { isHiringManager } = useRole();
   const [candidates, setCandidates] = useState([]);
   const [loading, setLoading] = useState(true);
   const [isExportModalOpen, setIsExportModalOpen] = useState(false);
@@ -219,135 +222,125 @@ const ResumesPage = () => {
       </div>
 
       {/* Resume Ingestion Dropzone */}
-      <div className="p-6 bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-2xl shadow-2xs space-y-4">
-        <div className="flex items-center justify-between">
-          <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
-            <Upload size={16} className="text-primary-600 dark:text-primary-400" />
-            Resume Ingestion Engine
-          </h3>
-          <span className="text-[11px] text-slate-400">PDF, DOCX, or ZIP</span>
-        </div>
-
-        <form onSubmit={handleUploadSubmit} className="space-y-4">
-          <div
-            onDragOver={handleDragOver}
-            onDragLeave={handleDragLeave}
-            onDrop={handleDrop}
-            onClick={() => fileInputRef.current && fileInputRef.current.click()}
-            className={`
-              border-2 border-dashed rounded-2xl p-6 sm:p-8 text-center transition-all cursor-pointer relative
-              ${isDragging 
-                ? 'border-primary-500 bg-primary-50/50 dark:bg-primary-950/20 scale-[0.99]' 
-                : 'border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-950/20 hover:border-primary-400 hover:bg-slate-50'}
-            `}
-          >
-            <input
-              ref={fileInputRef}
-              type="file"
-              multiple
-              accept=".pdf,.docx,.zip"
-              onChange={(e) => handleFileSelect(e.target.files)}
-              className="hidden"
-            />
-            <div className="flex flex-col items-center justify-center space-y-2">
-              <div className="w-12 h-12 rounded-2xl bg-primary-50 dark:bg-slate-800 text-primary-600 dark:text-primary-400 flex items-center justify-center shadow-inner">
-                <Upload size={24} />
-              </div>
-              <p className="text-sm font-bold text-slate-800 dark:text-slate-200">
-                Drag and drop resumes here, or <span className="text-primary-600 dark:text-primary-400 underline">browse files</span>
-              </p>
-              <p className="text-xs text-slate-400">
-                Supports single files, multi-file batches, or compressed .ZIP archives.
-              </p>
-            </div>
+      {!isHiringManager && (
+        <div className="p-6 bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-2xl shadow-2xs space-y-4">
+          <div className="flex items-center justify-between">
+            <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <Upload size={16} className="text-primary-600 dark:text-primary-400" />
+              Resume Ingestion Engine
+            </h3>
+            <span className="text-[11px] text-slate-400">PDF, DOCX, or ZIP</span>
           </div>
 
-          {/* Selected File Chips */}
-          {uploadFiles.length > 0 && (
-            <div className="space-y-2">
-              <div className="flex items-center justify-between text-xs font-semibold text-slate-600 dark:text-slate-400">
-                <span>Selected {uploadFiles.length} file(s) for extraction:</span>
-                <button
-                  type="button"
-                  onClick={() => setUploadFiles([])}
-                  className="text-rose-500 hover:underline"
-                >
-                  Clear All
-                </button>
+          <form onSubmit={handleUploadSubmit} className="space-y-4">
+            <div
+              onDragOver={handleDragOver}
+              onDragLeave={handleDragLeave}
+              onDrop={handleDrop}
+              onClick={() => fileInputRef.current && fileInputRef.current.click()}
+              className={`
+                border-2 border-dashed rounded-2xl p-6 sm:p-8 text-center transition-all cursor-pointer relative
+                ${isDragging 
+                  ? 'border-primary-500 bg-primary-50/50 dark:bg-primary-950/20 scale-[0.99]' 
+                  : 'border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-950/20 hover:border-primary-400 hover:bg-slate-50'}
+              `}
+            >
+              <input
+                ref={fileInputRef}
+                type="file"
+                multiple
+                accept=".pdf,.docx,.zip"
+                onChange={(e) => handleFileSelect(e.target.files)}
+                className="hidden"
+              />
+              <div className="flex flex-col items-center justify-center space-y-2">
+                <div className="w-12 h-12 rounded-2xl bg-primary-50 dark:bg-slate-800 text-primary-600 dark:text-primary-400 flex items-center justify-center shadow-inner">
+                  <Upload size={24} />
+                </div>
+                <p className="text-sm font-bold text-slate-800 dark:text-slate-200">
+                  Drag and drop resumes here, or <span className="text-primary-600 dark:text-primary-400 underline">browse files</span>
+                </p>
+                <p className="text-xs text-slate-400">
+                  Supports single files, multi-file batches, or compressed .ZIP archives.
+                </p>
               </div>
-              <div className="flex flex-wrap gap-2 max-h-36 overflow-y-auto p-2 bg-slate-50 dark:bg-slate-950/40 rounded-xl border border-slate-100 dark:border-slate-800">
-                {uploadFiles.map((file, idx) => (
-                  <span
-                    key={idx}
-                    className="inline-flex items-center space-x-1.5 px-3 py-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 rounded-lg text-xs font-medium shadow-2xs"
-                  >
-                    <FileText size={12} className="text-primary-500" />
-                    <span className="truncate max-w-[180px]">{file.name}</span>
-                    <button
-                      type="button"
-                      onClick={(e) => { e.stopPropagation(); handleRemoveFile(idx); }}
-                      className="text-slate-400 hover:text-rose-500"
+            </div>
+
+            {/* Selected File Chips List */}
+            {uploadFiles.length > 0 && (
+              <div className="space-y-2">
+                <p className="text-xs font-bold text-slate-700 dark:text-slate-300">
+                  Selected Files ({uploadFiles.length}):
+                </p>
+                <div className="flex flex-wrap gap-2 max-h-32 overflow-y-auto p-2 bg-slate-50 dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-800">
+                  {uploadFiles.map((file, idx) => (
+                    <div
+                      key={idx}
+                      className="flex items-center space-x-2 px-2.5 py-1 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-700 dark:text-slate-300"
                     >
-                      <X size={13} />
-                    </button>
-                  </span>
-                ))}
+                      <FileText size={14} className="text-primary-500" />
+                      <span className="max-w-[150px] truncate">{file.name}</span>
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleRemoveFile(idx);
+                        }}
+                        className="text-slate-400 hover:text-rose-500 p-0.5"
+                      >
+                        <X size={14} />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div className="flex justify-end pt-2">
+              <button
+                type="submit"
+                disabled={uploadFiles.length === 0 || uploading}
+                className="bg-primary-600 hover:bg-primary-700 disabled:bg-slate-300 dark:disabled:bg-slate-800 text-white font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all flex items-center space-x-2 cursor-pointer disabled:cursor-not-allowed"
+              >
+                {uploading ? (
+                  <>
+                    <span className="animate-spin border-2 border-white border-t-transparent rounded-full h-4 w-4 mr-1" />
+                    <span>Parsing & Indexing...</span>
+                  </>
+                ) : (
+                  <>
+                    <Sparkles size={16} />
+                    <span>Extract & Index Resumes</span>
+                  </>
+                )}
+              </button>
+            </div>
+          </form>
+
+          {/* Upload Notification Banner */}
+          {uploadResult && (
+            <div
+              className={`p-4 rounded-xl border text-xs sm:text-sm flex items-start space-x-3 transition-all ${
+                uploadResult.status === 'success'
+                  ? 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-500/30 text-emerald-900 dark:text-emerald-300'
+                  : 'bg-rose-50 dark:bg-rose-950/20 border-rose-500/30 text-rose-900 dark:text-rose-300'
+              }`}
+            >
+              {uploadResult.status === 'success' ? (
+                <CheckCircle2 size={20} className="text-emerald-500 flex-shrink-0 mt-0.5" />
+              ) : (
+                <AlertCircle size={20} className="text-rose-500 flex-shrink-0 mt-0.5" />
+              )}
+              <div className="space-y-1">
+                <p className="font-bold">{uploadResult.message}</p>
+                {uploadResult.processed && uploadResult.processed.length > 0 && (
+                  <p className="text-xs">Indexed ({uploadResult.processed.length}): {uploadResult.processed.join(', ')}</p>
+                )}
               </div>
             </div>
           )}
-
-          {/* Submit Action */}
-          <div className="flex justify-end">
-            <button
-              type="submit"
-              disabled={uploadFiles.length === 0 || uploading}
-              className="bg-primary-600 hover:bg-primary-700 disabled:bg-slate-300 dark:disabled:bg-slate-800 text-white font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all flex items-center space-x-2 cursor-pointer disabled:cursor-not-allowed"
-            >
-              {uploading ? (
-                <>
-                  <span className="animate-spin border-2 border-white border-t-transparent rounded-full h-4 w-4 mr-1" />
-                  <span>Parsing & Indexing...</span>
-                </>
-              ) : (
-                <>
-                  <Sparkles size={16} />
-                  <span>Extract & Index Resumes</span>
-                </>
-              )}
-            </button>
-          </div>
-        </form>
-
-        {/* Upload Notification Banner */}
-        {uploadResult && (
-          <div
-            className={`p-4 rounded-xl border text-xs sm:text-sm flex items-start space-x-3 transition-all ${
-              uploadResult.status === 'success'
-                ? 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-500/30 text-emerald-900 dark:text-emerald-300'
-                : 'bg-rose-50 dark:bg-rose-950/20 border-rose-500/30 text-rose-900 dark:text-rose-300'
-            }`}
-          >
-            {uploadResult.status === 'success' ? (
-              <CheckCircle2 size={20} className="text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
-            ) : (
-              <AlertCircle size={20} className="text-rose-600 dark:text-rose-400 flex-shrink-0 mt-0.5" />
-            )}
-            <div className="space-y-1">
-              <p className="font-bold">{uploadResult.message}</p>
-              {uploadResult.processed && uploadResult.processed.length > 0 && (
-                <p className="text-xs opacity-90">
-                  <strong>Queued:</strong> {uploadResult.processed.join(', ')}
-                </p>
-              )}
-              {uploadResult.skipped && uploadResult.skipped.length > 0 && (
-                <p className="text-xs text-amber-700 dark:text-amber-300 font-medium">
-                  <strong>Skipped:</strong> {uploadResult.skipped.join(', ')}
-                </p>
-              )}
-            </div>
-          </div>
-        )}
-      </div>
+        </div>
+      )}
 
       {/* Talent Filter & Table Panel */}
       <div className="p-6 bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-2xl shadow-2xs space-y-6">

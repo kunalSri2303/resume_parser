@@ -11,6 +11,9 @@ import {
   ShieldCheck
 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import { useRole } from '../context/RoleContext';
+import { useAuth } from '../context/AuthContext';
+import { Lock, LogOut } from 'lucide-react';
 
 const routeTitles = {
   '/': { title: 'Dashboard', subtitle: 'Overview & Talent Intelligence' },
@@ -18,10 +21,13 @@ const routeTitles = {
   '/jobs': { title: 'Job Openings', subtitle: 'Active Requisitions & Requirements' },
   '/search': { title: 'Talent Search', subtitle: 'Semantic Vector Query' },
   '/analytics': { title: 'Recruitment Analytics', subtitle: 'Pipeline & Skill Metrics' },
+  '/profile': { title: 'Account Security & Profile', subtitle: 'Server-backed Password Management & User Controls' },
 };
 
 const Navbar = ({ onToggleSidebar }) => {
   const { isDark, toggleTheme } = useTheme();
+  const { role, isAdmin, isHiringManager } = useRole();
+  const { logout } = useAuth();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -60,7 +66,7 @@ const Navbar = ({ onToggleSidebar }) => {
         </div>
       </div>
 
-      {/* Right: Quick Search, Status, Theme Toggle, Recruiter Pill */}
+      {/* Right: Quick Search, Status, Theme Toggle, Recruiter Pill, Logout */}
       <div className="flex items-center space-x-2 md:space-x-4">
         {/* Quick Search Bar Shortcut */}
         <button
@@ -94,16 +100,30 @@ const Navbar = ({ onToggleSidebar }) => {
           )}
         </button>
 
-        {/* Recruiter Avatar Badge */}
+        {/* Role & Recruiter Avatar Badge */}
         <div className="flex items-center space-x-2 pl-2 border-l border-slate-200 dark:border-slate-800">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-primary-600 to-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-sm ring-2 ring-primary-500/20">
-            HR
+          <div className={`w-8 h-8 rounded-full text-white flex items-center justify-center font-bold text-xs shadow-sm ring-2 ${isHiringManager ? 'bg-gradient-to-tr from-amber-500 to-orange-600 ring-amber-500/30' : 'bg-gradient-to-tr from-primary-600 to-indigo-600 ring-primary-500/20'}`}>
+            {isHiringManager ? 'HM' : 'ADM'}
           </div>
           <div className="hidden xl:block text-left leading-tight">
-            <span className="text-xs font-bold text-slate-800 dark:text-white block">Talent Lead</span>
-            <span className="text-[10px] text-slate-500 dark:text-slate-400">Enterprise ATS</span>
+            <span className="text-xs font-bold text-slate-800 dark:text-white block flex items-center gap-1">
+              {isHiringManager ? 'Hiring Manager' : 'Admin'}
+              {isHiringManager && <Lock size={10} className="text-amber-500" />}
+            </span>
+            <span className={`text-[10px] font-semibold ${isHiringManager ? 'text-amber-600 dark:text-amber-400' : 'text-slate-500 dark:text-slate-400'}`}>
+              {isHiringManager ? 'READ ONLY MODE' : 'Full Control'}
+            </span>
           </div>
         </div>
+
+        {/* Logout Button */}
+        <button
+          onClick={logout}
+          className="p-2 rounded-lg text-slate-500 hover:text-rose-600 dark:hover:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/30 border border-slate-200/80 dark:border-slate-800 transition-all cursor-pointer"
+          title="Logout of ATS Cockpit"
+        >
+          <LogOut size={18} />
+        </button>
       </div>
     </header>
   );

@@ -17,8 +17,11 @@ import {
   MapPin
 } from 'lucide-react';
 import { analyticsApi, resumeApi, jobApi } from '../services/api';
+import { useRole } from '../context/RoleContext';
+import { Lock } from 'lucide-react';
 
 const Dashboard = () => {
+  const { isHiringManager } = useRole();
   const [metrics, setMetrics] = useState(null);
   const [recentCandidates, setRecentCandidates] = useState([]);
   const [recentJobs, setRecentJobs] = useState([]);
@@ -155,22 +158,29 @@ const Dashboard = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3">
-            <Link
-              to="/resumes"
-              className="flex items-center space-x-2 bg-white hover:bg-slate-100 text-primary-900 font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all"
-            >
-              <Upload size={16} />
-              <span>Ingest Resumes</span>
-            </Link>
-            <Link
-              to="/jobs"
-              className="flex items-center space-x-2 bg-primary-600/80 hover:bg-primary-600 text-white border border-primary-400/40 font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm shadow-sm transition-all"
-            >
-              <Plus size={16} />
-              <span>New Job</span>
-            </Link>
-          </div>
+          {isHiringManager ? (
+            <div className="flex items-center space-x-2 bg-amber-500/20 text-amber-200 border border-amber-400/30 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold uppercase tracking-wider backdrop-blur-sm">
+              <Lock size={16} className="text-amber-400" />
+              <span>READ ONLY MODE</span>
+            </div>
+          ) : (
+            <div className="flex flex-wrap items-center gap-3">
+              <Link
+                to="/resumes"
+                className="flex items-center space-x-2 bg-white hover:bg-slate-100 text-primary-900 font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm shadow-md hover:shadow-lg transition-all"
+              >
+                <Upload size={16} />
+                <span>Ingest Resumes</span>
+              </Link>
+              <Link
+                to="/jobs"
+                className="flex items-center space-x-2 bg-primary-600/80 hover:bg-primary-600 text-white border border-primary-400/40 font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm shadow-sm transition-all"
+              >
+                <Plus size={16} />
+                <span>New Job</span>
+              </Link>
+            </div>
+          )}
         </div>
       </div>
 

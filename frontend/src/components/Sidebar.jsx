@@ -14,6 +14,8 @@ import {
   FileCheck2
 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import { useRole } from '../context/RoleContext';
+import { ShieldCheck, Lock } from 'lucide-react';
 
 const navItems = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard', badge: null },
@@ -21,10 +23,12 @@ const navItems = [
   { to: '/jobs', icon: Briefcase, label: 'Job Positions', badge: 'Active' },
   { to: '/search', icon: Search, label: 'Talent Search', badge: 'AI' },
   { to: '/analytics', icon: BarChart3, label: 'Analytics', badge: null },
+  { to: '/profile', icon: ShieldCheck, label: 'Security & Profile', badge: null },
 ];
 
 const Sidebar = ({ isOpen, onClose }) => {
   const { isDark, toggleTheme } = useTheme();
+  const { role, isAdmin, isHiringManager } = useRole();
 
   return (
     <>
@@ -47,7 +51,7 @@ const Sidebar = ({ isOpen, onClose }) => {
       >
         <div className="p-5">
           {/* Brand Header */}
-          <div className="flex items-center justify-between mb-8 pb-4 border-b border-slate-100 dark:border-slate-800/80">
+          <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-100 dark:border-slate-800/80">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary-600 via-primary-500 to-indigo-600 text-white flex items-center justify-center shadow-lg shadow-primary-500/25">
                 <FileCheck2 size={22} className="stroke-[2.5]" />
@@ -72,6 +76,30 @@ const Sidebar = ({ isOpen, onClose }) => {
             >
               <X size={20} />
             </button>
+          </div>
+
+          {/* Active Account Role Badge (Non-Interactive) */}
+          <div className="mb-6 p-3 bg-slate-50 dark:bg-slate-950/60 border border-slate-200/80 dark:border-slate-800 rounded-xl space-y-1.5">
+            <div className="flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+              <span className="flex items-center gap-1.5">
+                <ShieldCheck size={13} className="text-primary-500" />
+                Active Account Role:
+              </span>
+            </div>
+            
+            <div className={`p-2 rounded-lg text-xs font-extrabold flex items-center justify-between ${
+              isHiringManager
+                ? 'bg-amber-50 dark:bg-amber-950/40 border border-amber-500/30 text-amber-800 dark:text-amber-300'
+                : 'bg-primary-50 dark:bg-primary-950/40 border border-primary-500/30 text-primary-800 dark:text-primary-300'
+            }`}>
+              <span>{isHiringManager ? 'Hiring Manager' : 'Admin'}</span>
+              {isHiringManager && (
+                <span className="flex items-center gap-1 text-[9px] uppercase tracking-wider bg-amber-200/50 dark:bg-amber-900/60 px-1.5 py-0.5 rounded">
+                  <Lock size={10} />
+                  <span>Read Only</span>
+                </span>
+              )}
+            </div>
           </div>
 
           {/* Nav List */}
