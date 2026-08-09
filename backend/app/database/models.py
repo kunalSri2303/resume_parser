@@ -57,6 +57,7 @@ class Job(Base):
     skills = Column(Text, default="[]")
     preferred_skills = Column(Text, default="[]")
     responsibilities = Column(Text, default="[]")
+    interview_date = Column(String, nullable=True)
     
     raw_text = Column(Text, nullable=True)
     upload_date = Column(DateTime, default=datetime.utcnow)

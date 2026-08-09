@@ -10271,3 +10271,1502 @@ Please retry in 59.718820766s. [links {
 [2026-08-09 11:01:04] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 43
 [2026-08-09 11:01:04] INFO [recruitment_platform:main.py:9] - Initializing database tables...
 [2026-08-09 11:01:04] INFO [recruitment_platform:main.py:26] - Database tables initialized successfully.
+[2026-08-09 11:23:08] INFO [recruitment_platform:resume.py:194] - Received upload request for 1 items.
+[2026-08-09 11:23:08] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/fa78c4516bdd48389ed3f836563903e7_normal.pdf
+[2026-08-09 11:23:08] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: normal.pdf (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/fa78c4516bdd48389ed3f836563903e7_normal.pdf)
+[2026-08-09 11:23:08] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 295 characters extracted.
+[2026-08-09 11:23:08] INFO [recruitment_platform:pipeline_service.py:78] - Running normal layout parser for normal.pdf...
+[2026-08-09 11:23:08] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 11:23:08] INFO [recruitment_platform:pipeline_service.py:93] - Extracted resume text saved to: /Users/kunalsrivastav/Desktop/resume_parser/backend/debug/debug_resume.txt
+[2026-08-09 11:23:08] INFO [recruitment_platform:pipeline_service.py:100] - Starting hybrid extraction...
+[2026-08-09 11:23:08] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'john.doe@example.com', 'phone': '+1-234-567-8901', 'linkedin': 'linkedin.com/in/johndoe', 'github': None, 'portfolio': None}
+[2026-08-09 11:23:08] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-09 11:23:08] INFO [recruitment_platform:gemini_provider.py:130] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-09 11:23:17] INFO [recruitment_platform:gemini_provider.py:132] - Successfully parsed resume via Gemini API.
+[2026-08-09 11:23:17] INFO [recruitment_platform:pipeline_service.py:102] - Resume extracted successfully for John Doe
+[2026-08-09 11:23:17] INFO [recruitment_platform:operations.py:122] - Creating new candidate record for john.doe@example.com.
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:56] - FAISS index file not found on disk. Resetting in-memory index to empty.
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:31] - Creating a new FAISS index with dimension 384
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 0)
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 1)
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 2)
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 3)
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 4)
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 5)
+[2026-08-09 11:23:20] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:20] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 1
+[2026-08-09 11:23:21] INFO [recruitment_platform:excel_service.py:161] - Creating Candidates.xlsx at /Users/kunalsrivastav/Desktop/resume_parser/backend/excel/Candidates.xlsx
+[2026-08-09 11:23:23] INFO [recruitment_platform:pipeline_service.py:124] - Background processing complete for candidate John Doe (john.doe@example.com). Is update: False
+[2026-08-09 11:23:23] INFO [recruitment_platform:resume.py:194] - Received upload request for 1 items.
+[2026-08-09 11:23:23] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/09ca8d20d6f04972a4014bb33381f10d_normal.docx
+[2026-08-09 11:23:23] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: normal.docx (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/09ca8d20d6f04972a4014bb33381f10d_normal.docx)
+[2026-08-09 11:23:23] INFO [recruitment_platform:pipeline_service.py:78] - Running normal layout parser for normal.docx...
+[2026-08-09 11:23:23] INFO [recruitment_platform:parser.py:147] - DOCX file parsed and cleaned successfully.
+[2026-08-09 11:23:23] INFO [recruitment_platform:pipeline_service.py:93] - Extracted resume text saved to: /Users/kunalsrivastav/Desktop/resume_parser/backend/debug/debug_resume.txt
+[2026-08-09 11:23:23] INFO [recruitment_platform:pipeline_service.py:100] - Starting hybrid extraction...
+[2026-08-09 11:23:23] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'bob.johnson@example.com', 'phone': '888-777-6666', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 11:23:23] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-09 11:23:23] INFO [recruitment_platform:gemini_provider.py:130] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-09 11:23:30] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 11:23:32] INFO [recruitment_platform:gemini_provider.py:132] - Successfully parsed resume via Gemini API.
+[2026-08-09 11:23:32] INFO [recruitment_platform:pipeline_service.py:102] - Resume extracted successfully for Bob Johnson
+[2026-08-09 11:23:32] INFO [recruitment_platform:operations.py:122] - Creating new candidate record for bob.johnson@example.com.
+[2026-08-09 11:23:33] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 6)
+[2026-08-09 11:23:33] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:33] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 7)
+[2026-08-09 11:23:33] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:33] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 8)
+[2026-08-09 11:23:33] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:33] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 9)
+[2026-08-09 11:23:33] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:33] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 2
+[2026-08-09 11:23:34] INFO [recruitment_platform:excel_service.py:154] - Appending new candidate bob.johnson@example.com to Candidates.xlsx
+[2026-08-09 11:23:34] INFO [recruitment_platform:pipeline_service.py:124] - Background processing complete for candidate Bob Johnson (bob.johnson@example.com). Is update: False
+[2026-08-09 11:23:34] INFO [recruitment_platform:resume.py:194] - Received upload request for 1 items.
+[2026-08-09 11:23:34] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/462cdb83db094eadbf9587b17b3b5bf2_scanned.pdf
+[2026-08-09 11:23:34] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: scanned.pdf (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/462cdb83db094eadbf9587b17b3b5bf2_scanned.pdf)
+[2026-08-09 11:23:34] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 0 characters extracted.
+[2026-08-09 11:23:34] INFO [recruitment_platform:pipeline_service.py:48] - Scanned PDF detected for scanned.pdf. Running multimodal OCR fallback...
+[2026-08-09 11:23:34] INFO [recruitment_platform:parser.py:93] - Rendering PDF pages to images for OCR.
+[2026-08-09 11:23:35] INFO [recruitment_platform:parser.py:100] - Rendered 1 pages successfully.
+[2026-08-09 11:23:35] INFO [recruitment_platform:pipeline_service.py:53] - Transcribing page 1/1 using LLM OCR...
+[2026-08-09 11:23:35] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 11:23:37] INFO [recruitment_platform:gemini_provider.py:233] - Successfully transcribed page image (211 chars).
+[2026-08-09 11:23:37] INFO [recruitment_platform:pipeline_service.py:100] - Starting hybrid extraction...
+[2026-08-09 11:23:37] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'scanned.candidate@example.com', 'phone': '+91-76071-63007', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 11:23:37] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-09 11:23:37] INFO [recruitment_platform:gemini_provider.py:130] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-09 11:23:45] INFO [recruitment_platform:gemini_provider.py:132] - Successfully parsed resume via Gemini API.
+[2026-08-09 11:23:45] INFO [recruitment_platform:pipeline_service.py:102] - Resume extracted successfully for Scanned Candidate
+[2026-08-09 11:23:45] INFO [recruitment_platform:operations.py:122] - Creating new candidate record for scanned.candidate@example.com.
+[2026-08-09 11:23:45] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 10)
+[2026-08-09 11:23:45] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:46] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 11)
+[2026-08-09 11:23:46] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:46] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 12)
+[2026-08-09 11:23:46] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:46] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 13)
+[2026-08-09 11:23:46] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:46] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 14)
+[2026-08-09 11:23:46] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:46] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 3
+[2026-08-09 11:23:46] INFO [recruitment_platform:excel_service.py:154] - Appending new candidate scanned.candidate@example.com to Candidates.xlsx
+[2026-08-09 11:23:46] INFO [recruitment_platform:pipeline_service.py:124] - Background processing complete for candidate Scanned Candidate (scanned.candidate@example.com). Is update: False
+[2026-08-09 11:23:46] INFO [recruitment_platform:resume.py:194] - Received upload request for 1 items.
+[2026-08-09 11:23:46] INFO [recruitment_platform:parser.py:190] - Successfully extracted 2 resumes from ZIP.
+[2026-08-09 11:23:47] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/63f87a9afd0e4a699d3580a18f0efb71_normal.pdf
+[2026-08-09 11:23:47] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/a50a3adaa43a4fd19002d89116dd90e0_normal.docx
+[2026-08-09 11:23:47] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: normal.pdf (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/63f87a9afd0e4a699d3580a18f0efb71_normal.pdf)
+[2026-08-09 11:23:47] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 295 characters extracted.
+[2026-08-09 11:23:47] INFO [recruitment_platform:pipeline_service.py:78] - Running normal layout parser for normal.pdf...
+[2026-08-09 11:23:47] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 11:23:47] INFO [recruitment_platform:pipeline_service.py:93] - Extracted resume text saved to: /Users/kunalsrivastav/Desktop/resume_parser/backend/debug/debug_resume.txt
+[2026-08-09 11:23:47] INFO [recruitment_platform:pipeline_service.py:100] - Starting hybrid extraction...
+[2026-08-09 11:23:47] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'john.doe@example.com', 'phone': '+1-234-567-8901', 'linkedin': 'linkedin.com/in/johndoe', 'github': None, 'portfolio': None}
+[2026-08-09 11:23:47] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-09 11:23:47] INFO [recruitment_platform:gemini_provider.py:130] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-09 11:23:47] INFO [recruitment_platform:resume.py:194] - Received upload request for 1 items.
+[2026-08-09 11:23:47] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/b32dcc45ea4041adb732cf3e194fb092_normal.pdf
+[2026-08-09 11:23:47] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: normal.pdf (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/b32dcc45ea4041adb732cf3e194fb092_normal.pdf)
+[2026-08-09 11:23:47] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 295 characters extracted.
+[2026-08-09 11:23:47] INFO [recruitment_platform:pipeline_service.py:78] - Running normal layout parser for normal.pdf...
+[2026-08-09 11:23:47] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 11:23:47] INFO [recruitment_platform:pipeline_service.py:93] - Extracted resume text saved to: /Users/kunalsrivastav/Desktop/resume_parser/backend/debug/debug_resume.txt
+[2026-08-09 11:23:47] INFO [recruitment_platform:pipeline_service.py:100] - Starting hybrid extraction...
+[2026-08-09 11:23:47] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'john.doe@example.com', 'phone': '+1-234-567-8901', 'linkedin': 'linkedin.com/in/johndoe', 'github': None, 'portfolio': None}
+[2026-08-09 11:23:47] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-09 11:23:47] INFO [recruitment_platform:gemini_provider.py:130] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-09 11:23:48] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 11:23:52] INFO [recruitment_platform:resume.py:194] - Received upload request for 1 items.
+[2026-08-09 11:23:52] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/da7b4e21e6154ce2a66dc812b2804090_invalid.pdf
+[2026-08-09 11:23:52] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: invalid.pdf (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/da7b4e21e6154ce2a66dc812b2804090_invalid.pdf)
+[2026-08-09 11:23:52] ERROR [recruitment_platform:parser.py:85] - Error checking if PDF is scanned: Failed to open stream
+[2026-08-09 11:23:52] INFO [recruitment_platform:pipeline_service.py:48] - Scanned PDF detected for invalid.pdf. Running multimodal OCR fallback...
+[2026-08-09 11:23:52] INFO [recruitment_platform:parser.py:93] - Rendering PDF pages to images for OCR.
+[2026-08-09 11:23:52] ERROR [recruitment_platform:parser.py:103] - Failed to render PDF to images: Failed to open stream
+[2026-08-09 11:23:52] ERROR [recruitment_platform:pipeline_service.py:127] - Error during background processing of resume invalid.pdf: Error rendering PDF: Failed to open stream
+Traceback (most recent call last):
+  File "/Users/kunalsrivastav/Desktop/resume_parser/backend/venv/lib/python3.13/site-packages/pymupdf/__init__.py", line 2981, in __init__
+    doc = mupdf.fz_open_document_with_stream_and_dir(filetype if filetype else '', fz_stream, archive.this)
+  File "/Users/kunalsrivastav/Desktop/resume_parser/backend/venv/lib/python3.13/site-packages/pymupdf/mupdf.py", line 53278, in fz_open_document_with_stream_and_dir
+    return _mupdf.fz_open_document_with_stream_and_dir(magic, stream, dir)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+pymupdf.mupdf.FzErrorFormat: code=7: no objects found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kunalsrivastav/Desktop/resume_parser/backend/app/services/parser.py", line 94, in render_pdf_to_images
+    with fitz.open(stream=file_bytes, filetype="pdf") as doc:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kunalsrivastav/Desktop/resume_parser/backend/venv/lib/python3.13/site-packages/pymupdf/__init__.py", line 2984, in __init__
+    raise FileDataError('Failed to open stream') from e
+pymupdf.FileDataError: Failed to open stream
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kunalsrivastav/Desktop/resume_parser/backend/app/services/pipeline_service.py", line 50, in process_resume
+    page_images = ParserService.render_pdf_to_images(file_bytes)
+  File "/Users/kunalsrivastav/Desktop/resume_parser/backend/app/services/parser.py", line 104, in render_pdf_to_images
+    raise ValueError(f"Error rendering PDF: {e}")
+ValueError: Error rendering PDF: Failed to open stream
+[2026-08-09 11:23:52] INFO [recruitment_platform:jobs.py:59] - Using raw text input for job description.
+[2026-08-09 11:23:52] INFO [recruitment_platform:extractor.py:265] - Attempting job description extraction via LLM...
+[2026-08-09 11:23:52] INFO [recruitment_platform:gemini_provider.py:151] - Sending job description to Gemini for parsing...
+[2026-08-09 11:23:53] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.5-flash
+Please retry in 6.868973368s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 6
+}
+]'. Retrying attempt 1/3 in 1.69s...
+[2026-08-09 11:23:55] INFO [recruitment_platform:gemini_provider.py:132] - Successfully parsed resume via Gemini API.
+[2026-08-09 11:23:55] INFO [recruitment_platform:pipeline_service.py:102] - Resume extracted successfully for John Doe
+[2026-08-09 11:23:55] INFO [recruitment_platform:operations.py:82] - Candidate email john.doe@example.com exists. Updating candidate record (ID: 1).
+[2026-08-09 11:23:55] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 9)
+[2026-08-09 11:23:55] INFO [recruitment_platform:vector_store.py:88] - Removed 5 vectors from FAISS index matching IDs: [3, 2, 4, 1, 0]
+[2026-08-09 11:23:55] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 1
+[2026-08-09 11:23:57] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 11:23:57] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 11:23:57] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 9
+[2026-08-09 11:23:58] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 11:23:58] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 10)
+[2026-08-09 11:23:58] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:23:58] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 10
+[2026-08-09 11:23:58] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 11:23:58] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 10
+[2026-08-09 11:23:58] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 11:23:58] INFO [recruitment_platform:main.py:26] - Database tables initialized successfully.
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 11)
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 12)
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 13)
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 14)
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:00] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 1
+[2026-08-09 11:24:00] INFO [recruitment_platform:excel_service.py:150] - Updating candidate john.doe@example.com in Candidates.xlsx
+[2026-08-09 11:24:00] INFO [recruitment_platform:pipeline_service.py:124] - Background processing complete for candidate John Doe (john.doe@example.com). Is update: True
+[2026-08-09 11:24:00] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: normal.docx (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/a50a3adaa43a4fd19002d89116dd90e0_normal.docx)
+[2026-08-09 11:24:00] INFO [recruitment_platform:pipeline_service.py:78] - Running normal layout parser for normal.docx...
+[2026-08-09 11:24:00] INFO [recruitment_platform:parser.py:147] - DOCX file parsed and cleaned successfully.
+[2026-08-09 11:24:00] INFO [recruitment_platform:pipeline_service.py:93] - Extracted resume text saved to: /Users/kunalsrivastav/Desktop/resume_parser/backend/debug/debug_resume.txt
+[2026-08-09 11:24:00] INFO [recruitment_platform:pipeline_service.py:100] - Starting hybrid extraction...
+[2026-08-09 11:24:00] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'bob.johnson@example.com', 'phone': '888-777-6666', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 11:24:00] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-09 11:24:00] INFO [recruitment_platform:gemini_provider.py:130] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-09 11:24:00] INFO [recruitment_platform:operations.py:215] - Saved job description: 'Senior Python Engineer' (ID: 1)
+[2026-08-09 11:24:00] INFO [recruitment_platform:gemini_provider.py:132] - Successfully parsed resume via Gemini API.
+[2026-08-09 11:24:00] INFO [recruitment_platform:pipeline_service.py:102] - Resume extracted successfully for John Doe
+[2026-08-09 11:24:00] INFO [recruitment_platform:operations.py:82] - Candidate email john.doe@example.com exists. Updating candidate record (ID: 1).
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 9)
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:88] - Removed 5 vectors from FAISS index matching IDs: [17, 16, 18, 15, 14]
+[2026-08-09 11:24:00] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 1
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 10)
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 11)
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 12)
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 13)
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 14)
+[2026-08-09 11:24:00] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:00] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 1
+[2026-08-09 11:24:00] INFO [recruitment_platform:excel_service.py:150] - Updating candidate john.doe@example.com in Candidates.xlsx
+[2026-08-09 11:24:00] INFO [recruitment_platform:pipeline_service.py:124] - Background processing complete for candidate John Doe (john.doe@example.com). Is update: True
+[2026-08-09 11:24:00] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 1
+[2026-08-09 11:24:00] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.5-flash
+Please retry in 59.009719977s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 59
+}
+]'. Retrying attempt 1/3 in 2.12s...
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:recommendation.py:48] - Fetching AI recommendation report for Candidate 1 on Job 1
+[2026-08-09 11:24:01] INFO [recruitment_platform:recommendation_service.py:39] - Generating new recommendation for candidate 1 on job 1
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:01] INFO [recruitment_platform:gemini_provider.py:189] - Requesting matching recommendation from Gemini...
+[2026-08-09 11:24:01] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.5-flash
+Please retry in 58.154486433s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 58
+}
+]'. Retrying attempt 1/3 in 2.39s...
+[2026-08-09 11:24:03] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.5-flash
+Please retry in 56.657703605s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 56
+}
+]'. Retrying attempt 2/3 in 3.73s...
+[2026-08-09 11:24:04] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.5-flash
+Please retry in 55.542732893s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 55
+}
+]'. Retrying attempt 2/3 in 3.39s...
+[2026-08-09 11:24:07] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.5-flash
+Please retry in 52.716064115s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 52
+}
+]'. Retrying attempt 3/3 in 8.18s...
+[2026-08-09 11:24:08] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.5-flash
+Please retry in 51.93081093s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 51
+}
+]'. Retrying attempt 3/3 in 9.07s...
+[2026-08-09 11:24:19] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 11:24:22] INFO [recruitment_platform:search.py:39] - Natural language candidate search requested: 'Looking for a C++ developer with Docker skills'
+[2026-08-09 11:24:23] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:24:25] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 11:24:26] INFO [recruitment_platform:gemini_provider.py:132] - Successfully parsed resume via Gemini API.
+[2026-08-09 11:24:26] INFO [recruitment_platform:pipeline_service.py:102] - Resume extracted successfully for Bob Johnson
+[2026-08-09 11:24:26] INFO [recruitment_platform:operations.py:82] - Candidate email bob.johnson@example.com exists. Updating candidate record (ID: 2).
+[2026-08-09 11:24:26] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 10)
+[2026-08-09 11:24:26] INFO [recruitment_platform:vector_store.py:88] - Removed 4 vectors from FAISS index matching IDs: [7, 8, 6, 5]
+[2026-08-09 11:24:26] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 2
+[2026-08-09 11:24:26] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 11)
+[2026-08-09 11:24:26] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:26] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 12)
+[2026-08-09 11:24:26] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:26] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 13)
+[2026-08-09 11:24:26] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:26] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 14)
+[2026-08-09 11:24:26] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 11:24:26] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 2
+[2026-08-09 11:24:26] INFO [recruitment_platform:excel_service.py:150] - Updating candidate bob.johnson@example.com in Candidates.xlsx
+[2026-08-09 11:24:26] INFO [recruitment_platform:pipeline_service.py:124] - Background processing complete for candidate Bob Johnson (bob.johnson@example.com). Is update: True
+[2026-08-09 11:24:32] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 11:24:32] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 11:24:32] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 11:24:32] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 11:24:32] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 11:24:32] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 11:24:32] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 11:24:32] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 11:24:32] INFO [recruitment_platform:main.py:26] - Database tables initialized successfully.
+[2026-08-09 11:24:32] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 11:24:32] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 1020 characters extracted.
+[2026-08-09 11:24:32] INFO [recruitment_platform:vacancy.py:65] - Extracting structured vacancy schema from text (890 chars)...
+[2026-08-09 11:24:32] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 11:24:39] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 11:26:11] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 1
+[2026-08-09 11:26:11] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 1
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:26:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 14 matches.
+[2026-08-09 11:27:17] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 11:27:17] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 11:27:50] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 11:27:50] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 11:32:47] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 11:32:52] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 11:32:59] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 11:32:59] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 11:32:59] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 11:32:59] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 11:32:59] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 11:32:59] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 11:32:59] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 11:32:59] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 11:32:59] INFO [recruitment_platform:main.py:26] - Database tables initialized successfully.
+[2026-08-09 11:33:00] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 11:33:00] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 1679 characters extracted.
+[2026-08-09 11:33:00] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (1445 chars)...
+[2026-08-09 11:33:00] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 11:33:10] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 11:54:21] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 11:54:26] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 11:54:33] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 11:54:33] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 11:54:33] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 11:54:33] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 11:54:33] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 11:54:33] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 11:54:33] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 11:54:33] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 11:54:33] INFO [recruitment_platform:main.py:26] - Database tables initialized successfully.
+[2026-08-09 11:54:46] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 11:54:46] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 11:54:58] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'WhatsApp Image 2026-08-09 at 11.48.10.jpeg'...
+[2026-08-09 11:54:58] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 11:55:11] INFO [recruitment_platform:gemini_provider.py:233] - Successfully transcribed page image (1549 chars).
+[2026-08-09 11:55:11] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (1549 chars)...
+[2026-08-09 11:55:11] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 11:55:19] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 11:56:42] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'WhatsApp Image 2026-08-09 at 11.47.52.jpeg'...
+[2026-08-09 11:56:42] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 11:56:47] INFO [recruitment_platform:gemini_provider.py:233] - Successfully transcribed page image (809 chars).
+[2026-08-09 11:56:47] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (809 chars)...
+[2026-08-09 11:56:47] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 11:56:47] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 12.14113681s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 12
+}
+]'. Retrying attempt 1/3 in 2.22s...
+[2026-08-09 11:56:50] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 9.708625397s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 9
+}
+]'. Retrying attempt 2/3 in 3.28s...
+[2026-08-09 11:56:53] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 6.236760571s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 6
+}
+]'. Retrying attempt 3/3 in 7.99s...
+[2026-08-09 11:57:01] ERROR [recruitment_platform:gemini_provider.py:25] - Function call failed after 3 retry attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 58.034353606s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 58
+}
+]
+[2026-08-09 11:57:01] ERROR [recruitment_platform:gemini_provider.py:260] - All retry attempts for Gemini vacancy extraction failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 58.034353606s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 58
+}
+]
+[2026-08-09 11:57:01] ERROR [recruitment_platform:vacancy.py:85] - Error processing vacancy extraction for 'WhatsApp Image 2026-08-09 at 11.47.52.jpeg': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 58.034353606s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 58
+}
+]
+[2026-08-09 12:03:34] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 12:03:39] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 12:03:46] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 12:03:46] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 12:03:46] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 12:03:46] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 12:03:46] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 12:03:46] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 12:03:46] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 12:03:46] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 12:03:46] INFO [recruitment_platform:main.py:26] - Database tables initialized successfully.
+[2026-08-09 12:04:28] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'WhatsApp Image 2026-08-09 at 11.48.10.jpeg'...
+[2026-08-09 12:04:28] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 12:04:29] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]'. Retrying attempt 1/3 in 1.93s...
+[2026-08-09 12:04:32] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]'. Retrying attempt 2/3 in 4.58s...
+[2026-08-09 12:04:36] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]'. Retrying attempt 3/3 in 8.82s...
+[2026-08-09 12:04:46] ERROR [recruitment_platform:gemini_provider.py:25] - Function call failed after 3 retry attempts: 401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]
+[2026-08-09 12:04:46] ERROR [recruitment_platform:gemini_provider.py:236] - Multimodal OCR transcription failed: 401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]
+[2026-08-09 12:04:46] ERROR [recruitment_platform:vacancy.py:85] - Error processing vacancy extraction for 'WhatsApp Image 2026-08-09 at 11.48.10.jpeg': 401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]
+[2026-08-09 12:12:54] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 12:12:59] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 12:13:06] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 12:13:06] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 12:13:06] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 12:13:06] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 12:13:06] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 12:13:06] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 12:13:06] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 12:13:06] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 12:13:06] INFO [recruitment_platform:main.py:26] - Database tables initialized successfully.
+[2026-08-09 12:15:13] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 12:15:13] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 12:15:26] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'Screenshot 2026-08-09 at 11.11.15 AM.png'...
+[2026-08-09 12:15:26] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 12:15:27] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]'. Retrying attempt 1/3 in 2.20s...
+[2026-08-09 12:15:30] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]'. Retrying attempt 2/3 in 4.26s...
+[2026-08-09 12:15:34] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]'. Retrying attempt 3/3 in 9.39s...
+[2026-08-09 12:15:44] ERROR [recruitment_platform:gemini_provider.py:25] - Function call failed after 3 retry attempts: 401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]
+[2026-08-09 12:15:44] ERROR [recruitment_platform:gemini_provider.py:236] - Multimodal OCR transcription failed: 401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]
+[2026-08-09 12:15:44] ERROR [recruitment_platform:vacancy.py:85] - Error processing vacancy extraction for 'Screenshot 2026-08-09 at 11.11.15 AM.png': 401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]
+[2026-08-09 12:18:33] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'Screenshot 2026-08-09 at 11.11.00 AM.png'...
+[2026-08-09 12:18:33] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 12:18:33] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]'. Retrying attempt 1/3 in 1.78s...
+[2026-08-09 12:18:35] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]'. Retrying attempt 2/3 in 3.35s...
+[2026-08-09 12:18:39] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]'. Retrying attempt 3/3 in 6.87s...
+[2026-08-09 12:18:46] ERROR [recruitment_platform:gemini_provider.py:25] - Function call failed after 3 retry attempts: 401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]
+[2026-08-09 12:18:46] ERROR [recruitment_platform:gemini_provider.py:236] - Multimodal OCR transcription failed: 401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]
+[2026-08-09 12:18:46] ERROR [recruitment_platform:vacancy.py:85] - Error processing vacancy extraction for 'Screenshot 2026-08-09 at 11.11.00 AM.png': 401 Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. [reason: "ACCESS_TOKEN_TYPE_UNSUPPORTED"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+metadata {
+  key: "method"
+  value: "google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"
+}
+]
+[2026-08-09 12:24:08] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 12:24:13] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 12:24:20] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 12:24:20] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 12:24:20] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 12:24:20] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 12:24:20] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 12:24:20] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 12:24:20] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 12:24:20] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 12:24:20] INFO [recruitment_platform:main.py:26] - Database tables initialized successfully.
+[2026-08-09 12:24:20] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'Screenshot 2026-08-09 at 11.11.00 AM.png'...
+[2026-08-09 12:24:20] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 12:24:22] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 38.052211716s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 38
+}
+]'. Retrying attempt 1/3 in 2.35s...
+[2026-08-09 12:24:24] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 35.238893493s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 35
+}
+]'. Retrying attempt 2/3 in 3.38s...
+[2026-08-09 12:24:28] WARNING [recruitment_platform:gemini_provider.py:30] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 31.472390572s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 31
+}
+]'. Retrying attempt 3/3 in 7.29s...
+[2026-08-09 12:24:36] ERROR [recruitment_platform:gemini_provider.py:25] - Function call failed after 3 retry attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 23.799922785s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 23
+}
+]
+[2026-08-09 12:24:36] ERROR [recruitment_platform:gemini_provider.py:236] - Multimodal OCR transcription failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 23.799922785s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 23
+}
+]
+[2026-08-09 12:24:36] ERROR [recruitment_platform:vacancy.py:85] - Error processing vacancy extraction for 'Screenshot 2026-08-09 at 11.11.00 AM.png': 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash
+Please retry in 23.799922785s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 23
+}
+]
+[2026-08-09 12:26:20] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 12:26:25] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 12:26:32] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 12:26:32] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 12:26:32] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 12:26:32] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 12:26:32] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 12:26:32] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 12:26:32] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 14
+[2026-08-09 12:26:32] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 12:26:32] INFO [recruitment_platform:main.py:26] - Database tables initialized successfully.
+[2026-08-09 12:26:44] INFO [recruitment_platform:resume.py:194] - Received upload request for 1 items.
+[2026-08-09 12:26:44] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/6959d7eeff6242fc963cc16064fcb11d_Uma Sankar  (1).pdf
+[2026-08-09 12:26:44] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: Uma Sankar  (1).pdf (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/6959d7eeff6242fc963cc16064fcb11d_Uma Sankar  (1).pdf)
+[2026-08-09 12:26:44] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 4378 characters extracted.
+[2026-08-09 12:26:44] INFO [recruitment_platform:pipeline_service.py:78] - Running normal layout parser for Uma Sankar  (1).pdf...
+[2026-08-09 12:26:44] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 12:26:44] INFO [recruitment_platform:pipeline_service.py:93] - Extracted resume text saved to: /Users/kunalsrivastav/Desktop/resume_parser/backend/debug/debug_resume.txt
+[2026-08-09 12:26:44] INFO [recruitment_platform:pipeline_service.py:100] - Starting hybrid extraction...
+[2026-08-09 12:26:44] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'umasankarpanda012@gmail.com', 'phone': '+91 7978021431', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 12:26:44] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-09 12:26:44] INFO [recruitment_platform:gemini_provider.py:130] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-09 12:27:02] INFO [recruitment_platform:gemini_provider.py:132] - Successfully parsed resume via Gemini API.
+[2026-08-09 12:27:02] INFO [recruitment_platform:pipeline_service.py:102] - Resume extracted successfully for Uma Sankar Panda
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:122] - Creating new candidate record for umasankarpanda012@gmail.com.
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Logistics Coordinator' (alias: 'logistics coordinator')
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Time Keeper' (alias: 'time keeper')
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Stock Management' (alias: 'stock management')
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Team Management' (alias: 'team management')
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Market Development' (alias: 'market development')
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Strategic Planning' (alias: 'strategic planning')
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Relationship Building' (alias: 'relationship building')
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Recruitment' (alias: 'recruitment')
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Logistics Management' (alias: 'logistics management')
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Hard Working' (alias: 'hard working')
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Basic Computer Science' (alias: 'basic computer science')
+[2026-08-09 12:27:02] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Oriya' (alias: 'oriya')
+[2026-08-09 12:27:04] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 15)
+[2026-08-09 12:27:04] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:27:04] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 16)
+[2026-08-09 12:27:04] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:27:04] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 17)
+[2026-08-09 12:27:04] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:27:04] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 18)
+[2026-08-09 12:27:04] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:27:04] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 19)
+[2026-08-09 12:27:04] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:27:04] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 4
+[2026-08-09 12:27:04] INFO [recruitment_platform:excel_service.py:154] - Appending new candidate umasankarpanda012@gmail.com to Candidates.xlsx
+[2026-08-09 12:27:04] INFO [recruitment_platform:pipeline_service.py:124] - Background processing complete for candidate Uma Sankar Panda (umasankarpanda012@gmail.com). Is update: False
+[2026-08-09 12:27:42] INFO [recruitment_platform:resume.py:194] - Received upload request for 1 items.
+[2026-08-09 12:27:42] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/c5b4b88fcb684f7189ddb316693af0b0_REAJESHRESUMEAEW.pdf
+[2026-08-09 12:27:42] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: REAJESHRESUMEAEW.pdf (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/c5b4b88fcb684f7189ddb316693af0b0_REAJESHRESUMEAEW.pdf)
+[2026-08-09 12:27:42] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 6967 characters extracted.
+[2026-08-09 12:27:42] INFO [recruitment_platform:pipeline_service.py:78] - Running normal layout parser for REAJESHRESUMEAEW.pdf...
+[2026-08-09 12:27:42] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 12:27:42] INFO [recruitment_platform:pipeline_service.py:93] - Extracted resume text saved to: /Users/kunalsrivastav/Desktop/resume_parser/backend/debug/debug_resume.txt
+[2026-08-09 12:27:42] INFO [recruitment_platform:pipeline_service.py:100] - Starting hybrid extraction...
+[2026-08-09 12:27:42] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'rajeshkyadav00342@gmail.com', 'phone': '+91 8107261166', 'linkedin': 'linkedin.com/in/rajeshkumaryadav342', 'github': None, 'portfolio': None}
+[2026-08-09 12:27:42] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-09 12:27:42] INFO [recruitment_platform:gemini_provider.py:130] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-09 12:28:03] INFO [recruitment_platform:gemini_provider.py:132] - Successfully parsed resume via Gemini API.
+[2026-08-09 12:28:03] INFO [recruitment_platform:pipeline_service.py:102] - Resume extracted successfully for RAJESH KUMAR YADAV
+[2026-08-09 12:28:03] INFO [recruitment_platform:operations.py:122] - Creating new candidate record for rajeshkyadav00342@gmail.com.
+[2026-08-09 12:28:03] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Collaborated & Communicated With Team' (alias: 'collaborated & communicated with team')
+[2026-08-09 12:28:03] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Utm' (alias: 'utm')
+[2026-08-09 12:28:03] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Asme' (alias: 'asme')
+[2026-08-09 12:28:03] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 20)
+[2026-08-09 12:28:03] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:28:03] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 21)
+[2026-08-09 12:28:03] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:28:04] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 22)
+[2026-08-09 12:28:04] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:28:04] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 23)
+[2026-08-09 12:28:04] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:28:04] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 24)
+[2026-08-09 12:28:04] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:28:04] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 25)
+[2026-08-09 12:28:04] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:28:04] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 26)
+[2026-08-09 12:28:04] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:28:04] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 5
+[2026-08-09 12:28:04] INFO [recruitment_platform:excel_service.py:154] - Appending new candidate rajeshkyadav00342@gmail.com to Candidates.xlsx
+[2026-08-09 12:28:04] INFO [recruitment_platform:pipeline_service.py:124] - Background processing complete for candidate RAJESH KUMAR YADAV (rajeshkyadav00342@gmail.com). Is update: False
+[2026-08-09 12:28:10] INFO [recruitment_platform:resume.py:194] - Received upload request for 1 items.
+[2026-08-09 12:28:10] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/b7231dd1c41c4cbbbb1f8cfc748f5ff3_RITESH KUMAR TRANSMISSION LINE TECHNICIAN.pdf
+[2026-08-09 12:28:10] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: RITESH KUMAR TRANSMISSION LINE TECHNICIAN.pdf (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/b7231dd1c41c4cbbbb1f8cfc748f5ff3_RITESH KUMAR TRANSMISSION LINE TECHNICIAN.pdf)
+[2026-08-09 12:28:10] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 2849 characters extracted.
+[2026-08-09 12:28:10] INFO [recruitment_platform:pipeline_service.py:78] - Running normal layout parser for RITESH KUMAR TRANSMISSION LINE TECHNICIAN.pdf...
+[2026-08-09 12:28:10] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 12:28:10] INFO [recruitment_platform:pipeline_service.py:93] - Extracted resume text saved to: /Users/kunalsrivastav/Desktop/resume_parser/backend/debug/debug_resume.txt
+[2026-08-09 12:28:10] INFO [recruitment_platform:pipeline_service.py:100] - Starting hybrid extraction...
+[2026-08-09 12:28:10] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'roshankumar965149@gmail.co', 'phone': '7887227480', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 12:28:10] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-09 12:28:10] INFO [recruitment_platform:gemini_provider.py:130] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-09 12:28:23] INFO [recruitment_platform:gemini_provider.py:132] - Successfully parsed resume via Gemini API.
+[2026-08-09 12:28:23] INFO [recruitment_platform:pipeline_service.py:102] - Resume extracted successfully for RITESH KUMAR
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:122] - Creating new candidate record for roshankumar965149@gmail.co.
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Hv Transmission Line Construction' (alias: 'hv transmission line construction')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Hv Transmission Line Maintenance' (alias: 'hv transmission line maintenance')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Tower Foundation' (alias: 'tower foundation')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Tower Erection' (alias: 'tower erection')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Stringing' (alias: 'stringing')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Sagging' (alias: 'sagging')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Conductor Installation' (alias: 'conductor installation')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Route Surveys' (alias: 'route surveys')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Fault Identification' (alias: 'fault identification')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Fault Resolution' (alias: 'fault resolution')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Active Listening' (alias: 'active listening')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Hardworking' (alias: 'hardworking')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Keen Observer' (alias: 'keen observer')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Better Scheduling' (alias: 'better scheduling')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Flexibility' (alias: 'flexibility')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Dedication' (alias: 'dedication')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Continuous Learning' (alias: 'continuous learning')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Transmission Line Tools' (alias: 'transmission line tools')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Winches' (alias: 'winches')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Pullers' (alias: 'pullers')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Tensioners' (alias: 'tensioners')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Lifting Equipment' (alias: 'lifting equipment')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Safety Regulations' (alias: 'safety regulations')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Work Permits' (alias: 'work permits')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Ppe Requirements' (alias: 'ppe requirements')
+[2026-08-09 12:28:23] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Quality Standards' (alias: 'quality standards')
+[2026-08-09 12:28:23] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 27)
+[2026-08-09 12:28:23] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:28:23] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 28)
+[2026-08-09 12:28:23] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:28:23] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 29)
+[2026-08-09 12:28:23] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:28:23] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 30)
+[2026-08-09 12:28:23] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:28:23] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 31)
+[2026-08-09 12:28:23] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 12:28:23] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 6
+[2026-08-09 12:28:23] INFO [recruitment_platform:excel_service.py:154] - Appending new candidate roshankumar965149@gmail.co to Candidates.xlsx
+[2026-08-09 12:28:23] INFO [recruitment_platform:pipeline_service.py:124] - Background processing complete for candidate RITESH KUMAR (roshankumar965149@gmail.co). Is update: False
+[2026-08-09 12:28:48] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'WhatsApp Image 2026-08-09 at 11.48.10.jpeg'...
+[2026-08-09 12:28:48] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 12:28:54] INFO [recruitment_platform:gemini_provider.py:233] - Successfully transcribed page image (1009 chars).
+[2026-08-09 12:28:54] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (1009 chars)...
+[2026-08-09 12:28:54] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 12:29:01] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 12:29:06] INFO [recruitment_platform:jobs.py:59] - Using raw text input for job description.
+[2026-08-09 12:29:06] INFO [recruitment_platform:extractor.py:265] - Attempting job description extraction via LLM...
+[2026-08-09 12:29:06] INFO [recruitment_platform:gemini_provider.py:151] - Sending job description to Gemini for parsing...
+[2026-08-09 12:29:08] INFO [recruitment_platform:operations.py:215] - Saved job description: 'Helper' (ID: 2)
+[2026-08-09 12:29:18] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 2
+[2026-08-09 12:29:18] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 2
+[2026-08-09 12:29:18] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:18] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:19] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:29:42] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'WhatsApp Image 2026-08-09 at 11.47.52.jpeg'...
+[2026-08-09 12:29:42] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 12:29:47] INFO [recruitment_platform:gemini_provider.py:233] - Successfully transcribed page image (788 chars).
+[2026-08-09 12:29:47] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (788 chars)...
+[2026-08-09 12:29:47] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 12:29:56] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 12:31:18] INFO [recruitment_platform:jobs.py:59] - Using raw text input for job description.
+[2026-08-09 12:31:18] INFO [recruitment_platform:extractor.py:265] - Attempting job description extraction via LLM...
+[2026-08-09 12:31:18] INFO [recruitment_platform:gemini_provider.py:151] - Sending job description to Gemini for parsing...
+[2026-08-09 12:31:21] INFO [recruitment_platform:operations.py:215] - Saved job description: 'HVAC TECHNICIAN' (ID: 3)
+[2026-08-09 12:31:34] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 3
+[2026-08-09 12:31:34] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 3
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:34] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 2
+[2026-08-09 12:31:52] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 2
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:31:52] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:00] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 1
+[2026-08-09 12:32:00] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 1
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:01] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 31 matches.
+[2026-08-09 12:32:44] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 12:32:44] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 12:36:20] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 12:36:20] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 17:23:16] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 17:23:22] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 17:23:34] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 17:23:34] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 17:23:34] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 31
+[2026-08-09 17:23:34] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 17:23:34] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 31
+[2026-08-09 17:23:34] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 17:23:34] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 31
+[2026-08-09 17:23:34] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 17:23:34] INFO [recruitment_platform:main.py:26] - Database tables initialized successfully.
+[2026-08-09 17:24:06] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 17:24:06] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 17:28:51] INFO [recruitment_platform:resume.py:194] - Received upload request for 1 items.
+[2026-08-09 17:28:51] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/4d1d0b372c7a4ba2b166cf8c86c8f2ab_SUNIL KUMAR PDF_merged.pdf
+[2026-08-09 17:28:51] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: SUNIL KUMAR PDF_merged.pdf (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/4d1d0b372c7a4ba2b166cf8c86c8f2ab_SUNIL KUMAR PDF_merged.pdf)
+[2026-08-09 17:28:51] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 4361 characters extracted.
+[2026-08-09 17:28:51] INFO [recruitment_platform:pipeline_service.py:78] - Running normal layout parser for SUNIL KUMAR PDF_merged.pdf...
+[2026-08-09 17:28:51] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 17:28:51] INFO [recruitment_platform:pipeline_service.py:93] - Extracted resume text saved to: /Users/kunalsrivastav/Desktop/resume_parser/backend/debug/debug_resume.txt
+[2026-08-09 17:28:51] INFO [recruitment_platform:pipeline_service.py:100] - Starting hybrid extraction...
+[2026-08-09 17:28:51] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'sk8913471@rmaii.com', 'phone': '10419400744', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 17:28:51] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-09 17:28:51] INFO [recruitment_platform:gemini_provider.py:130] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-09 17:29:07] INFO [recruitment_platform:gemini_provider.py:132] - Successfully parsed resume via Gemini API.
+[2026-08-09 17:29:07] INFO [recruitment_platform:pipeline_service.py:102] - Resume extracted successfully for Sunil Kumar
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:122] - Creating new candidate record for sk8913471@rmaii.com.
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Electrical Installations' (alias: 'electrical installations')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Electrical Maintenance' (alias: 'electrical maintenance')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Fire Alarm Systems Installation' (alias: 'fire alarm systems installation')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Fire Alarm Systems Troubleshooting' (alias: 'fire alarm systems troubleshooting')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Building Management Systems (bms) Operations' (alias: 'building management systems (bms) operations')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Industrial Wiring' (alias: 'industrial wiring')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'B.m.s Working' (alias: 'b.m.s working')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Fire Alarm Working' (alias: 'fire alarm working')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Honest' (alias: 'honest')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Siga Pd' (alias: 'siga-pd')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Siga Sb' (alias: 'siga-sb')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Siga Led' (alias: 'siga-led')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Siga Ct1' (alias: 'siga-ct1')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Siga Ct2' (alias: 'siga-ct2')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Siga Im' (alias: 'siga-im')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Siga Cc1' (alias: 'siga-cc1')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Beamdetector Ec 100r' (alias: 'beamdetector ec-100r')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Mpsr2 Shtw Ge' (alias: 'mpsr2-shtw-ge')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Smoke Detector' (alias: 'smoke detector')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Heat Detector' (alias: 'heat detector')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Beam Detector' (alias: 'beam detector')
+[2026-08-09 17:29:07] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Wp Enclosure Modules' (alias: 'wp enclosure modules')
+[2026-08-09 17:29:08] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 32)
+[2026-08-09 17:29:08] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:29:08] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 33)
+[2026-08-09 17:29:08] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:29:08] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 34)
+[2026-08-09 17:29:08] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:29:08] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 35)
+[2026-08-09 17:29:08] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:29:08] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 36)
+[2026-08-09 17:29:08] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:29:08] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 37)
+[2026-08-09 17:29:08] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:29:08] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 7
+[2026-08-09 17:29:08] INFO [recruitment_platform:excel_service.py:154] - Appending new candidate sk8913471@rmaii.com to Candidates.xlsx
+[2026-08-09 17:29:08] INFO [recruitment_platform:pipeline_service.py:124] - Background processing complete for candidate Sunil Kumar (sk8913471@rmaii.com). Is update: False
+[2026-08-09 17:32:07] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'WhatsApp Image 2026-08-09 at 11.48.10.jpeg'...
+[2026-08-09 17:32:07] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 17:32:15] INFO [recruitment_platform:gemini_provider.py:233] - Successfully transcribed page image (1703 chars).
+[2026-08-09 17:32:15] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (1703 chars)...
+[2026-08-09 17:32:15] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 17:32:22] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 17:32:28] INFO [recruitment_platform:jobs.py:59] - Using raw text input for job description.
+[2026-08-09 17:32:28] INFO [recruitment_platform:extractor.py:265] - Attempting job description extraction via LLM...
+[2026-08-09 17:32:28] INFO [recruitment_platform:gemini_provider.py:151] - Sending job description to Gemini for parsing...
+[2026-08-09 17:32:31] INFO [recruitment_platform:operations.py:215] - Saved job description: 'HELPR' (ID: 4)
+[2026-08-09 17:32:50] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 4
+[2026-08-09 17:32:50] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 4
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:32:51] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 4
+[2026-08-09 17:33:03] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 4
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:03] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:41] INFO [recruitment_platform:search.py:39] - Natural language candidate search requested: 'Quality Engineer / Inspection Engineer'
+[2026-08-09 17:33:42] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:33:57] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 17:33:57] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 17:45:42] INFO [recruitment_platform:resume.py:194] - Received upload request for 1 items.
+[2026-08-09 17:45:42] INFO [recruitment_platform:local_storage.py:21] - File saved successfully to local storage: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/84f3c3c5e261468db59066f06e92a16a_REAJESHRESUMEAEW.pdf
+[2026-08-09 17:45:42] INFO [recruitment_platform:pipeline_service.py:33] - Starting background processing for resume: REAJESHRESUMEAEW.pdf (path: /Users/kunalsrivastav/Desktop/resume_parser/backend/uploads/84f3c3c5e261468db59066f06e92a16a_REAJESHRESUMEAEW.pdf)
+[2026-08-09 17:45:42] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 6967 characters extracted.
+[2026-08-09 17:45:42] INFO [recruitment_platform:pipeline_service.py:78] - Running normal layout parser for REAJESHRESUMEAEW.pdf...
+[2026-08-09 17:45:42] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 17:45:42] INFO [recruitment_platform:pipeline_service.py:93] - Extracted resume text saved to: /Users/kunalsrivastav/Desktop/resume_parser/backend/debug/debug_resume.txt
+[2026-08-09 17:45:42] INFO [recruitment_platform:pipeline_service.py:100] - Starting hybrid extraction...
+[2026-08-09 17:45:42] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'rajeshkyadav00342@gmail.com', 'phone': '+91 8107261166', 'linkedin': 'linkedin.com/in/rajeshkumaryadav342', 'github': None, 'portfolio': None}
+[2026-08-09 17:45:42] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-09 17:45:42] INFO [recruitment_platform:gemini_provider.py:130] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-09 17:46:04] INFO [recruitment_platform:gemini_provider.py:132] - Successfully parsed resume via Gemini API.
+[2026-08-09 17:46:04] INFO [recruitment_platform:pipeline_service.py:102] - Resume extracted successfully for RAJESH KUMAR YADAV
+[2026-08-09 17:46:04] INFO [recruitment_platform:operations.py:82] - Candidate email rajeshkyadav00342@gmail.com exists. Updating candidate record (ID: 5).
+[2026-08-09 17:46:04] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Dimensional Inspections' (alias: 'dimensional inspections')
+[2026-08-09 17:46:04] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Broadband' (alias: 'broadband')
+[2026-08-09 17:46:04] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Leased Line' (alias: 'leased line')
+[2026-08-09 17:46:04] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Mpls' (alias: 'mpls')
+[2026-08-09 17:46:04] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Vpn' (alias: 'vpn')
+[2026-08-09 17:46:04] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Enterprise Connectivity' (alias: 'enterprise connectivity')
+[2026-08-09 17:46:04] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Network Infrastructure' (alias: 'network infrastructure')
+[2026-08-09 17:46:04] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Commissioning' (alias: 'commissioning')
+[2026-08-09 17:46:05] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Installation' (alias: 'installation')
+[2026-08-09 17:46:05] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Testing' (alias: 'testing')
+[2026-08-09 17:46:05] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Startup' (alias: 'startup')
+[2026-08-09 17:46:05] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Welding' (alias: 'welding')
+[2026-08-09 17:46:05] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Fabrication Alignments' (alias: 'fabrication alignments')
+[2026-08-09 17:46:05] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Operator Training' (alias: 'operator training')
+[2026-08-09 17:46:05] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Mdf Plant' (alias: 'mdf plant')
+[2026-08-09 17:46:05] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Itps' (alias: 'itps')
+[2026-08-09 17:46:05] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Quality Plans' (alias: 'quality plans')
+[2026-08-09 17:46:05] INFO [recruitment_platform:operations.py:36] - Adding new canonical skill to database: 'Preventive Maintenance Planning' (alias: 'preventive maintenance planning')
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 30)
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:88] - Removed 7 vectors from FAISS index matching IDs: [34, 33, 31, 30, 32, 29, 28]
+[2026-08-09 17:46:05] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 5
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 31)
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 32)
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 33)
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 34)
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 35)
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 36)
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:43] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 37)
+[2026-08-09 17:46:05] INFO [recruitment_platform:vector_store.py:76] - Added 1 vectors to FAISS index.
+[2026-08-09 17:46:05] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 5
+[2026-08-09 17:46:05] INFO [recruitment_platform:excel_service.py:150] - Updating candidate rajeshkyadav00342@gmail.com in Candidates.xlsx
+[2026-08-09 17:46:05] INFO [recruitment_platform:pipeline_service.py:124] - Background processing complete for candidate RAJESH KUMAR YADAV (rajeshkyadav00342@gmail.com). Is update: True
+[2026-08-09 17:46:52] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'WhatsApp Image 2026-08-09 at 11.47.52.jpeg'...
+[2026-08-09 17:46:52] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 17:46:57] INFO [recruitment_platform:gemini_provider.py:233] - Successfully transcribed page image (823 chars).
+[2026-08-09 17:46:57] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (823 chars)...
+[2026-08-09 17:46:57] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 17:47:04] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 17:48:02] INFO [recruitment_platform:jobs.py:59] - Using raw text input for job description.
+[2026-08-09 17:48:02] INFO [recruitment_platform:extractor.py:265] - Attempting job description extraction via LLM...
+[2026-08-09 17:48:02] INFO [recruitment_platform:gemini_provider.py:151] - Sending job description to Gemini for parsing...
+[2026-08-09 17:48:04] INFO [recruitment_platform:operations.py:215] - Saved job description: 'HVAC TECHNICIAN' (ID: 5)
+[2026-08-09 17:48:11] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 5
+[2026-08-09 17:48:11] INFO [recruitment_platform:recommendation.py:30] - Triggering candidate-job matching for Job ID: 5
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 17:48:12] INFO [recruitment_platform:vector_store.py:118] - FAISS search returned 37 matches.
+[2026-08-09 18:21:41] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 18:21:46] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 18:21:59] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 18:21:59] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 18:21:59] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 18:21:59] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 18:21:59] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 18:21:59] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 18:21:59] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 18:21:59] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 18:21:59] INFO [recruitment_platform:main.py:26] - Database tables initialized successfully.
+[2026-08-09 18:22:09] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 18:22:09] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-09 18:25:43] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'WhatsApp Image 2026-08-09 at 18.24.52.jpeg'...
+[2026-08-09 18:25:43] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 18:25:55] INFO [recruitment_platform:gemini_provider.py:233] - Successfully transcribed page image (1455 chars).
+[2026-08-09 18:25:55] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (1455 chars)...
+[2026-08-09 18:25:55] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 18:26:06] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 18:44:46] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 18:44:51] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 18:45:03] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 18:45:03] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 18:45:04] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 18:45:04] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 18:45:04] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 18:45:04] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 18:45:04] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 18:45:04] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 18:45:04] INFO [recruitment_platform:main.py:27] - Adding interview_date column to jobs table...
+[2026-08-09 18:45:04] INFO [recruitment_platform:main.py:30] - interview_date column added to jobs table successfully.
+[2026-08-09 18:45:04] INFO [recruitment_platform:main.py:34] - Database tables initialized successfully.
+[2026-08-09 18:45:04] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 18:45:04] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 1679 characters extracted.
+[2026-08-09 18:45:04] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (1445 chars)...
+[2026-08-09 18:45:04] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 18:45:13] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 18:45:13] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 18:45:13] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'john.doe@example.com', 'phone': '+1-234-567-8901', 'linkedin': 'linkedin.com/in/johndoe', 'github': 'github.com/johndoe', 'portfolio': 'https://johndoe.dev'}
+[2026-08-09 18:45:13] ERROR [recruitment_platform:matching_service.py:273] - Error querying FAISS during job match for section 'certifications': 
+[2026-08-09 18:45:13] ERROR [recruitment_platform:matching_service.py:273] - Error querying FAISS during job match for section 'achievements': 
+[2026-08-09 18:45:13] ERROR [recruitment_platform:matching_service.py:273] - Error querying FAISS during job match for section 'summary': 
+[2026-08-09 18:45:13] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': None, 'phone': '+1 (123) 456-7890', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 18:45:13] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': None, 'phone': '+91 98765 43210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 18:45:13] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': None, 'phone': '98765-43210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 18:45:13] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': None, 'phone': None, 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-09 18:45:13] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-09 18:45:13] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 1020 characters extracted.
+[2026-08-09 18:45:13] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (890 chars)...
+[2026-08-09 18:45:13] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 18:45:21] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 18:45:36] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 18:45:41] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 18:45:51] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 18:45:51] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 18:45:51] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 18:45:51] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 18:45:51] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 18:45:51] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 18:45:51] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 18:45:51] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 18:45:51] INFO [recruitment_platform:main.py:34] - Database tables initialized successfully.
+[2026-08-09 18:45:51] INFO [recruitment_platform:operations.py:216] - Saved job description: 'Senior Quality Inspector' (ID: 6)
+[2026-08-09 18:45:51] INFO [recruitment_platform:operations.py:247] - Updated job description: 'Senior Quality Inspector' (ID: 6)
+[2026-08-09 18:47:37] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-09 18:47:42] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-09 18:47:51] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-09 18:47:51] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 18:47:51] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 18:47:51] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 18:47:51] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 18:47:51] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-09 18:47:51] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 37
+[2026-08-09 18:47:51] INFO [recruitment_platform:main.py:9] - Initializing database tables...
+[2026-08-09 18:47:52] INFO [recruitment_platform:main.py:34] - Database tables initialized successfully.
+[2026-08-09 18:48:51] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'WhatsApp Image 2026-08-09 at 18.24.52.jpeg'...
+[2026-08-09 18:48:51] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 18:48:57] INFO [recruitment_platform:gemini_provider.py:233] - Successfully transcribed page image (1457 chars).
+[2026-08-09 18:48:57] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (1457 chars)...
+[2026-08-09 18:48:57] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 18:49:06] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 18:50:43] INFO [recruitment_platform:vacancy.py:60] - Performing multimodal OCR on image 'WhatsApp Image 2026-08-09 at 18.24.52.jpeg'...
+[2026-08-09 18:50:43] INFO [recruitment_platform:gemini_provider.py:231] - Requesting multimodal OCR from Gemini...
+[2026-08-09 18:50:50] INFO [recruitment_platform:gemini_provider.py:233] - Successfully transcribed page image (1391 chars).
+[2026-08-09 18:50:50] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (1391 chars)...
+[2026-08-09 18:50:50] INFO [recruitment_platform:gemini_provider.py:255] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-09 18:51:01] INFO [recruitment_platform:gemini_provider.py:257] - Successfully parsed vacancy document via Gemini API.
+[2026-08-09 18:51:18] INFO [recruitment_platform:operations.py:216] - Saved job description: 'HELPERS' (ID: 7)
+[2026-08-09 18:51:18] INFO [recruitment_platform:operations.py:216] - Saved job description: 'STEEL FIXERS' (ID: 8)
+[2026-08-09 18:51:18] INFO [recruitment_platform:operations.py:216] - Saved job description: 'CARPENTERS' (ID: 9)
+[2026-08-09 18:51:18] INFO [recruitment_platform:operations.py:216] - Saved job description: 'SCAFFOLDERS (GULF RETURN)' (ID: 10)
+[2026-08-09 18:51:18] INFO [recruitment_platform:operations.py:216] - Saved job description: 'MASONS' (ID: 11)

@@ -14,7 +14,9 @@ import {
   Eye,
   ArrowRight,
   CheckCircle2,
-  AlertCircle
+  AlertCircle,
+  Calendar,
+  Pencil
 } from 'lucide-react';
 import { jobApi, recommendationApi, feedbackApi } from '../services/api';
 
@@ -24,6 +26,17 @@ const JobDetails = () => {
   const [matches, setMatches] = useState([]);
   const [loading, setLoading] = useState(true);
   const [matchingLoading, setMatchingLoading] = useState(false);
+
+  // Edit Vacancy State
+  const [isEditing, setIsEditing] = useState(false);
+  const [editFormData, setEditFormData] = useState({
+    title: '',
+    location: '',
+    experience: '',
+    education: '',
+    interview_date: ''
+  });
+  const [updating, setUpdating] = useState(false);
   
   // Feedback popup state
   const [selectedCandidate, setSelectedCandidate] = useState(null);
@@ -86,6 +99,38 @@ const JobDetails = () => {
     }
   };
 
+  const handleStartEdit = () => {
+    if (!job) return;
+    setEditFormData({
+      title: job.title || '',
+      location: job.location || '',
+      experience: job.experience || '',
+      education: job.education || '',
+      interview_date: job.interview_date || ''
+    });
+    setIsEditing(true);
+  };
+
+  const handleSaveEdit = async (e) => {
+    e.preventDefault();
+    setUpdating(true);
+    try {
+      const res = await jobApi.update(id, {
+        title: editFormData.title,
+        location: editFormData.location,
+        experience: editFormData.experience,
+        education: editFormData.education,
+        interview_date: editFormData.interview_date || null
+      });
+      setJob(res.data);
+      setIsEditing(false);
+    } catch (err) {
+      console.error('Failed to update job details:', err);
+    } finally {
+      setUpdating(false);
+    }
+  };
+
   if (loading) {
     return (
       <div className="flex justify-center items-center min-h-[60vh]">
@@ -127,9 +172,19 @@ const JobDetails = () => {
           </div>
 
           <div className="space-y-1.5">
-            <h2 className="text-xl sm:text-2xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">
-              {job.title}
-            </h2>
+            <div className="flex items-center space-x-3">
+              <h2 className="text-xl sm:text-2xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">
+                {job.title}
+              </h2>
+              <button
+                type="button"
+                onClick={handleStartEdit}
+                className="p-1.5 text-slate-400 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors cursor-pointer"
+                title="Edit Vacancy Details"
+              >
+                <Pencil size={16} />
+              </button>
+            </div>
             <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-slate-500 dark:text-slate-400 font-medium pt-1">
               <span className="flex items-center space-x-1">
                 <MapPin size={13} />
@@ -143,11 +198,23 @@ const JobDetails = () => {
                 <GraduationCap size={13} />
                 <span>{job.education || 'CS / Engineering Degree'}</span>
               </span>
+              <span className="flex items-center space-x-1 text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/40 px-2.5 py-0.5 rounded-md border border-indigo-500/20">
+                <Calendar size={13} />
+                <span>Interview Date: {job.interview_date || 'Not scheduled'}</span>
+              </span>
             </div>
           </div>
         </div>
 
         <div className="flex items-center space-x-3 border-t lg:border-t-0 pt-4 lg:pt-0 border-slate-100 dark:border-slate-800">
+          <button
+            type="button"
+            onClick={handleStartEdit}
+            className="flex items-center space-x-1.5 px-3 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold rounded-xl transition-colors cursor-pointer mr-2"
+          >
+            <Pencil size={14} />
+            <span>Edit Requisition</span>
+          </button>
           <div className="text-right">
             <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">
               Match Engine Status
@@ -159,6 +226,107 @@ const JobDetails = () => {
           </div>
         </div>
       </div>
+
+      {/* Edit Vacancy Modal in JobDetails */}
+      {isEditing && (
+        <div className="fixed inset-0 bg-slate-950/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 animate-fade-in">
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
+            <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+              <h3 className="font-extrabold text-base text-slate-900 dark:text-white flex items-center gap-2">
+                <Pencil size={18} className="text-primary-600 dark:text-primary-400" />
+                Edit Position Requisition
+              </h3>
+              <button
+                type="button"
+                onClick={() => setIsEditing(false)}
+                className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            <form onSubmit={handleSaveEdit} className="space-y-4 text-xs">
+              <div>
+                <label className="font-bold text-slate-700 dark:text-slate-300 block mb-1">
+                  Position Title
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={editFormData.title}
+                  onChange={(e) => setEditFormData({ ...editFormData, title: e.target.value })}
+                  className="w-full p-2.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl font-bold"
+                />
+              </div>
+
+              <div>
+                <label className="font-bold text-slate-700 dark:text-slate-300 block mb-1">
+                  Interview Date
+                </label>
+                <input
+                  type="date"
+                  value={editFormData.interview_date}
+                  onChange={(e) => setEditFormData({ ...editFormData, interview_date: e.target.value })}
+                  className="w-full p-2.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl font-medium"
+                />
+              </div>
+
+              <div>
+                <label className="font-bold text-slate-700 dark:text-slate-300 block mb-1">
+                  Location
+                </label>
+                <input
+                  type="text"
+                  value={editFormData.location}
+                  onChange={(e) => setEditFormData({ ...editFormData, location: e.target.value })}
+                  className="w-full p-2.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl font-medium"
+                />
+              </div>
+
+              <div>
+                <label className="font-bold text-slate-700 dark:text-slate-300 block mb-1">
+                  Required Experience
+                </label>
+                <input
+                  type="text"
+                  value={editFormData.experience}
+                  onChange={(e) => setEditFormData({ ...editFormData, experience: e.target.value })}
+                  className="w-full p-2.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl font-medium"
+                />
+              </div>
+
+              <div>
+                <label className="font-bold text-slate-700 dark:text-slate-300 block mb-1">
+                  Required Education
+                </label>
+                <input
+                  type="text"
+                  value={editFormData.education}
+                  onChange={(e) => setEditFormData({ ...editFormData, education: e.target.value })}
+                  className="w-full p-2.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl font-medium"
+                />
+              </div>
+
+              <div className="flex justify-end space-x-2 pt-2 border-t border-slate-100 dark:border-slate-800">
+                <button
+                  type="button"
+                  onClick={() => setIsEditing(false)}
+                  className="px-4 py-2 border border-slate-200 dark:border-slate-800 text-xs font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  disabled={updating}
+                  className="bg-primary-600 hover:bg-primary-700 disabled:bg-slate-400 text-white px-4 py-2 text-xs font-bold rounded-xl transition-all shadow-sm cursor-pointer"
+                >
+                  {updating ? 'Saving...' : 'Save Requisition'}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
 
       {/* Main Grid: Job Specifications vs Ranked Candidate Matches */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

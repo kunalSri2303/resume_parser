@@ -235,3 +235,28 @@ class GeminiProvider(LLMProvider):
         except Exception as e:
             logger.error(f"Multimodal OCR transcription failed: {e}")
             raise e
+
+    async def extract_vacancy(self, raw_text: str) -> dict:
+        """
+        Parses Demand Letters / Job Vacancy documents into structured JSON with positions.
+        """
+        prompt_template = self._load_prompt("vacancy_extraction.md")
+        formatted_prompt = prompt_template.replace("{raw_text}", raw_text)
+        
+        async def call_api():
+            response = await self._generate_content_async(
+                formatted_prompt,
+                generation_config={"response_mime_type": "application/json"}
+            )
+            json_str = clean_json_text(response.text)
+            return json.loads(json_str)
+
+        try:
+            logger.info("Sending vacancy document text to Gemini for structured parsing...")
+            extracted_data = await retry_with_backoff(call_api)
+            logger.info("Successfully parsed vacancy document via Gemini API.")
+            return extracted_data
+        except Exception as e:
+            logger.error(f"All retry attempts for Gemini vacancy extraction failed: {e}")
+            raise e
+

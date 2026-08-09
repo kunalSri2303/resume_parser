@@ -27,7 +27,7 @@ export const resumeApi = {
 };
 
 export const jobApi = {
-  upload: (file, rawText) => {
+  upload: (file, rawText, interviewDate) => {
     const formData = new FormData();
     if (file) {
       formData.append('file', file);
@@ -35,7 +35,21 @@ export const jobApi = {
     if (rawText) {
       formData.append('raw_text', rawText);
     }
+    if (interviewDate) {
+      formData.append('interview_date', interviewDate);
+    }
     return api.post('/upload-job', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    });
+  },
+  create: (jobData) => api.post('/job', jobData),
+  update: (id, jobData) => api.put(`/job/${id}`, jobData),
+  extractVacancy: (file) => {
+    const formData = new FormData();
+    formData.append('file', file);
+    return api.post('/extract-vacancy', formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },

@@ -196,7 +196,7 @@ def save_or_update_candidate(db: Session, candidate_data: dict, resume_path: str
         logger.error(f"Database transaction failed while saving candidate {email}: {e}")
         raise e
 
-def save_job(db: Session, job_data: dict, raw_text: str) -> Job:
+def save_job(db: Session, job_data: dict, raw_text: str = "") -> Job:
     """Saves a Job Description to the database with transaction protection."""
     try:
         job = Job(
@@ -204,9 +204,10 @@ def save_job(db: Session, job_data: dict, raw_text: str) -> Job:
             location=job_data.get("location"),
             experience=job_data.get("experience"),
             education=job_data.get("education"),
-            skills=json.dumps(job_data.get("skills", [])),
-            preferred_skills=json.dumps(job_data.get("preferred_skills", [])),
-            responsibilities=json.dumps(job_data.get("responsibilities", [])),
+            interview_date=job_data.get("interview_date"),
+            skills=json.dumps(job_data.get("skills", []) if isinstance(job_data.get("skills"), list) else []),
+            preferred_skills=json.dumps(job_data.get("preferred_skills", []) if isinstance(job_data.get("preferred_skills"), list) else []),
+            responsibilities=json.dumps(job_data.get("responsibilities", []) if isinstance(job_data.get("responsibilities"), list) else []),
             raw_text=raw_text
         )
         db.add(job)
@@ -217,6 +218,37 @@ def save_job(db: Session, job_data: dict, raw_text: str) -> Job:
     except Exception as e:
         db.rollback()
         logger.error(f"Failed to save job details: {e}")
+        raise e
+
+def update_job(db: Session, job_id: int, job_data: dict) -> Job:
+    """Updates an existing Job Description in the database with transaction protection."""
+    try:
+        job = db.query(Job).filter(Job.id == job_id).first()
+        if not job:
+            return None
+        if "title" in job_data and job_data["title"] is not None:
+            job.title = job_data["title"]
+        if "location" in job_data:
+            job.location = job_data["location"]
+        if "experience" in job_data:
+            job.experience = job_data["experience"]
+        if "education" in job_data:
+            job.education = job_data["education"]
+        if "interview_date" in job_data:
+            job.interview_date = job_data["interview_date"]
+        if "skills" in job_data and job_data["skills"] is not None:
+            job.skills = json.dumps(job_data["skills"] if isinstance(job_data["skills"], list) else [])
+        if "preferred_skills" in job_data and job_data["preferred_skills"] is not None:
+            job.preferred_skills = json.dumps(job_data["preferred_skills"] if isinstance(job_data["preferred_skills"], list) else [])
+        if "responsibilities" in job_data and job_data["responsibilities"] is not None:
+            job.responsibilities = json.dumps(job_data["responsibilities"] if isinstance(job_data["responsibilities"], list) else [])
+        db.commit()
+        db.refresh(job)
+        logger.info(f"Updated job description: '{job.title}' (ID: {job.id})")
+        return job
+    except Exception as e:
+        db.rollback()
+        logger.error(f"Failed to update job details: {e}")
         raise e
 
 def delete_candidate_embedding_metadata(db: Session, candidate_id: int):

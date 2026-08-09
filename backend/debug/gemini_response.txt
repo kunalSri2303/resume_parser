@@ -1,187 +1,254 @@
 {
   "personal_information": {
-    "name": "SHAIKH ANAS Z.",
-    "email": "sanas8084@gmail.com",
-    "phone": "+91 7817937498",
-    "location": "Ahmedabad, India",
-    "linkedin": null,
+    "name": "RAJESH KUMAR YADAV",
+    "email": "rajeshkyadav00342@gmail.com",
+    "phone": "+91 8107261166",
+    "location": "Bhiwadi, Rajasthan, India",
+    "linkedin": "linkedin.com/in/rajeshkumaryadav342",
     "github": null,
     "portfolio": null,
-    "nationality": "Indian"
+    "nationality": "INDIAN"
   },
 
   "profession": {
-    "category": "Software & IT",
-    "subcategory": "IT Hardware and Support",
-    "industry": "Information Technology",
-    "current_role": "Desktop Support Server Engineer",
-    "target_roles": [
-      "Desktop Support Server Engineer",
-      "IT Hardware Engineer",
-      "Technical Support Engineer"
-    ],
-    "current_company": "Arizona Automation & Technology",
-    "experience_years": 7.17,
+    "category": "Manufacturing",
+    "subcategory": "Quality Engineering",
+    "industry": "Oil & Gas",
+    "current_role": "Quality Engineer / Inspection Engineer",
+    "target_roles": ["Process Quality Assurance Engineer"],
+    "current_company": "WELLCARE Oil Tools Pvt. Ltd",
+    "experience_years": 6.0,
     "seniority": "Mid",
     "employment_type": null
   },
 
   "skills": {
     "technical": [
-      "Laptop assembling",
-      "Laptop disassembling",
-      "Computer assembling",
-      "Computer disassembling",
-      "Troubleshooting hardware issues",
-      "Develop and test computer systems",
-      "Develop and test computer components",
-      "Windows installation",
-      "Windows management",
-      "Crimping",
-      "punching",
-      "Basic networking setup",
-      "Network troubleshooting",
-      "Formatting Windows",
-      "Device driver installation",
-      "Software installation"
+      "Piping Inspection",
+      "QA/QC Inspection",
+      "Final Inspection",
+      "Vendor Inspection",
+      "IQC",
+      "NDT Level II",
+      "Material UTM Tested",
+      "Dimensional inspections",
+      "VT",
+      "MT",
+      "PT",
+      "UT",
+      "Broadband",
+      "leased line",
+      "MPLS",
+      "VPN",
+      "enterprise connectivity",
+      "network infrastructure",
+      "Commissioning",
+      "installation",
+      "testing",
+      "startup",
+      "welding",
+      "fabrication alignments"
     ],
     "soft": [
-      "teamwork",
-      "communication",
-      "Ability to work independently",
-      "Adaptable",
-      "willingness to learn",
-      "Positive attitude"
+      "collaborated & communicated with Team",
+      "Problem Solving",
+      "Cross-functional Coordination",
+      "Troubleshooting",
+      "Corrective Action",
+      "Preventive Action",
+      "Defect Reduction",
+      "Compliance",
+      "operator training"
     ],
     "tools": [
-      "MS Office Suite",
-      "Windows 7",
-      "Windows 8",
-      "Windows 10",
-      "Windows Server 2013",
-      "Windows Server 2016",
-      "Windows Server 2019"
+      "Micrometers",
+      "Bevel Protractor",
+      "Wire Gauge",
+      "Rockwell Hardness Tester",
+      "Profile Projector",
+      "Internal Taper & External Tapper Gauge",
+      "Portable Hardness Tester",
+      "Bore Dial Gauge",
+      "Universal Testing Machine",
+      "Contour",
+      "Vernier Caliper",
+      "Surface Roughness Testers"
     ],
     "frameworks": [],
     "equipment": [
-      "Laptop",
-      "Computer",
-      "Servers"
+      "Universal Testing Machine",
+      "MDF plant"
     ],
-    "standards": [],
-    "languages": [
-      "English",
-      "Hindi",
-      "Gujarati"
+    "standards": [
+      "ASME Section V",
+      "ISO 9001",
+      "API",
+      "ASME",
+      "SOPs"
     ],
+    "languages": [],
     "methodologies": [
-      "System Administration",
-      "Help Desk",
-      "Technical Support"
+      "APQP",
+      "PPAP",
+      "SPC",
+      "FMEA",
+      "MSA",
+      "PDCA",
+      "CAPA",
+      "NCR",
+      "8D",
+      "FIFO",
+      "QMS",
+      "ITPs",
+      "Quality Plans",
+      "Quality KPIs",
+      "Documentation Control",
+      "Audit Readiness",
+      "Inspection Planning",
+      "Preventive maintenance planning"
     ]
   },
 
   "experience": [
     {
-      "title": "Desktop Support Server Engineer",
-      "company": "Arizona Automation & Technology",
-      "location": "",
-      "start_date": "",
-      "end_date": "",
-      "duration": "1.5 Years",
-      "description": "Managed and maintained IT infrastructure, including networks, servers, and cloud environments. Provided technical support and training to end users, improving overall system efficiency. Installed and configured operating systems and software. System Administration & Troubleshooting. Diagnosed and resolved hardware/software issues. Technical Support & Help Desk.",
-      "key_achievements": []
+      "title": "Quality Engineer / Inspection Engineer",
+      "company": "WELLCARE Oil Tools Pvt. Ltd",
+      "location": "India",
+      "start_date": "10/2019",
+      "end_date": "Present",
+      "duration": null,
+      "description": "Oversaw QA/QC activities for petroleum parts manufacturing, ensuring compliance with client specifications and industry standards, and managed end-to-end QA/QC for Oil & Gas tools. Prepared and implemented comprehensive ITPs, Quality Plans, and inspection procedures, while performing inspections to meet customer and international standards. Conducted dimensional inspections using advanced measuring instruments, and performed ASNT NDT Level II examinations, including VT, MT, PT, and UT. Escalated production output by 40%, improved inventory turnover by 15%, and reduced error rates to below 2% through effective FIFO system implementation. Led root cause analysis utilizing 8D methodology, resulting in defect reduction and continuous product quality improvement. Ensured compliance with API, ISO, and ASME standards, maintaining QMS, and coordinating NCRs for corrective actions with clients and third-party inspectors. Collaborated with cross-functional teams to resolve manufacturing quality issues, contributing to 80% business growth over four years.",
+      "key_achievements": [
+        "Escalated production output by 40%, improved inventory turnover by 15%, and reduced error rates to below 2% through effective FIFO system implementation.",
+        "Led root cause analysis utilizing 8D methodology, resulting in defect reduction and continuous product quality improvement.",
+        "Collaborated with cross-functional teams to resolve manufacturing quality issues, contributing to 80% business growth over four years."
+      ]
     },
     {
-      "title": "Technical Support Engineer",
-      "company": "ITechEzy",
-      "location": "",
-      "start_date": "",
-      "end_date": "",
-      "duration": "1 Year",
-      "description": "Delivered customer support for IT-related issues. Assisted in troubleshooting the system and resolving the problems.",
-      "key_achievements": []
+      "title": "Tech Support Engineer",
+      "company": "TeamLease Service Ltd",
+      "location": "India",
+      "start_date": "10/2018",
+      "end_date": "09/2019",
+      "duration": null,
+      "description": "Offered Level 1 and Level 2 technical support for broadband, leased line, MPLS, VPN, and enterprise connectivity services. Improved team productivity by 15% by implementing software-based workflow improvements and process optimization initiatives. Increased system uptime by 15% through timely troubleshooting and resolution of over 50 software and hardware issues. Managed, troubleshot, and optimized network infrastructure, software systems, and hardware devices to maintain smooth business operations. Handled multiple maintenance and support tasks efficiently while meeting tight deadlines and service expectations. Diagnosed technical issues, provided end-user support, and ensured prompt incident resolution to minimize operational downtime.",
+      "key_achievements": [
+        "Improved team productivity by 15% by implementing software-based workflow improvements and process optimization initiatives.",
+        "Increased system uptime by 15% through timely troubleshooting and resolution of over 50 software and hardware issues."
+      ]
     },
     {
-      "title": "Desktop Support Engineer",
-      "company": "Sunce Info Solution",
-      "location": "",
-      "start_date": "",
-      "end_date": "",
-      "duration": "8 Months",
-      "description": "Provided technical support and system maintenance. Installed and configured operating systems and software. Diagnosed and resolved hardware/software issues.",
-      "key_achievements": []
+      "title": "Assistant Engineer",
+      "company": "Greenply Industry Limited",
+      "location": "Andhra Pradesh, India",
+      "start_date": "01/2017",
+      "end_date": "03/2018",
+      "duration": null,
+      "description": "Led commissioning of India's largest MDF plant, managing installation, testing, and startup for on-time operational success. Boosted equipment uptime by 15% through diagnostics and network optimization, significantly reducing production downtime. Work together with engineers and contractors to ensure compliance with SOPs, safety, and quality standards during installation. Conducted inspections and implemented preventive and corrective measures, enhancing production efficiency and reducing waste. Worked closely with Maintenance, Quality Assurance, and Process Engineering teams to enhance productivity and process reliability. Supported process optimization initiatives and assisted in operator training, contributing to improved production quality. Participated in preventive maintenance planning, ensuring post-maintenance production readiness and sustained optimal operations.",
+      "key_achievements": [
+        "Led commissioning of India's largest MDF plant, managing installation, testing, and startup for on-time operational success.",
+        "Boosted equipment uptime by 15% through diagnostics and network optimization, significantly reducing production downtime."
+      ]
     },
     {
-      "title": "Technical Support Engineer",
-      "company": "Fourtune Systems",
-      "location": "",
-      "start_date": "",
-      "end_date": "",
-      "duration": "2 Years",
-      "description": "Delivered customer support for IT-related issues. Assisted in troubleshooting system and network problems.",
-      "key_achievements": []
-    },
-    {
-      "title": "Hardware Technician",
-      "company": "Unique Computers",
-      "location": "",
-      "start_date": "",
-      "end_date": "",
-      "duration": "1 Year",
-      "description": "Assembled and disassembled a laptop's components. All Laptop-Related Hardware Components Assemble. Installed drivers and software applications.",
-      "key_achievements": []
-    },
-    {
-      "title": "Intern",
-      "company": "Computrack System",
-      "location": "",
-      "start_date": "",
-      "end_date": "",
-      "duration": "1 Year",
-      "description": "Learning Computer & Laptop OS installation & Formatting Windows. Basic hardware troubleshooting and maintenance. Supported system installations and upgrades.",
+      "title": "Graduate Engineer",
+      "company": "MASAND INFRATECH",
+      "location": "Meerut, India",
+      "start_date": "02/2016",
+      "end_date": "12/2016",
+      "duration": null,
+      "description": "Supported erection, installation, and commissioning of equipment, piping systems, adhering to project specifications. Supervised site activities, ensuring fabrication alignments, welding, and quality compliance. Assisted in pre-commissioning and commissioning, adhering to ASME codes and safety standards. Prepared and sustained progress, inspection reports, ensuring accuracy and transparency. Coordinated material inspection, QA/QC compliance, upholding project quality standards. Identified and resolved site deviations, supporting issue resolution and project execution. Assisted in planning, scheduling, and resource allocation for timely project completion.",
       "key_achievements": []
     }
   ],
 
   "education": [
     {
-      "degree": "Bachelor of Commerce (B.Com)",
-      "institution": "Vivekanand Vanijya College, Raipur, Ahmedabad. Gujarat University",
-      "field_of_study": "Commerce",
-      "graduation_year": "Pursuing",
+      "degree": "Bachelor of Technology (B.Tech)",
+      "institution": "SLBS Engineering College",
+      "field_of_study": null,
+      "graduation_year": "2016",
       "cgpa_or_percentage": null
     },
     {
-      "degree": "Higher Secondary (12th)",
-      "institution": "GSEB",
+      "degree": "Senior Secondary Education",
+      "institution": "CBSE Board",
       "field_of_study": null,
-      "graduation_year": "2015",
-      "cgpa_or_percentage": "50%"
-    },
-    {
-      "degree": "Secondary (10th)",
-      "institution": "GSEB",
-      "field_of_study": null,
-      "graduation_year": "2013",
-      "cgpa_or_percentage": "53%"
+      "graduation_year": "2010",
+      "cgpa_or_percentage": null
     }
   ],
 
   "projects": [],
 
-  "certifications": [],
+  "certifications": [
+    {
+      "name": "ASNT Level II – NDT Inspection",
+      "issuer": "CORE Training Engineering Services Pvt. Ltd",
+      "issue_date": null,
+      "expiry_date": null,
+      "credential_id": null
+    }
+  ],
 
   "licenses": [],
 
-  "achievements": [],
+  "achievements": [
+    {
+      "title": "Production Output Amplification",
+      "description": "Amplified production output by 40% and enhanced inventory turnover by 15% by implementing an effective FIFO system, while reducing error rates to below 2%",
+      "metrics": "40% output increase, 15% inventory turnover enhancement, error rates < 2%"
+    },
+    {
+      "title": "Business Growth Delivery",
+      "description": "Delivered 80% business growth over four years by supervising workshop operations, improving diagnostics, repair quality, and customer satisfaction",
+      "metrics": "80% business growth"
+    },
+    {
+      "title": "NDT Inspections Execution",
+      "description": "Performed and reviewed NDT inspections including UT, MT, PT, and VT in compliance with ASME Section V, ensuring product quality and client specification adherence",
+      "metrics": "ASME Section V compliance"
+    },
+    {
+      "title": "Root Cause Analysis Leadership",
+      "description": "Oversaw root cause analysis using 8D methodology, driving defect reduction and continuous quality compliance",
+      "metrics": "8D methodology"
+    },
+    {
+      "title": "QMS Implementation",
+      "description": "Executed and preserved QMS aligned with API, ISO 9001, and ASME, improving process efficiency, and audit readiness",
+      "metrics": "API, ISO 9001, and ASME compliance"
+    },
+    {
+      "title": "Team Productivity Optimization",
+      "description": "Improved team productivity by 15% through workflow optimization and software-based process improvements in technical support operations",
+      "metrics": "15% productivity improvement"
+    },
+    {
+      "title": "Production Efficiency Contribution",
+      "description": "Contributed to 30% higher production efficiency during Green ply plant installation and setup activities",
+      "metrics": "30% efficiency increase"
+    },
+    {
+      "title": "Downtime and Failure Reduction",
+      "description": "Decreased machine downtime by 15% and machine failures by 20% through process optimization and preventive maintenance programs",
+      "metrics": "15% downtime reduction, 20% failure reduction"
+    },
+    {
+      "title": "Waste and Rejection Minimization",
+      "description": "Maintained product rejection rates below 2% and reduced raw material wastage by 8% through close process monitoring and quality control",
+      "metrics": "< 2% rejection rate, 8% wastage reduction"
+    }
+  ],
 
-  "summary": "Dedicated IT Hardware Engineer with over 7 years of experience in computer hardware, operating systems installation, and technical support. Proven expertise in troubleshooting hardware and network issues, laptop and computer assembly/disassembly, server administration, and desktop support.",
+  "summary": "Process Quality Assurance professional with over 6 years of experience in quality assurance and quality control, specializing in process improvement and defect analysis. Proven track record of amplifying production output by 40% and reducing error rates to below 2%. Seeking a Process Quality Assurance Engineer position to apply expertise in APQP, PPAP, Root Cause Analysis (8D), QMS (API, ISO 9001, ASME), and NDT Level II inspections (UT, MT, PT, VT).",
+  
   "documents": {
     "resume_available": true,
     "cover_letter_available": false,
     "certificates_available": false
   },
+
   "confidence": {
     "name": 1.0,
     "email": 1.0,
@@ -190,22 +257,30 @@
     "skills": 1.0,
     "experience": 1.0
   },
+
   "search_keywords": [
-    "IT Hardware Engineer",
-    "Desktop Support Server Engineer",
-    "Technical Support Engineer",
-    "Desktop Support Engineer",
-    "Hardware Technician",
-    "Windows Server 2019",
-    "Windows Server 2016",
-    "Windows Server 2013",
-    "System Administration",
-    "Hardware Troubleshooting",
-    "Network Troubleshooting",
-    "OS installation",
-    "MS Office Suite",
-    "Help Desk Support",
-    "Assembling",
-    "Crimping & punching"
+    "Mechanical Quality Engineer",
+    "Quality Engineer",
+    "Inspection Engineer",
+    "Process Quality Assurance Engineer",
+    "APQP",
+    "PPAP",
+    "Root Cause Analysis",
+    "QA/QC",
+    "NDT Level II",
+    "8D",
+    "ASME Section V",
+    "ISO 9001",
+    "API",
+    "QMS",
+    "UT",
+    "MT",
+    "PT",
+    "VT",
+    "Piping Inspection",
+    "SPC",
+    "FMEA",
+    "MSA",
+    "IQC"
   ]
 }

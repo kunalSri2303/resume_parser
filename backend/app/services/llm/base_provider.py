@@ -38,3 +38,10 @@ class LLMProvider(ABC):
         Transcribes the text contents of an image (OCR).
         """
         pass
+
+    @abstractmethod
+    async def extract_vacancy(self, raw_text: str) -> dict:
+        """
+        Parses Demand Letters / Job Vacancies into structured JSON.
+        """
+        pass

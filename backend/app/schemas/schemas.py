@@ -41,9 +41,20 @@ class JobCreateSchema(BaseModel):
     location: Optional[str] = None
     experience: Optional[str] = None
     education: Optional[str] = None
+    interview_date: Optional[str] = None
     skills: List[str] = Field(default_factory=list)
     preferred_skills: List[str] = Field(default_factory=list)
     responsibilities: List[str] = Field(default_factory=list)
+
+class JobUpdateSchema(BaseModel):
+    title: Optional[str] = None
+    location: Optional[str] = None
+    experience: Optional[str] = None
+    education: Optional[str] = None
+    interview_date: Optional[str] = None
+    skills: Optional[List[str]] = None
+    preferred_skills: Optional[List[str]] = None
+    responsibilities: Optional[List[str]] = None
 
 class JobResponseSchema(BaseModel):
     id: int
@@ -51,6 +62,7 @@ class JobResponseSchema(BaseModel):
     location: Optional[str] = None
     experience: Optional[str] = None
     education: Optional[str] = None
+    interview_date: Optional[str] = None
     skills: List[str] = Field(default_factory=list)
     preferred_skills: List[str] = Field(default_factory=list)
     responsibilities: List[str] = Field(default_factory=list)
@@ -264,5 +276,44 @@ class CandidateResponseSchema(BaseModel):
 
     class Config:
         from_attributes = True
+
+
+class VacancyPositionSchema(BaseModel):
+    title: str = "Position"
+    quantity: Optional[int] = None
+    salary: Optional[str] = None
+    currency: Optional[str] = None
+    experience_required: Optional[str] = None
+    education_required: Optional[str] = None
+    interview_date: Optional[str] = None
+    skills_required: List[str] = Field(default_factory=list)
+    job_description: Optional[str] = None
+    benefits: Optional[str] = None
+    notes: Optional[str] = None
+    confidence: Optional[dict] = Field(default_factory=dict)
+
+
+class VacancyExtractionSchema(BaseModel):
+    company_name: Optional[str] = None
+    client_name: Optional[str] = None
+    country: Optional[str] = None
+    demand_letter_number: Optional[str] = None
+    working_hours: Optional[str] = None
+    contract_years: Optional[str] = None
+    received_date: Optional[str] = None
+    expiry_date: Optional[str] = None
+    interview_date: Optional[str] = None
+    interview_type: Optional[str] = None
+    interview_location: Optional[str] = None
+    received_from: Optional[str] = None
+    contact_person: Optional[str] = None
+    contact_phone: Optional[str] = None
+    contact_email: Optional[str] = None
+    accommodation_provided: Optional[str] = None
+    transport_provided: Optional[str] = None
+    food_provided: Optional[str] = None
+    positions: List[VacancyPositionSchema] = Field(default_factory=list)
+    confidence: Optional[dict] = Field(default_factory=dict)
+
          
      

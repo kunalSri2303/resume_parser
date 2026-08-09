@@ -10,7 +10,8 @@ Return ONLY a valid JSON object matching the schema below. Do not include markdo
   "education": "Education requirements, e.g., 'Bachelor in CS' (string or null)",
   "responsibilities": ["Responsibility 1", "Responsibility 2", ...],
   "preferred_skills": ["Preferred Skill 1", "Preferred Skill 2", ...],
-  "location": "Job location, e.g., 'New York' or 'Remote' (string or null)"
+  "location": "Job location, e.g., 'New York' or 'Remote' (string or null)",
+  "interview_date": "Interview date formatted as YYYY-MM-DD if mentioned e.g., '2026-08-15' (string or null)"
 }
 
 ### Inputs:
