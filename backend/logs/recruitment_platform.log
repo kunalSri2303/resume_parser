@@ -12325,3 +12325,39 @@ Please retry in 18.64717493s. [links {
 [2026-08-09 23:46:21] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
 [2026-08-09 23:46:23] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
 [2026-08-09 23:46:23] INFO [recruitment_platform:analytics.py:22] - Computing platform analytics metrics.
+[2026-08-10 00:01:44] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-10 00:01:48] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-10 00:01:55] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-10 00:01:55] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-10 00:01:55] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-10 00:01:55] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-10 00:01:55] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-10 00:01:55] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-10 00:01:55] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-10 00:01:55] INFO [recruitment_platform:main.py:12] - Initializing database tables...
+[2026-08-10 00:01:55] INFO [recruitment_platform:main.py:55] - Database tables initialized successfully.
+[2026-08-10 00:01:56] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-10 00:01:56] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-10 00:01:56] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-10 00:01:57] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-10 00:01:57] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-10 00:01:57] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-10 00:01:57] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-10 00:01:58] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'admin'
+[2026-08-10 00:01:58] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-10 00:01:58] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-10 00:01:58] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-10 00:01:58] INFO [recruitment_platform:operations.py:363] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-10 00:01:58] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-10 00:01:58] INFO [recruitment_platform:operations.py:216] - Saved job description: 'Senior Quality Inspector' (ID: 20)
+[2026-08-10 00:01:58] INFO [recruitment_platform:operations.py:247] - Updated job description: 'Senior Quality Inspector' (ID: 20)
+[2026-08-10 00:02:01] INFO [recruitment_platform:sentence_transformer.py:17] - Initializing SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-10 00:02:07] INFO [recruitment_platform:sentence_transformer.py:20] - SentenceTransformers model loaded successfully.
+[2026-08-10 00:02:07] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-10 00:02:07] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-10 00:02:07] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-10 00:02:07] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-10 00:02:07] INFO [recruitment_platform:vector_store.py:20] - Loading FAISS index from /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss
+[2026-08-10 00:02:07] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
+[2026-08-10 00:02:07] INFO [recruitment_platform:main.py:12] - Initializing database tables...
+[2026-08-10 00:02:07] INFO [recruitment_platform:main.py:55] - Database tables initialized successfully.

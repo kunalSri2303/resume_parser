@@ -4,10 +4,19 @@ import asyncio
 import random
 from pathlib import Path
 import google.generativeai as genai
-import json_repair
 from app.config import settings
 from app.services.llm.base_provider import LLMProvider
 from app.utils.logger import logger
+
+try:
+    import json_repair
+except ImportError:
+    logger.warning("json_repair module not found; using fallback regex JSON cleaner.")
+    class FallbackJsonRepair:
+        @staticmethod
+        def repair_json(text: str) -> str:
+            return re.sub(r',\s*([\]}])', r'\1', text)
+    json_repair = FallbackJsonRepair()
 
 async def retry_with_backoff(func, *args, max_retries=3, initial_delay=2.0, **kwargs):
     """
