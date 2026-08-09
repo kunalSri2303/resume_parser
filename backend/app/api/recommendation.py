@@ -12,11 +12,11 @@ from app.utils.logger import logger
 
 router = APIRouter(prefix="", tags=["Recommendations"])
 
-embedding_provider = SentenceTransformersProvider()
-vector_store = VectorStoreService()
-matching_service = MatchingService(embedding_provider, vector_store)
-llm_provider = GeminiProvider()
-recommendation_service = RecommendationService(llm_provider, matching_service)
+def get_matching_service():
+    return MatchingService(SentenceTransformersProvider(), VectorStoreService())
+
+def get_recommendation_service():
+    return RecommendationService(GeminiProvider(), get_matching_service())
 
 @router.post("/match/{job_id}", response_model=list[MatchResultSchema])
 def match_candidates_for_job(
@@ -28,6 +28,7 @@ def match_candidates_for_job(
     Returns ranked candidates list sorted by overall score.
     """
     logger.info(f"Triggering candidate-job matching for Job ID: {job_id}")
+    matching_service = get_matching_service()
     job = db.query(Job).filter(Job.id == job_id).first()
     if not job:
         raise HTTPException(status_code=404, detail="Job description not found.")
@@ -47,6 +48,7 @@ async def get_candidate_recommendation(
     """
     logger.info(f"Fetching AI recommendation report for Candidate {candidate_id} on Job {job_id}")
     try:
+        recommendation_service = get_recommendation_service()
         recommendation = await recommendation_service.get_or_create_recommendation(db, candidate_id, job_id)
         return recommendation
     except ValueError as ve:

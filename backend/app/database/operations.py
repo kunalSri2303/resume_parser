@@ -6,8 +6,13 @@ from app.database.models import Candidate, Skill, SkillAlias, CandidateSkill, Em
 from app.services.skill_normalizer import SkillNormalizer
 from app.utils.logger import logger
 
-# Global Skill Normalizer instance for database operations
-normalizer = SkillNormalizer()
+_normalizer = None
+
+def get_skill_normalizer():
+    global _normalizer
+    if _normalizer is None:
+        _normalizer = SkillNormalizer()
+    return _normalizer
 
 def get_or_create_skill(db: Session, skill_name: str) -> Skill:
     """
@@ -23,7 +28,7 @@ def get_or_create_skill(db: Session, skill_name: str) -> Skill:
         return alias_record.skill
         
     # 2. Check if a canonical skill with this name already exists (case-insensitive)
-    normalized_canonical = normalizer.normalize_skill(skill_name)
+    normalized_canonical = get_skill_normalizer().normalize_skill(skill_name)
     skill_record = db.query(Skill).filter(Skill.name == normalized_canonical).first()
     if skill_record:
         # Register alias for future fast lookup

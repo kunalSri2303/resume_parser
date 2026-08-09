@@ -1,46 +1,60 @@
 import faiss
 import numpy as np
+import threading
 from pathlib import Path
 from app.config import settings
 from app.utils.logger import logger
 
 class VectorStoreService:
+    _shared_index = None
+    _lock = threading.Lock()
+
     def __init__(self, dimension: int = 384):
         self.dimension = dimension
         self.index_dir = settings.vector_dir_path
         self.index_dir.mkdir(parents=True, exist_ok=True)
         self.index_path = self.index_dir / "index.faiss"
-        self.index = None
-        self.load_or_create_index()
+
+    @property
+    def index(self):
+        if VectorStoreService._shared_index is None:
+            self.load_or_create_index()
+        return VectorStoreService._shared_index
+
+    @index.setter
+    def index(self, value):
+        VectorStoreService._shared_index = value
 
     def load_or_create_index(self):
-        """Loads index from disk, or creates a new one if not present."""
-        if self.index_path.exists():
-            try:
-                logger.info(f"Loading FAISS index from {self.index_path}")
-                self.index = faiss.read_index(str(self.index_path))
-                logger.info(f"FAISS index loaded. Total vectors: {self.index.ntotal}")
-            except Exception as e:
-                logger.error(f"Failed to load FAISS index: {e}. Recreating...")
+        """Lazy loads index from disk, or creates a new one if not present."""
+        with VectorStoreService._lock:
+            if VectorStoreService._shared_index is not None:
+                return
+            if self.index_path.exists():
+                try:
+                    logger.info(f"Lazy-loading FAISS index from {self.index_path}")
+                    VectorStoreService._shared_index = faiss.read_index(str(self.index_path))
+                    logger.info(f"FAISS index loaded into memory. Total vectors: {VectorStoreService._shared_index.ntotal}")
+                except Exception as e:
+                    logger.error(f"Failed to load FAISS index: {e}. Recreating...")
+                    self._create_new_index()
+            else:
                 self._create_new_index()
-        else:
-            self._create_new_index()
 
     def _create_new_index(self):
         """Initializes a new FAISS index with ID mapping capabilities."""
         logger.info(f"Creating a new FAISS index with dimension {self.dimension}")
-        # IndexFlatIP uses Inner Product (equivalent to Cosine Similarity when vectors are L2-normalized)
         sub_index = faiss.IndexFlatIP(self.dimension)
-        # Wrap index in IDMap so we can specify custom integer IDs matching database mappings
-        self.index = faiss.IndexIDMap(sub_index)
+        VectorStoreService._shared_index = faiss.IndexIDMap(sub_index)
         self.save_index()
 
     def save_index(self):
         """Saves current state of the index to disk."""
         try:
             self.index_dir.mkdir(parents=True, exist_ok=True)
-            faiss.write_index(self.index, str(self.index_path))
-            logger.info(f"Saved FAISS index to {self.index_path} (vectors: {self.index.ntotal})")
+            if VectorStoreService._shared_index is not None:
+                faiss.write_index(VectorStoreService._shared_index, str(self.index_path))
+                logger.info(f"Saved FAISS index to {self.index_path} (vectors: {VectorStoreService._shared_index.ntotal})")
         except Exception as e:
             logger.error(f"Failed to save FAISS index: {e}")
 
@@ -48,7 +62,8 @@ class VectorStoreService:
         """Syncs the in-memory FAISS index with the index file on disk."""
         if self.index_path.exists():
             try:
-                self.index = faiss.read_index(str(self.index_path))
+                with VectorStoreService._lock:
+                    VectorStoreService._shared_index = faiss.read_index(str(self.index_path))
             except Exception as e:
                 logger.error(f"Failed to reload FAISS index from disk: {e}")
         else:
@@ -68,7 +83,6 @@ class VectorStoreService:
         np_vectors = np.array(vectors, dtype=np.float32)
         np_ids = np.array(ids, dtype=np.int64)
 
-        # L2-normalization for Cosine Similarity search
         faiss.normalize_L2(np_vectors)
         
         self.index.add_with_ids(np_vectors, np_ids)
@@ -99,20 +113,17 @@ class VectorStoreService:
             logger.warning("FAISS search called on an empty index.")
             return []
 
-        # Prevent FAISS C++ segmentation fault when top_k exceeds total vectors
         search_k = min(top_k, self.index.ntotal)
 
         np_query = np.array([query_vector], dtype=np.float32)
         faiss.normalize_L2(np_query)
 
-        # FAISS search returns: (distances/scores matrix, indices/ids matrix)
         scores, indices = self.index.search(np_query, search_k)
         
         results = []
         for score, idx in zip(scores[0], indices[0]):
-            if idx == -1:  # FAISS uses -1 for empty search slots
+            if idx == -1:
                 continue
-            # Convert float32 score to Python float
             results.append((int(idx), float(score)))
             
         logger.info(f"FAISS search returned {len(results)} matches.")

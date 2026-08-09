@@ -12361,3 +12361,21 @@ Please retry in 18.64717493s. [links {
 [2026-08-10 00:02:07] INFO [recruitment_platform:vector_store.py:22] - FAISS index loaded. Total vectors: 44
 [2026-08-10 00:02:07] INFO [recruitment_platform:main.py:12] - Initializing database tables...
 [2026-08-10 00:02:07] INFO [recruitment_platform:main.py:55] - Database tables initialized successfully.
+[2026-08-10 00:25:34] INFO [recruitment_platform:main.py:12] - Initializing database tables...
+[2026-08-10 00:25:34] INFO [recruitment_platform:main.py:55] - Database tables initialized successfully.
+[2026-08-10 00:25:35] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'admin'
+[2026-08-10 00:25:35] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-10 00:25:35] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-10 00:25:36] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'admin'
+[2026-08-10 00:25:36] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-10 00:25:36] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-10 00:25:36] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'admin'
+[2026-08-10 00:25:36] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-10 00:25:37] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-10 00:25:37] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-10 00:25:37] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-10 00:25:37] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-10 00:25:37] INFO [recruitment_platform:operations.py:221] - Saved job description: 'Senior Quality Inspector' (ID: 21)
+[2026-08-10 00:25:37] INFO [recruitment_platform:operations.py:252] - Updated job description: 'Senior Quality Inspector' (ID: 21)
+[2026-08-10 00:25:47] INFO [recruitment_platform:main.py:12] - Initializing database tables...
+[2026-08-10 00:25:47] INFO [recruitment_platform:main.py:55] - Database tables initialized successfully.

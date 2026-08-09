@@ -12,8 +12,11 @@ from app.utils.logger import logger
 
 router = APIRouter(prefix="", tags=["Search"])
 
-embedding_provider = SentenceTransformersProvider()
-vector_store = VectorStoreService()
+def get_embedding_provider():
+    return SentenceTransformersProvider()
+
+def get_vector_store():
+    return VectorStoreService()
 
 def parse_experience_filter(query: str) -> int:
     """Helper to detect experience numbers in natural language query (e.g., '3+ years')."""
@@ -28,25 +31,16 @@ def search_candidates(
     search_payload: SearchQuerySchema,
     db: Session = Depends(get_db)
 ):
-    """
-    Performs a hybrid semantic search with metadata filters:
-    1. Parse natural language queries for filters like experience years.
-    2. Convert query to vector embedding.
-    3. Retrieve relevant FAISS vector matches.
-    4. Fetch candidates, apply SQL metadata filters, and return candidates ranked by similarity.
-    """
     query_text = search_payload.query
     logger.info(f"Natural language candidate search requested: '{query_text}'")
-    
+    if not query_text or not query_text.strip():
+        return []
+
+    embedding_provider = get_embedding_provider()
+    vector_store = get_vector_store()
+
     # 1. Detect experience metadata filter
     min_exp = parse_experience_filter(query_text)
-    
-    # Detect location names (basic heuristics for common locations, or let semantic search handle it)
-    # If the user searches "Lucknow", we also add a soft keyword search on candidate location
-    location_filter = None
-    location_match = re.search(r'(?:in|from|at|around)\s+([a-zA-Z\s]+)', query_text, re.IGNORECASE)
-    if location_match:
-        location_filter = location_match.group(1).strip()
 
     # 2. Get query embedding
     try:
