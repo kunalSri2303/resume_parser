@@ -40,7 +40,11 @@ class SentenceTransformersProvider(EmbeddingProvider):
             model = self._get_model()
             with self._lock:
                 vector = model.encode(text, normalize_embeddings=True)
-            return vector.tolist()
+            result = vector.tolist()
+            del vector
+            import gc
+            gc.collect()
+            return result
         except Exception as e:
             logger.error(f"Error generating embedding: {e}")
             raise e
@@ -55,7 +59,12 @@ class SentenceTransformersProvider(EmbeddingProvider):
             model = self._get_model()
             with self._lock:
                 vectors = model.encode(cleaned_texts, normalize_embeddings=True)
-            return vectors.tolist()
+            result = vectors.tolist()
+            del vectors
+            del cleaned_texts
+            import gc
+            gc.collect()
+            return result
         except Exception as e:
             logger.error(f"Error generating batch embeddings: {e}")
             raise e

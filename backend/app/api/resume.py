@@ -14,7 +14,9 @@ from app.utils.logger import logger
 router = APIRouter(prefix="", tags=["Resumes"])
 
 storage = LocalStorage()
-pipeline_service = PipelineService()
+
+def get_pipeline_service():
+    return PipelineService()
 
 def format_candidate_response(candidate: Candidate) -> dict:
     """Formats SQLAlchemy candidate model to match the CandidateResponseSchema."""
@@ -201,26 +203,31 @@ async def upload_resumes(
         
         try:
             content = await file.read()
+            pipeline_svc = get_pipeline_service()
             
             # Handle ZIP uploads
             if suffix == ".zip":
                 extracted = ParserService.extract_zip(content)
+                del content
                 for ext_filename, ext_bytes in extracted:
                     # Save each extracted file to storage
                     unique_name = f"{uuid.uuid4().hex}_{ext_filename}"
                     file_path = storage.save_file(ext_bytes, unique_name)
+                    del ext_bytes
                     
                     # Queue background processing
-                    background_tasks.add_task(pipeline_service.process_resume, file_path, ext_filename)
+                    background_tasks.add_task(pipeline_svc.process_resume, file_path, ext_filename)
                     processed_files.append(ext_filename)
+                del extracted
             
             # Handle PDF/DOCX uploads
             elif suffix in [".pdf", ".docx"]:
                 unique_name = f"{uuid.uuid4().hex}_{filename}"
                 file_path = storage.save_file(content, unique_name)
+                del content
                 
                 # Queue background processing
-                background_tasks.add_task(pipeline_service.process_resume, file_path, filename)
+                background_tasks.add_task(pipeline_svc.process_resume, file_path, filename)
                 processed_files.append(filename)
                 
             else:
@@ -230,6 +237,9 @@ async def upload_resumes(
         except Exception as e:
             logger.error(f"Error preparing file {filename} for upload: {e}")
             skipped_files.append(filename)
+        finally:
+            import gc
+            gc.collect()
 
     if not processed_files:
         raise HTTPException(

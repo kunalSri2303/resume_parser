@@ -1,3 +1,4 @@
+import gc
 from pathlib import Path
 from app.database.database import SessionLocal
 from app.database.operations import save_or_update_candidate
@@ -11,17 +12,48 @@ from app.services.storage.local_storage import LocalStorage
 from app.utils.logger import logger
 
 class PipelineService:
+    _shared_extractor = None
+    _shared_embedding_provider = None
+    _shared_vector_store = None
+    _shared_matching_service = None
+    _shared_excel_service = None
+
     def __init__(self):
         self.storage = LocalStorage()
-        self.extractor = ExtractorService()
-        self.embedding_provider = SentenceTransformersProvider()
-        self.vector_store = VectorStoreService()
-        self.matching_service = MatchingService(self.embedding_provider, self.vector_store)
-        self.excel_service = ExcelService()
+
+    @property
+    def extractor(self):
+        if PipelineService._shared_extractor is None:
+            PipelineService._shared_extractor = ExtractorService()
+        return PipelineService._shared_extractor
+
+    @property
+    def embedding_provider(self):
+        if PipelineService._shared_embedding_provider is None:
+            PipelineService._shared_embedding_provider = SentenceTransformersProvider()
+        return PipelineService._shared_embedding_provider
+
+    @property
+    def vector_store(self):
+        if PipelineService._shared_vector_store is None:
+            PipelineService._shared_vector_store = VectorStoreService()
+        return PipelineService._shared_vector_store
+
+    @property
+    def matching_service(self):
+        if PipelineService._shared_matching_service is None:
+            PipelineService._shared_matching_service = MatchingService(self.embedding_provider, self.vector_store)
+        return PipelineService._shared_matching_service
+
+    @property
+    def excel_service(self):
+        if PipelineService._shared_excel_service is None:
+            PipelineService._shared_excel_service = ExcelService()
+        return PipelineService._shared_excel_service
 
     async def process_resume(self, file_path: str, filename: str):
         """
-        Executes the full pipeline for a resume:
+        Executes the full pipeline for a resume with explicit memory cleanup:
         1. Read file bytes from storage
         2. Detect scanned PDF or parse text normally
         3. Run OCR transcription if scanned
@@ -29,13 +61,16 @@ class PipelineService:
         5. Save/update candidate profile in database
         6. Generate section-based embeddings and index in FAISS
         7. Append/update record in Candidates.xlsx
+        8. Release all temporary memory buffers and run garbage collection
         """
         logger.info(f"Starting background processing for resume: {filename} (path: {file_path})")
-        print("\n" + "="*80)
-        print("✅ process_resume() started")
-        print(f"Filename: {filename}")
-        print("="*80 + "\n")
         db = SessionLocal()
+        file_bytes = None
+        page_images = None
+        transcribed_pages = None
+        raw_text = None
+        candidate_data = None
+
         try:
             # 1. Read file bytes
             file_bytes = self.storage.get_file(file_path)
@@ -46,7 +81,6 @@ class PipelineService:
             # 2. Check for scanned PDF vs normal parsing
             if suffix == ".pdf" and ParserService.is_scanned_pdf(file_bytes):
                 logger.info(f"Scanned PDF detected for {filename}. Running multimodal OCR fallback...")
-                # Render pages to PNG
                 page_images = ParserService.render_pdf_to_images(file_bytes)
                 transcribed_pages = []
                 for i, img_bytes in enumerate(page_images):
@@ -59,10 +93,8 @@ class PipelineService:
                         logger.error(f"Failed to transcribe page {i+1} of {filename}: {ocr_err}")
                 
                 raw_text = "\n\n--- PAGE BREAK ---\n\n".join(transcribed_pages)
-                # Clean up extracted OCR text formatting
                 raw_text = ParserService.clean_text(raw_text)
                 
-                # Mock fallback if OCR failed (e.g., due to rate limits/quota exceeded during testing)
                 if not raw_text.strip() and "scanned" in filename.lower():
                     logger.warning("Gemini OCR transcription failed or returned empty. Using mock text fallback for testing...")
                     raw_text = (
@@ -74,24 +106,14 @@ class PipelineService:
                         "Education: MS in AI, Stanford University"
                     )
             else:
-                # Normal parsing (PDF layout-sorted or DOCX)
-               logger.info(f"Running normal layout parser for {filename}...")
-               print("➡️ About to call ParserService.parse_file()")
-               raw_text = ParserService.parse_file(file_bytes, filename)
-               print("✅ ParserService.parse_file() completed")
-               print(f"Characters extracted: {len(raw_text)}")
+                logger.info(f"Running normal layout parser for {filename}...")
+                raw_text = ParserService.parse_file(file_bytes, filename)
 
-               # ================= DEBUG =================
-               debug_dir = Path("debug")
-               debug_dir.mkdir(exist_ok=True)
-
-               debug_file = debug_dir / "debug_resume.txt"
-
-               with open(debug_file, "w", encoding="utf-8") as f:
-                   f.write(raw_text)
-
-               logger.info(f"Extracted resume text saved to: {debug_file.resolve()}")
-               # =========================================
+                debug_dir = Path("debug")
+                debug_dir.mkdir(exist_ok=True)
+                debug_file = debug_dir / "debug_resume.txt"
+                with open(debug_file, "w", encoding="utf-8") as f:
+                    f.write(raw_text)
                 
             if not raw_text.strip():
                 raise ValueError("Parsed text is empty. Resume could not be parsed.")
@@ -126,4 +148,12 @@ class PipelineService:
         except Exception as e:
             logger.error(f"Error during background processing of resume {filename}: {e}", exc_info=True)
         finally:
-            db.close()
+            if db:
+                db.close()
+            # Explicitly release large memory buffers
+            del file_bytes
+            del page_images
+            del transcribed_pages
+            del raw_text
+            del candidate_data
+            gc.collect()

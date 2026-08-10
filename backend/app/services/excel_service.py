@@ -164,3 +164,10 @@ class ExcelService:
         except Exception as e:
             logger.error(f"Failed to sync candidate to Excel sheet: {e}")
             # Do not raise error to avoid breaking the background task pipeline
+        finally:
+            import gc
+            if 'df' in locals():
+                del df
+            if 'df_new_row' in locals():
+                del df_new_row
+            gc.collect()
