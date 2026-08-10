@@ -5,6 +5,7 @@ from app.database.database import engine, Base
 from app.api import resume, jobs, search, recommendation, feedback, analytics, vacancy, auth
 from app.database.database import SessionLocal
 from app.database.operations import get_user_by_username, create_user
+import os
 import bcrypt
 from app.utils.logger import logger
 
@@ -60,10 +61,28 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# Parse allowed origins for CORS
+raw_origins = [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:3000",
+]
+
+frontend_env = os.getenv("FRONTEND_URL")
+if frontend_env:
+    for url in frontend_env.split(","):
+        clean_url = url.strip()
+        if clean_url and clean_url not in raw_origins:
+            raw_origins.append(clean_url)
+
+allowed_origins = [origin for origin in raw_origins if origin and origin.strip()]
+
 # Configure CORS Middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # In production, lock this down to the frontend domain
+    allow_origins=allowed_origins,
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
