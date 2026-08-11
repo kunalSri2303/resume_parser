@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://resume-parser-2wl1.onrender.com';
+const API_BASE_URL = 'resumeparser-production-9427.up.railway.app';
 
 const api = axios.create({
   baseURL: API_BASE_URL,

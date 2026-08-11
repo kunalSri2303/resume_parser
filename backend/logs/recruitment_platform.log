@@ -12421,3 +12421,322 @@ Please retry in 18.64717493s. [links {
 [2026-08-11 14:21:39] INFO [recruitment_platform:main.py:56] - Database tables initialized successfully.
 [2026-08-11 15:02:04] INFO [recruitment_platform:main.py:13] - Initializing database tables...
 [2026-08-11 15:02:04] INFO [recruitment_platform:main.py:58] - Database tables initialized successfully.
+[2026-08-11 15:02:18] INFO [recruitment_platform:main.py:13] - Initializing database tables...
+[2026-08-11 15:02:18] INFO [recruitment_platform:main.py:58] - Database tables initialized successfully.
+[2026-08-11 15:02:19] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'admin'
+[2026-08-11 15:02:19] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-11 15:02:19] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-11 15:02:20] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'admin'
+[2026-08-11 15:02:20] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-11 15:02:20] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-11 15:02:20] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'admin'
+[2026-08-11 15:02:20] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-11 15:02:21] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-11 15:02:21] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-11 15:02:21] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-11 15:02:21] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-11 15:02:21] INFO [recruitment_platform:operations.py:221] - Saved job description: 'Senior Quality Inspector' (ID: 24)
+[2026-08-11 15:02:21] INFO [recruitment_platform:operations.py:252] - Updated job description: 'Senior Quality Inspector' (ID: 24)
+[2026-08-11 15:06:44] INFO [recruitment_platform:main.py:13] - Initializing database tables...
+[2026-08-11 15:06:44] INFO [recruitment_platform:main.py:58] - Database tables initialized successfully.
+[2026-08-11 15:06:51] INFO [recruitment_platform:main.py:13] - Initializing database tables...
+[2026-08-11 15:06:51] INFO [recruitment_platform:main.py:58] - Database tables initialized successfully.
+[2026-08-11 15:06:51] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'admin'
+[2026-08-11 15:06:51] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-11 15:06:51] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-11 15:06:52] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'admin'
+[2026-08-11 15:06:52] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-11 15:06:52] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-11 15:06:53] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'admin'
+[2026-08-11 15:06:53] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-11 15:06:53] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-11 15:06:53] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-11 15:06:53] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-11 15:06:53] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-11 15:06:53] INFO [recruitment_platform:operations.py:221] - Saved job description: 'Senior Quality Inspector' (ID: 25)
+[2026-08-11 15:06:53] INFO [recruitment_platform:operations.py:252] - Updated job description: 'Senior Quality Inspector' (ID: 25)
+[2026-08-11 15:09:22] INFO [recruitment_platform:main.py:13] - Initializing database tables...
+[2026-08-11 15:09:22] INFO [recruitment_platform:main.py:58] - Database tables initialized successfully.
+[2026-08-11 15:09:23] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'admin'
+[2026-08-11 15:09:23] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-11 15:09:23] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-11 15:09:23] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'admin'
+[2026-08-11 15:09:23] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-11 15:09:24] INFO [recruitment_platform:auth.py:58] - User 'admin' successfully authenticated for role 'admin'.
+[2026-08-11 15:09:24] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'admin'
+[2026-08-11 15:09:24] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'admin'.
+[2026-08-11 15:09:25] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-11 15:09:25] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-11 15:09:25] INFO [recruitment_platform:operations.py:368] - Successfully updated password hash for user: 'hiringmanager'
+[2026-08-11 15:09:25] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
+[2026-08-11 15:09:25] INFO [recruitment_platform:operations.py:221] - Saved job description: 'Senior Quality Inspector' (ID: 26)
+[2026-08-11 15:09:25] INFO [recruitment_platform:operations.py:252] - Updated job description: 'Senior Quality Inspector' (ID: 26)
+[2026-08-11 15:09:25] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-11 15:09:25] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 1679 characters extracted.
+[2026-08-11 15:09:25] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (1445 chars)...
+[2026-08-11 15:09:25] INFO [recruitment_platform:gemini_provider.py:264] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-11 15:09:35] INFO [recruitment_platform:gemini_provider.py:266] - Successfully parsed vacancy document via Gemini API.
+[2026-08-11 15:09:35] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-11 15:09:35] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'john.doe@example.com', 'phone': '+1-234-567-8901', 'linkedin': 'linkedin.com/in/johndoe', 'github': 'github.com/johndoe', 'portfolio': 'https://johndoe.dev'}
+[2026-08-11 15:09:35] ERROR [recruitment_platform:matching_service.py:273] - Error querying FAISS during job match for section 'certifications': 
+[2026-08-11 15:09:35] ERROR [recruitment_platform:matching_service.py:273] - Error querying FAISS during job match for section 'achievements': 
+[2026-08-11 15:09:35] ERROR [recruitment_platform:matching_service.py:273] - Error querying FAISS during job match for section 'summary': 
+[2026-08-11 15:09:36] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': None, 'phone': '+1 (123) 456-7890', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:09:36] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': None, 'phone': '+91 98765 43210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:09:36] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': None, 'phone': '98765-43210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:09:36] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': None, 'phone': None, 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:09:36] INFO [recruitment_platform:parser.py:63] - PDF file parsed and cleaned successfully.
+[2026-08-11 15:09:36] INFO [recruitment_platform:parser.py:82] - PDF selectable text check: 1020 characters extracted.
+[2026-08-11 15:09:36] INFO [recruitment_platform:vacancy.py:69] - Extracting structured vacancy schema from text (890 chars)...
+[2026-08-11 15:09:36] INFO [recruitment_platform:gemini_provider.py:264] - Sending vacancy document text to Gemini for structured parsing...
+[2026-08-11 15:09:42] INFO [recruitment_platform:gemini_provider.py:266] - Successfully parsed vacancy document via Gemini API.
+[2026-08-11 15:12:23] INFO [recruitment_platform:main.py:13] - Initializing database tables...
+[2026-08-11 15:12:23] INFO [recruitment_platform:main.py:58] - Database tables initialized successfully.
+[2026-08-11 15:12:30] INFO [recruitment_platform:sentence_transformer.py:26] - Lazy-loading SentenceTransformers model: BAAI/bge-small-en-v1.5
+[2026-08-11 15:12:38] INFO [recruitment_platform:sentence_transformer.py:28] - SentenceTransformers model loaded successfully into memory.
+[2026-08-11 15:12:39] INFO [recruitment_platform:vector_store.py:129] - FAISS search returned 10 matches.
+[2026-08-11 15:12:39] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'kunal@example.com', 'phone': '+91-9876543210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:12:39] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-11 15:12:39] INFO [recruitment_platform:gemini_provider.py:139] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-11 15:12:50] INFO [recruitment_platform:gemini_provider.py:141] - Successfully parsed resume via Gemini API.
+[2026-08-11 15:12:50] INFO [recruitment_platform:operations.py:127] - Creating new candidate record for kunal@example.com.
+[2026-08-11 15:12:50] INFO [recruitment_platform:skill_normalizer.py:18] - Loaded 52 skill alias mappings.
+[2026-08-11 15:12:50] INFO [recruitment_platform:operations.py:41] - Adding new canonical skill to database: 'React' (alias: 'react')
+[2026-08-11 15:12:50] INFO [recruitment_platform:operations.py:41] - Adding new canonical skill to database: 'Faiss' (alias: 'faiss')
+[2026-08-11 15:12:51] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 45)
+[2026-08-11 15:12:51] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:12:51] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 46)
+[2026-08-11 15:12:51] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:12:52] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 47)
+[2026-08-11 15:12:52] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:12:52] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 48)
+[2026-08-11 15:12:52] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:12:52] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 49)
+[2026-08-11 15:12:52] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:12:52] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 9
+[2026-08-11 15:12:52] INFO [recruitment_platform:excel_service.py:154] - Appending new candidate kunal@example.com to Candidates.xlsx
+[2026-08-11 15:12:52] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'kunal@example.com', 'phone': '+91-9876543210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:12:52] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-11 15:12:52] INFO [recruitment_platform:gemini_provider.py:139] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-11 15:13:05] INFO [recruitment_platform:gemini_provider.py:141] - Successfully parsed resume via Gemini API.
+[2026-08-11 15:13:05] INFO [recruitment_platform:operations.py:87] - Candidate email kunal@example.com exists. Updating candidate record (ID: 9).
+[2026-08-11 15:13:05] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 44)
+[2026-08-11 15:13:05] INFO [recruitment_platform:vector_store.py:102] - Removed 5 vectors from FAISS index matching IDs: [63, 62, 64, 61, 60]
+[2026-08-11 15:13:05] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 9
+[2026-08-11 15:13:06] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 45)
+[2026-08-11 15:13:06] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:06] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 46)
+[2026-08-11 15:13:06] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:06] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 47)
+[2026-08-11 15:13:06] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:06] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 48)
+[2026-08-11 15:13:06] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:07] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 49)
+[2026-08-11 15:13:07] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:07] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 9
+[2026-08-11 15:13:07] INFO [recruitment_platform:excel_service.py:150] - Updating candidate kunal@example.com in Candidates.xlsx
+[2026-08-11 15:13:07] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'kunal@example.com', 'phone': '+91-9876543210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:13:07] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-11 15:13:07] INFO [recruitment_platform:gemini_provider.py:139] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-11 15:13:17] INFO [recruitment_platform:gemini_provider.py:141] - Successfully parsed resume via Gemini API.
+[2026-08-11 15:13:17] INFO [recruitment_platform:operations.py:87] - Candidate email kunal@example.com exists. Updating candidate record (ID: 9).
+[2026-08-11 15:13:17] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 44)
+[2026-08-11 15:13:17] INFO [recruitment_platform:vector_store.py:102] - Removed 5 vectors from FAISS index matching IDs: [63, 62, 64, 61, 60]
+[2026-08-11 15:13:17] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 9
+[2026-08-11 15:13:18] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 45)
+[2026-08-11 15:13:18] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:18] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 46)
+[2026-08-11 15:13:18] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:18] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 47)
+[2026-08-11 15:13:18] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:19] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 48)
+[2026-08-11 15:13:19] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:19] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 49)
+[2026-08-11 15:13:19] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:19] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 9
+[2026-08-11 15:13:19] INFO [recruitment_platform:excel_service.py:150] - Updating candidate kunal@example.com in Candidates.xlsx
+[2026-08-11 15:13:19] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'kunal@example.com', 'phone': '+91-9876543210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:13:19] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-11 15:13:19] INFO [recruitment_platform:gemini_provider.py:139] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-11 15:13:27] INFO [recruitment_platform:gemini_provider.py:141] - Successfully parsed resume via Gemini API.
+[2026-08-11 15:13:27] INFO [recruitment_platform:operations.py:87] - Candidate email kunal@example.com exists. Updating candidate record (ID: 9).
+[2026-08-11 15:13:27] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 44)
+[2026-08-11 15:13:27] INFO [recruitment_platform:vector_store.py:102] - Removed 5 vectors from FAISS index matching IDs: [63, 62, 64, 61, 60]
+[2026-08-11 15:13:27] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 9
+[2026-08-11 15:13:28] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 45)
+[2026-08-11 15:13:28] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:28] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 46)
+[2026-08-11 15:13:28] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:28] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 47)
+[2026-08-11 15:13:28] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:28] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 48)
+[2026-08-11 15:13:28] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:28] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 49)
+[2026-08-11 15:13:28] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:28] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 9
+[2026-08-11 15:13:28] INFO [recruitment_platform:excel_service.py:150] - Updating candidate kunal@example.com in Candidates.xlsx
+[2026-08-11 15:13:28] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'kunal@example.com', 'phone': '+91-9876543210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:13:28] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-11 15:13:28] INFO [recruitment_platform:gemini_provider.py:139] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-11 15:13:36] INFO [recruitment_platform:gemini_provider.py:141] - Successfully parsed resume via Gemini API.
+[2026-08-11 15:13:36] INFO [recruitment_platform:operations.py:87] - Candidate email kunal@example.com exists. Updating candidate record (ID: 9).
+[2026-08-11 15:13:36] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 44)
+[2026-08-11 15:13:36] INFO [recruitment_platform:vector_store.py:102] - Removed 5 vectors from FAISS index matching IDs: [63, 62, 64, 61, 60]
+[2026-08-11 15:13:36] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 9
+[2026-08-11 15:13:37] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 45)
+[2026-08-11 15:13:37] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:37] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 46)
+[2026-08-11 15:13:37] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:37] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 47)
+[2026-08-11 15:13:37] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:37] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 48)
+[2026-08-11 15:13:37] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:37] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 49)
+[2026-08-11 15:13:37] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:37] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 9
+[2026-08-11 15:13:37] INFO [recruitment_platform:excel_service.py:150] - Updating candidate kunal@example.com in Candidates.xlsx
+[2026-08-11 15:13:37] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'kunal@example.com', 'phone': '+91-9876543210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:13:37] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-11 15:13:37] INFO [recruitment_platform:gemini_provider.py:139] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-11 15:13:45] INFO [recruitment_platform:gemini_provider.py:141] - Successfully parsed resume via Gemini API.
+[2026-08-11 15:13:45] INFO [recruitment_platform:operations.py:87] - Candidate email kunal@example.com exists. Updating candidate record (ID: 9).
+[2026-08-11 15:13:45] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 44)
+[2026-08-11 15:13:45] INFO [recruitment_platform:vector_store.py:102] - Removed 5 vectors from FAISS index matching IDs: [63, 62, 64, 61, 60]
+[2026-08-11 15:13:45] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 9
+[2026-08-11 15:13:46] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 45)
+[2026-08-11 15:13:46] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:46] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 46)
+[2026-08-11 15:13:46] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:46] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 47)
+[2026-08-11 15:13:46] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:46] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 48)
+[2026-08-11 15:13:46] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:46] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 49)
+[2026-08-11 15:13:46] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:46] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 9
+[2026-08-11 15:13:46] INFO [recruitment_platform:excel_service.py:150] - Updating candidate kunal@example.com in Candidates.xlsx
+[2026-08-11 15:13:46] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'kunal@example.com', 'phone': '+91-9876543210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:13:46] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-11 15:13:46] INFO [recruitment_platform:gemini_provider.py:139] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-11 15:13:55] INFO [recruitment_platform:gemini_provider.py:141] - Successfully parsed resume via Gemini API.
+[2026-08-11 15:13:55] INFO [recruitment_platform:operations.py:87] - Candidate email kunal@example.com exists. Updating candidate record (ID: 9).
+[2026-08-11 15:13:55] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 44)
+[2026-08-11 15:13:55] INFO [recruitment_platform:vector_store.py:102] - Removed 5 vectors from FAISS index matching IDs: [63, 62, 64, 61, 60]
+[2026-08-11 15:13:55] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 9
+[2026-08-11 15:13:55] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 45)
+[2026-08-11 15:13:55] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:55] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 46)
+[2026-08-11 15:13:55] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:56] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 47)
+[2026-08-11 15:13:56] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:56] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 48)
+[2026-08-11 15:13:56] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:56] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 49)
+[2026-08-11 15:13:56] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:13:56] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 9
+[2026-08-11 15:13:56] INFO [recruitment_platform:excel_service.py:150] - Updating candidate kunal@example.com in Candidates.xlsx
+[2026-08-11 15:13:56] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'kunal@example.com', 'phone': '+91-9876543210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:13:56] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-11 15:13:56] INFO [recruitment_platform:gemini_provider.py:139] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-11 15:14:04] INFO [recruitment_platform:gemini_provider.py:141] - Successfully parsed resume via Gemini API.
+[2026-08-11 15:14:04] INFO [recruitment_platform:operations.py:87] - Candidate email kunal@example.com exists. Updating candidate record (ID: 9).
+[2026-08-11 15:14:04] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 44)
+[2026-08-11 15:14:04] INFO [recruitment_platform:vector_store.py:102] - Removed 5 vectors from FAISS index matching IDs: [63, 62, 64, 61, 60]
+[2026-08-11 15:14:04] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 9
+[2026-08-11 15:14:04] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 45)
+[2026-08-11 15:14:04] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:04] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 46)
+[2026-08-11 15:14:04] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:04] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 47)
+[2026-08-11 15:14:04] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:05] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 48)
+[2026-08-11 15:14:05] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:05] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 49)
+[2026-08-11 15:14:05] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:05] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 9
+[2026-08-11 15:14:05] INFO [recruitment_platform:excel_service.py:150] - Updating candidate kunal@example.com in Candidates.xlsx
+[2026-08-11 15:14:05] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'kunal@example.com', 'phone': '+91-9876543210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:14:05] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-11 15:14:05] INFO [recruitment_platform:gemini_provider.py:139] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-11 15:14:12] INFO [recruitment_platform:gemini_provider.py:141] - Successfully parsed resume via Gemini API.
+[2026-08-11 15:14:12] INFO [recruitment_platform:operations.py:87] - Candidate email kunal@example.com exists. Updating candidate record (ID: 9).
+[2026-08-11 15:14:12] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 44)
+[2026-08-11 15:14:12] INFO [recruitment_platform:vector_store.py:102] - Removed 5 vectors from FAISS index matching IDs: [63, 62, 64, 61, 60]
+[2026-08-11 15:14:12] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 9
+[2026-08-11 15:14:13] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 45)
+[2026-08-11 15:14:13] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:13] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 46)
+[2026-08-11 15:14:13] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:13] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 47)
+[2026-08-11 15:14:13] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:13] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 48)
+[2026-08-11 15:14:13] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:14] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 49)
+[2026-08-11 15:14:14] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:14] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 9
+[2026-08-11 15:14:14] INFO [recruitment_platform:excel_service.py:150] - Updating candidate kunal@example.com in Candidates.xlsx
+[2026-08-11 15:14:14] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'kunal@example.com', 'phone': '+91-9876543210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:14:14] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-11 15:14:14] INFO [recruitment_platform:gemini_provider.py:139] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-11 15:14:23] INFO [recruitment_platform:gemini_provider.py:141] - Successfully parsed resume via Gemini API.
+[2026-08-11 15:14:23] INFO [recruitment_platform:operations.py:87] - Candidate email kunal@example.com exists. Updating candidate record (ID: 9).
+[2026-08-11 15:14:23] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 44)
+[2026-08-11 15:14:23] INFO [recruitment_platform:vector_store.py:102] - Removed 5 vectors from FAISS index matching IDs: [63, 62, 64, 61, 60]
+[2026-08-11 15:14:23] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 9
+[2026-08-11 15:14:24] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 45)
+[2026-08-11 15:14:24] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:24] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 46)
+[2026-08-11 15:14:24] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:24] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 47)
+[2026-08-11 15:14:24] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:24] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 48)
+[2026-08-11 15:14:24] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:25] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 49)
+[2026-08-11 15:14:25] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:25] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 9
+[2026-08-11 15:14:25] INFO [recruitment_platform:excel_service.py:150] - Updating candidate kunal@example.com in Candidates.xlsx
+[2026-08-11 15:14:25] INFO [recruitment_platform:extractor.py:110] - Rule-based deterministic extraction complete: {'email': 'kunal@example.com', 'phone': '+91-9876543210', 'linkedin': None, 'github': None, 'portfolio': None}
+[2026-08-11 15:14:25] INFO [recruitment_platform:extractor.py:123] - Attempting LLM-enhanced extraction...
+[2026-08-11 15:14:25] INFO [recruitment_platform:gemini_provider.py:139] - Sending resume raw text to Gemini for structured parsing...
+[2026-08-11 15:14:25] WARNING [recruitment_platform:gemini_provider.py:39] - Gemini API call warning: '429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.5-flash
+Please retry in 34.381495902s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-3.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 5
+}
+, retry_delay {
+  seconds: 34
+}
+]'. Retrying attempt 1/3 in 2.30s...
+[2026-08-11 15:14:37] INFO [recruitment_platform:gemini_provider.py:141] - Successfully parsed resume via Gemini API.
+[2026-08-11 15:14:37] INFO [recruitment_platform:operations.py:87] - Candidate email kunal@example.com exists. Updating candidate record (ID: 9).
+[2026-08-11 15:14:37] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 44)
+[2026-08-11 15:14:37] INFO [recruitment_platform:vector_store.py:102] - Removed 5 vectors from FAISS index matching IDs: [63, 62, 64, 61, 60]
+[2026-08-11 15:14:37] INFO [recruitment_platform:matching_service.py:190] - Cleaned up embedding metadata for candidate 9
+[2026-08-11 15:14:38] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 45)
+[2026-08-11 15:14:38] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:38] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 46)
+[2026-08-11 15:14:38] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:38] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 47)
+[2026-08-11 15:14:38] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:38] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 48)
+[2026-08-11 15:14:38] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:38] INFO [recruitment_platform:vector_store.py:57] - Saved FAISS index to /Users/kunalsrivastav/Desktop/resume_parser/backend/vectors/index.faiss (vectors: 49)
+[2026-08-11 15:14:38] INFO [recruitment_platform:vector_store.py:90] - Added 1 vectors to FAISS index.
+[2026-08-11 15:14:38] INFO [recruitment_platform:matching_service.py:171] - Successfully generated section-based embeddings for candidate 9
+[2026-08-11 15:14:38] INFO [recruitment_platform:excel_service.py:150] - Updating candidate kunal@example.com in Candidates.xlsx
+[2026-08-11 15:14:39] INFO [recruitment_platform:extractor.py:265] - Attempting job description extraction via LLM...
+[2026-08-11 15:14:39] INFO [recruitment_platform:gemini_provider.py:160] - Sending job description to Gemini for parsing...

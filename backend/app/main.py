@@ -109,3 +109,13 @@ def get_root_status():
         "active_llm": settings.LLM_PROVIDER,
         "active_embedding": settings.EMBEDDING_PROVIDER
     }
+
+@app.get("/health")
+@app.get("/api/health")
+def get_health_status():
+    """Explicit health check probe endpoint for cloud deployments (Railway / Render)."""
+    return {
+        "status": "healthy",
+        "code": 200,
+        "message": "Recruitment Platform API is operational."
+    }

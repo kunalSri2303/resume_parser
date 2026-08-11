@@ -1,9 +1,9 @@
 {
   "personal_information": {
-    "name": "Jaydeep Babubhai Ajani",
-    "email": "jaydeepajani1963@gmail.com",
-    "phone": "+91 83470 50997",
-    "location": "Rajkot, Gujarat, India",
+    "name": "Kunal Srivastav",
+    "email": "kunal@example.com",
+    "phone": "+91-9876543210",
+    "location": null,
     "linkedin": null,
     "github": null,
     "portfolio": null,
@@ -11,170 +11,80 @@
   },
 
   "profession": {
-    "category": "Manufacturing",
-    "subcategory": "Automation Engineering",
-    "industry": "CNC Automation",
-    "current_role": "Junior Engineer, R&D Department",
-    "target_roles": [
-      "Electrical Engineer",
-      "Automation Engineer",
-      "PLC Programmer"
-    ],
-    "current_company": "Jyoti CNC Automation Ltd.",
+    "category": "Software & IT",
+    "subcategory": "Software Engineering",
+    "industry": "Software & IT",
+    "current_role": "Software Engineer",
+    "target_roles": [],
+    "current_company": "Tech Corp",
     "experience_years": 2.0,
-    "seniority": "Junior",
+    "seniority": null,
     "employment_type": null
   },
 
   "skills": {
     "technical": [
-      "PLC programming",
-      "CNC machine commissioning",
-      "HMI development",
-      "troubleshooting",
-      "FAT/SAT testing",
-      "root-cause analysis",
-      "I/O mapping",
-      "parameter configuration",
-      "signal validation",
-      "synchronized axis control",
-      "coordinated machining operations"
+      "Python",
+      "FastAPI",
+      "React",
+      "PyTorch",
+      "FAISS",
+      "Docker"
     ],
-    "soft": [
-      "Analytical & problem solving",
-      "Self-motivated",
-      "Process-orientated"
-    ],
+    "soft": [],
     "tools": [
-      "Fanuc NC Guide",
-      "Fanuc Servo Guide",
-      "Fanuc Picture",
-      "GX Works",
-      "Fanuc Ladder",
-      "Microsoft Office Suite"
+      "Docker"
     ],
-    "frameworks": [],
-    "equipment": [
-      "CNC machines",
-      "Huron Graffenstaden CNC machines",
-      "Fanuc controllers",
-      "Mitsubishi controllers",
-      "spindle drives",
-      "servo axes",
-      "ATC systems",
-      "rotary/tilting tables",
-      "bar feeders",
-      "gantry robots",
-      "hydraulic units",
-      "pneumatic units",
-      "Arduino",
-      "IOT controller"
+    "frameworks": [
+      "FastAPI",
+      "React",
+      "PyTorch"
     ],
-    "standards": [
-      "CE safety standards",
-      "European machine directives",
-      "5S"
-    ],
+    "equipment": [],
+    "standards": [],
     "languages": [
-      "Gujarati",
-      "English",
-      "Hindi"
+      "Python"
     ],
-    "methodologies": [
-      "PLC ladder logic"
-    ]
+    "methodologies": []
   },
 
   "experience": [
     {
-      "title": "Junior Engineer, R&D Department",
-      "company": "Jyoti CNC Automation Ltd.",
-      "location": "Rajkot, Gujarat, India",
-      "start_date": "March 2022",
+      "title": "Software Engineer",
+      "company": "Tech Corp",
+      "location": null,
+      "start_date": "2022",
       "end_date": "Present",
-      "duration": "March 2022 – Present",
-      "description": "Develop, test, and standardize PLC ladder logic for CNC machines using Fanuc and Mitsubishi controllers, including interlocks, safety logic, alarm handling, and sequence control. Commission Huron Graffenstaden(France) CNC machines configured and commissioned according to CE safety standards and European machine directives. Work with multi-path, multi-axis CNC machines, including synchronized axis control and coordinated machining operations. Perform full CNC machine commissioning including spindle drives, servo axes, ATC systems, rotary/tilting tables, bar feeders, gantry robots, hydraulic and pneumatic units. Integrate CNC controllers with field devices via I/O mapping, parameter configuration, and signal validation. Design and implement Fanuc HMI screens with real-time diagnostics, alarms, and maintenance pages. Develop custom PLC function blocks. Perform FAT/SAT testing, root-cause analysis, and onsite troubleshooting. Create and maintain electrical commissioning manuals, PLC alarm lists, configuration procedures, and technical data sheets. Provide advanced technical support to service and maintenance teams.",
-      "key_achievements": [
-        "Optimize PLC and HMI fault logic, reducing unplanned machine downtime by ~20% and shortening restart time."
-      ]
+      "duration": "2022 - Present",
+      "description": "Software Engineer at Tech Corp",
+      "key_achievements": []
     }
   ],
 
   "education": [
     {
-      "degree": "Bachelor of Engineering",
-      "institution": "Marwadi Engineering College",
-      "field_of_study": "Electrical Engineering",
-      "graduation_year": "2019",
-      "cgpa_or_percentage": "8.66"
+      "degree": "B.Tech",
+      "institution": null,
+      "field_of_study": "Computer Science",
+      "graduation_year": null,
+      "cgpa_or_percentage": null
     }
   ],
 
-  "projects": [
-    {
-      "name": "Arduino based smart greenhouse system",
-      "description": "Developed a system to control climate parameters such as temperature, humidity, moisture, and light intensity using Arduino and IOT controller, collecting continuous data via a mobile application.",
-      "technologies_used": [
-        "IOT"
-      ],
-      "tools_used": [
-        "Arduino"
-      ],
-      "role": "University Project",
-      "github_url": null,
-      "project_url": null
-    },
-    {
-      "name": "Double Column CNC Machine (Huron Graffenstaden)",
-      "description": "Automation and Preprograming of a double-column machining center equipped with Automatic Head Changer (AHC) with HV/LV type Automatic Tool Changer (ATC) for horizontal and vertical heads, incorporating integrated safety and interlock logic as per CE standards, and full PLC, HMI, and servo integration.",
-      "technologies_used": [
-        "PLC",
-        "HMI",
-        "servo integration"
-      ],
-      "tools_used": [],
-      "role": null,
-      "github_url": null,
-      "project_url": null
-    }
-  ],
+  "projects": [],
 
-  "certifications": [
-    {
-      "name": "Bosch Rexroth PLC",
-      "issuer": "Bosch Rexroth",
-      "issue_date": null,
-      "expiry_date": null,
-      "credential_id": null
-    },
-    {
-      "name": "Soft skills development (SIG)",
-      "issuer": "SIG",
-      "issue_date": null,
-      "expiry_date": null,
-      "credential_id": null
-    },
-    {
-      "name": "5S",
-      "issuer": null,
-      "issue_date": null,
-      "expiry_date": null,
-      "credential_id": null
-    }
-  ],
+  "certifications": [],
 
   "licenses": [],
 
   "achievements": [],
 
-  "summary": "Electrical Engineer with experience in CNC automation and PLC programming, seeking a challenging role in the automation industry. Possesses a strong background in Fanuc & Mitsubishi PLC systems, CNC machine commissioning, HMI development, and troubleshooting.",
-
+  "summary": "Software Engineer with experience at Tech Corp since 2022. Skilled in Python, FastAPI, React, PyTorch, FAISS, and Docker. Holds a B.Tech in Computer Science.",
   "documents": {
     "resume_available": true,
     "cover_letter_available": false,
     "certificates_available": false
   },
-
   "confidence": {
     "name": 1.0,
     "email": 1.0,
@@ -183,26 +93,17 @@
     "skills": 1.0,
     "experience": 1.0
   },
-
   "search_keywords": [
-    "Electrical Engineer",
-    "CNC Automation",
-    "PLC programming",
-    "Fanuc",
-    "Mitsubishi PLC",
-    "CNC machine commissioning",
-    "HMI development",
-    "Huron Graffenstaden",
-    "CE safety standards",
-    "Fanuc Ladder",
-    "GX Works",
-    "Fanuc NC Guide",
-    "Fanuc Servo Guide",
-    "Fanuc Picture",
-    "Bosch Rexroth PLC",
-    "Arduino",
-    "FAT/SAT testing",
-    "Troubleshooting",
-    "Servo axes"
+    "Software Engineer",
+    "Tech Corp",
+    "Python",
+    "FastAPI",
+    "React",
+    "PyTorch",
+    "FAISS",
+    "Docker",
+    "B.Tech",
+    "Computer Science",
+    "Kunal Srivastav"
   ]
 }
