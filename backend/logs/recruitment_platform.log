@@ -12417,3 +12417,7 @@ Please retry in 18.64717493s. [links {
 [2026-08-10 23:28:20] INFO [recruitment_platform:auth.py:117] - Password successfully changed for user 'hiringmanager'.
 [2026-08-10 23:28:20] INFO [recruitment_platform:operations.py:221] - Saved job description: 'Senior Quality Inspector' (ID: 23)
 [2026-08-10 23:28:20] INFO [recruitment_platform:operations.py:252] - Updated job description: 'Senior Quality Inspector' (ID: 23)
+[2026-08-11 14:21:39] INFO [recruitment_platform:main.py:13] - Initializing database tables...
+[2026-08-11 14:21:39] INFO [recruitment_platform:main.py:56] - Database tables initialized successfully.
+[2026-08-11 15:02:04] INFO [recruitment_platform:main.py:13] - Initializing database tables...
+[2026-08-11 15:02:04] INFO [recruitment_platform:main.py:58] - Database tables initialized successfully.

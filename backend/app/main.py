@@ -18,13 +18,15 @@ try:
     db_session = SessionLocal()
     admin_user = get_user_by_username(db_session, "admin")
     if not admin_user:
-        admin_hash = bcrypt.hashpw(b"AdminPassword2026!", bcrypt.gensalt()).decode("utf-8")
+        admin_pass = os.getenv("ADMIN_INITIAL_PASSWORD", "AdminPassword2026!")
+        admin_hash = bcrypt.hashpw(admin_pass.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
         create_user(db_session, "admin", admin_hash, "admin")
         logger.info("Seeded initial 'admin' user into database.")
 
     hm_user = get_user_by_username(db_session, "hiringmanager")
     if not hm_user:
-        hm_hash = bcrypt.hashpw(b"ManagerPassword2026!", bcrypt.gensalt()).decode("utf-8")
+        hm_pass = os.getenv("HIRING_MANAGER_INITIAL_PASSWORD", "ManagerPassword2026!")
+        hm_hash = bcrypt.hashpw(hm_pass.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
         create_user(db_session, "hiringmanager", hm_hash, "hiring_manager")
         logger.info("Seeded initial 'hiringmanager' user into database.")
     db_session.close()
