@@ -172,6 +172,7 @@ def format_candidate_response(candidate: Candidate) -> dict:
                 "missing_skills": json.loads(r.missing_skills or "[]")
             } for r in (candidate.recommendations or [])
         ],
+        #feedback 
         "feedbacks": [
             {
                 "id": f.id,

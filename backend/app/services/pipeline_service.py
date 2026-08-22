@@ -129,7 +129,7 @@ class PipelineService:
             candidate, is_updated = save_or_update_candidate(
                 db=db,
                 candidate_data=candidate_data,
-                resume_path=file_path,
+                resume_path=filename,
                 raw_text=raw_text
             )
 
@@ -141,7 +141,7 @@ class PipelineService:
             )
 
             # 6. Sync details with Excel Candidates.xlsx
-            self.excel_service.sync_candidate(candidate.id, candidate_data, file_path)
+            self.excel_service.sync_candidate(candidate.id, candidate_data, filename)
 
             logger.info(f"Background processing complete for candidate {candidate.name} ({candidate.email}). Is update: {is_updated}")
             
@@ -150,6 +150,9 @@ class PipelineService:
         finally:
             if db:
                 db.close()
+            # Delete temporary upload file from disk immediately after processing
+            if file_path:
+                self.storage.delete_file(file_path)
             # Explicitly release large memory buffers
             del file_bytes
             del page_images
